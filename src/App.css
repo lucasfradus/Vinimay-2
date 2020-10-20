@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900:500&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,wght@0,300;0,400;1,300;1,500;1,700;1,900&display=swap');*/
+
+
+@font-face {
+	font-family: 'FSJoey';
+	src: url('fonts/FSJoey-Medium.otf') format('opentype');
+	font-weight: normal !important;
+}
+
+
+
+body {
+	overflow-x: hidden !important;
+	width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 900 !important;
+	font-style: italic !important;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif!important;
+}
+
+
+.boar{
+  padding-top: 0pc;
+}
+
+
+
+
+
+
+.nav-header img {
+	height: 37px !important;
+}
+.nav-links a {
+	text-transform: uppercase;
+	font-size: 20px !important;
+	font-weight: 900 !important;
+}
+
+
+.title {
+	padding-right: 0rem !important;
+}
+.content {
+	padding-top: 5rem !important;
+}
+.content .line1 {
+	line-height: 45px;
+}
+.content .line3 {
+	line-height: 50px !important;
+	font-size: 50px !important;
+}
+.content .line4 {
+	font-size: 35px;
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+{
+	min-height: 100vh !important;
+	height: auto !important;
+}
+.buttons {
+	display: block !important;
+}
+.buttons img:nth-child(1) {
+	margin-right: 15px;
+}
+.buttons img:nth-child(2) {
+	margin-left: 15px;
+}
+.buttons img {
+	margin-top: 0px;
+	width: 200px;
+	height: auto !important;
+}
+
+.ImgMoc {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    height: 31em !important;
+}
+
+.mocups .moc1 {
+	height: 29em !important;
+}
+
+.info .line1 {
+	margin-bottom: 0px;
+}
+.info .line2 {
+	margin-top: 10px;
+}
+.mocups {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.navbar {
+	top: 25px !important;
+	background: transparent !important;
+}
+.navbar.active {
+    background: #171E36 !important;
+    transition: 0.2s;
+    top: 0px !important;
+}
+.info .line2 {
+	color: rgba(0,0,0,0.7);
+	font-family: 'FSJoey';
+	font-weight: 500 !important;
+}
+
+.Opts-Container h1 {
+	max-width: 500px;
+	margin: 0 auto;
+	width: 100%;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+.Opts-Container .opt {
+	margin-right: 25px !important;
+	margin-left: 25px !important;
+}
+.Opts-Container .opt img {
+	height: 8rem !important;
+}
+.Opts-Container .opt p {
+	font-weight: 900 !important;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.fanMap {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.fanMap {
+	font-weight: 900 !important;
+}
+
+.line-bajate-app {
+	font-weight: 900 !important;
+	font-style: italic;
+}
+
+.ImgD {
+	height: 4rem !important;
+	margin-top: 20px !important;
+	margin: 10px;
+}
+
+.ImgR:nth-child(1) {
+	position: absolute;
+	left: 0px;
+	/*top: 0px;*/
+}
+.ImgM {
+	margin-top: 30px;
+}
+.ImgR:nth-child(3) {
+	position: absolute;
+	right: 0px;
+	/*top: 0px;*/
+}
+
+.follow-container .moc1 img, .follow-container .moc2 img {
+	height: 23rem !important;
+}
+.Foll img.Img3 {
+	margin-top: 47px !important;
+    height: 9rem;
+}
+.Foll h1 {
+	font-size: 22px !important;
+}
+.Foll div .redImg {
+	margin: 5px;
+}
+.follow-container {
+	margin-bottom: -4px;
+}
+
+
+.footer {
+	max-width: 1024px;
+	width: 100%;
+	padding: 0px !important;
+	padding-top: 25px !important;
+	padding-bottom: 25px !important;
+	margin: 0px !important;
+	flex-wrap: wrap;
+}
+.footer ul li {
+	margin-bottom: 8px !important;
+}
+
+
+
+
+
+.page-comunidad {
+	text-align: left;
+}
+.page-comunidad p.line1 {
+	margin-top: 25px;
+	font-weight: 900;
+	letter-spacing: 1px;
+	font-size: 30px;
+}
+
+.page-comunidad .carret {
+	margin-left: 47px;
+    height: 60px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+.page-comunidad h1.line3 {
+	font-size: 55px;
+}
+.page-comunidad p.line2 {
+	font-weight: 900;
+	font-size: 45px;
+}
+
+.page-comunidad .cardShirtContainer {
+	display: block !important;
+}
+.page-comunidad .cardShirtContainer .cardShirt {
+    position: relative;
+    display: block !important;
+    float: left;
+    width: 25%;
+}
+.clearBoth {
+	clear: both !important;
+}
+.page-comunidad .cardShirtContainer .cardShirt img {
+	visibility: hidden;
+}
+.page-comunidad .cardShirtContainer .info {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	transform: none !important;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.page-comunidad .cardShirtContainer .info h2 {
+	font-family: 'FSJoey';
+	font-weight: 500 !important;
+	font-size: 16px;
+}
+.page-comunidad .cardShirtContainer .info .Sec {
+	margin-top: 0px !important;
+	font-weight: 900;
+	font-size: 25px;
+}
+
+.page-comunidad .moci {
+	left: 6em !important;
+	margin-top: 25px;
+}
+
+.page-comunidad .count .muse, .page-comunidad .count .shirt {
+	padding-top: 15px;
+}
+.page-comunidad .count .muse .line2 {
+	font-size: 100px;
+}
+
+.page-comunidad .count .shirt .line2 {
+	font-size: 100px;
+}
+
+.page-comunidad .carTop {
+	padding-top: 25px !important;
+	padding-bottom: 25px !important;
+}
+.page-comunidad .carBot {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.page-comunidad .topi {
+	padding-top: 40px;
+	margin-bottom: -75px;
+}
+.page-comunidad .topi .cards .cardItem:nth-child(1), .page-comunidad .topi .cards .cardItem:nth-child(5) {
+	visibility: hidden;
+}
+.page-comunidad .topi .cards .cardItem:nth-child(2) {
+	zoom: 0.8;
+}
+.page-comunidad .topi .cards .cardItem:nth-child(4) {
+	zoom: 0.6;
+}
+.page-comunidad .carTop .counter {
+	font-size: 64px;
+	margin: 15px;
+	margin-top: 0px;
+}
+
+.page-comunidad .carTop h1.name {
+	margin-bottom: 15px;
+}
+.page-comunidad .carTop .shir, .page-comunidad .carTop .us {
+	font-family: 'FSJoey';
+	font-weight: 500 !important;
+	font-style: normal !important;
+	font-size: 15px;
+}
+
+
+.page-comunidad .topi {
+	z-index: 10;
+	position: relative;
+	text-align: center;
+}
+.page-comunidad .topi .line3 {
+	font-size: 60px !important;
+}
+
+.page-comunidad .topi .mockup-float-right, .page-comunidad .topi .mockup-float-left {
+	position: absolute;
+	width: 20rem;
+	filter: drop-shadow(2px 4px 12px rgba(0,0,0,0.9));
+}
+.page-comunidad .topi .mockup-float-right {
+	bottom: -225px;
+	right: -5px;
+    transform: rotate(-8deg);
+}
+.page-comunidad .topi .mockup-float-left {
+	bottom: -400px;
+	left: -25px;
+    transform: rotate(10deg);
+}
+
+.page-comunidad .top-item {
+	font-size: 13px;
+}
+.page-comunidad .top-item h1.us {
+	font-size: 17px;
+	font-family: 'FSJoey';
+	font-weight: 500 !important;
+}
+.page-comunidad .top-item .countShirt h1 {
+	font-size: 26px;
+	margin-top: 19px;
+}
+.page-comunidad .title-fanaticos-10 {
+	width: 100%;
+	max-width: 712px;
+	margin: 0 auto !important;
+}
+
+.page-comunidad .preguntas-container {
+	text-align: center;
+	padding-bottom: 50px;
+}
+.page-comunidad .preguntas-container .list {
+	width: 100% !important;
+}
+.page-comunidad .preguntas-container .item-container {
+	border: 0px !important;
+	border-bottom: 2px solid lightgray !important;
+	border-radius: 0px;
+}
+.page-comunidad .preguntas-container .item-container:hover .conten {
+	display: none;
+}
+.page-comunidad .preguntas-container .item-container .item {
+	padding: 0px;
+	position: relative;
+}
+.page-comunidad .preguntas-container .item-container .item .caret-facing-down {
+	color: #A8C813;
+	font-size: 38px;
+	position: absolute;
+	line-height: 16px;
+	right: 10px;
+}
+.page-comunidad .preguntas-container .item-container .item .caret-facing-right {
+	display: none;
+	color: #A8C813;
+	font-size: 38px;
+	position: absolute;
+	line-height: 24px;
+	right: 10px;
+	transform: rotate(-180deg);
+}
+
+.page-comunidad .equipo-container {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.page-comunidad .equipo-container .line1 {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 25px;
+	margin-bottom: 0px !important;
+}
+.page-comunidad .equipo-container .lista {
+	text-transform: uppercase;
+}
+.page-comunidad .equipo-container .card-team {
+	position: relative;
+}
+.page-comunidad .equipo-container .lista .name {
+	margin-top: 15px;
+}
+.page-comunidad .equipo-container .lista .last {
+	margin-bottom: 10px;
+}
+.page-comunidad .equipo-container .lista .pos {
+	text-transform: none;
+	font-style: normal !important;
+	font-family: 'FSJoey';
+	font-weight: 500 !important;
+	width: 80%;
+	margin: 0 auto;
+}
+.page-comunidad .equipo-container .ImgP {
+	height: 20rem !important;
+}
+.page-comunidad .equipo-container .card-team .flecha[data-flecha_numero='1'] {
+	position: absolute;
+	top: -50px;
+	width: 135px;
+	right: -70px;
+}
+.page-comunidad .equipo-container .card-team .flecha[data-flecha_numero='2'] {
+	position: absolute;
+	bottom: -50px;
+	height: 147px;
+	left: -64px;
+}
+.page-comunidad .equipo-container .card-team .flecha[data-flecha_numero='3'] {
+    position: absolute;
+    right: -91px;
+    height: 294px;
+    bottom: -127px;
+}
+.page-comunidad .equipo-container .card-team .flecha[data-flecha_numero='4'] {
+	height: 180px;
+	position: absolute;
+	bottom: -59px;
+	left: -42px;
+}
+.page-comunidad .equipo-container .card-team .flecha[data-flecha_numero='5'] {
+    position: absolute;
+    bottom: 104px;
+    right: -53px;
+    height: 121px;
+}
+
+.page-comunidad .line-3-listo {
+	text-align: center;
+	font-size: 38px !important;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #A8C813;
+}
+
+/*.page-comunidad h1 {
+	text-align: center;
+}*/
+
+.pageContacto .line2 {
+	font-size: 32px;
+}
+.pageContacto .line3 {
+    font-size: 44px;
+    margin-bottom: 6px;
+}
+
+.pageContacto input, .pageContacto textarea {
+	outline: 0px !important;
+	border: 0px !important;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	width: 100%;
+	background: white !important;
+	border-radius: 10px !important;
+	font-size: 15px;
+	height: 2rem;
+    width: 30rem;
+    margin: 20px;
+}
+.pageContacto textarea {
+	min-height: 150px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+.pageContacto .inputCar .hold {
+	font-size: 25px;
+	width: 160px;
+	text-align: left;
+}
+.pageContacto [type='submit'] {
+	font-weight: 900 !important;
+	font-style: italic;
+	letter-spacing: 1px !important;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: auto !important;
+	cursor: pointer !important;
+}
+.pageContacto .inputCar:nth-child(4) {
+	align-items: initial !important;
+}
+.pageContacto .inputCar:nth-child(4) .hold {
+	margin-top: 20px;
+}
+.pageContacto .Img2 {
+	margin-top: -75px;
+	transform: rotateY(180deg);
+}
+.nav-item.active a {
+	color: white !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #333;
+  font-family: 'FSJoey'
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #333;
+  font-family: 'FSJoey'
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #333;
+  font-family: 'FSJoey'
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #333;
+  font-family: 'FSJoey'
+}
+
+@media (max-width: 1253px) {
+	.page-comunidad .equipo-container .card-team .flecha {
+		display: none;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	.nav-header img {
+		height: 30px !important;
+		margin: 18px !important;
+	}
+	.nav-links.show-nav {
+		padding-bottom: 15px;
+		height: auto !important;
+	    box-shadow: 0px 2px 7px rgba(0,0,0,0.4);
+	}
+	.nav-links a {
+		line-height: 40px !important;
+	}
+
+	.content {
+		padding-top: 10rem !important;
+	}
+
+	ul.nav-links {
+		margin: 0px !important;
+	}
+
+	.moc1 {
+		height: 18em !important;
+	}
+
+	.mocups .moc1 {
+		height: 18em !important;
+	}
+
+	.content .line1 {
+		font-size: 38px;
+	}
+	.content .line2 {
+		font-size: 38px !important;
+	}
+	.content .line3 {
+		font-size: 42px !important;
+		line-height: 44px !important;
+		margin: 0px;
+		margin-top: 0px !important;
+	}
+	.content .line4 {
+		font-size: 25px !important;
+	}
+
+	.buttons img:nth-child(1) {
+		margin-right: 15px;
+	}
+	.buttons img:nth-child(2) {
+		margin-left: 15px;
+	}
+	.buttons img {
+		width: 150px;
+	}
+
+	.info .line1 {
+		font-weight: 900 !important;
+	}
+	.info {
+		padding-bottom: 40px !important;
+	}
+	.info big {
+		font-size: 134%;
+	}
+
+	.Opts-Container h1 {
+		font-size: 25px !important;
+		width: 80% !important;
+	}
+	.Opts-Container .opt {
+		margin-right: 10px !important;
+		margin-left: 10px !important;
+	}
+	.Opts-Container .opt img {
+		height: 4rem !important;
+	}
+	.Opts-Container .opt p {
+		font-weight: 900 !important;
+		font-style: italic;
+		font-size: 15px;
+	}
+
+	.ImgD {
+		height: 3rem !important;
+		margin-top: 20px !important;
+		margin: 5px;
+	}
+
+	.footer .legal, .footer .pab {
+		padding-left: 0px !important;
+		flex-basis: 100% !important;
+	}
+
+	.follow-container {
+		padding-top: 30px !important;
+		padding-bottom: 40px !important;
+	}
+
+	.fanMap {
+		padding-bottom: 0px !important;
+	}
+	.fanMap .ImgM {
+		height: auto !important;
+		width: 95%;
+	}
+	.fanMap .line2, .fanMap .line1, .fanMap .line3 {
+		width: 95%;
+		margin: 0 auto !important;
+		padding: 0px !important;
+	}
+	.fanMap .line3 {
+		margin-bottom: 25px !important;
+	}
+
+	.footer-parent {
+		padding: 0px !important;
+	}
+
+	.page-comunidad h1.line3 {
+		font-size: 45px !important;
+	}
+	.page-comunidad .topi .cards .cardItem:nth-child(1), .page-comunidad .topi .cards .cardItem:nth-child(5) {
+		display: none;
+	}
+	.page-comunidad .list {
+		width: 100% !important;
+	}
+	.page-comunidad .preguntas-container {
+		padding-bottom: 40px;
+	}
+	.page-comunidad .equipo-container .card-team .flecha {
+		display: none;
+	}
+
+	.page-comunidad .line-3-listo {
+		font-size: 30px !important;
+		color: #A8C813;
+	}
+
+
+	.pageContacto input, .pageContacto textarea {
+		width: calc(100vw - 4.5rem);
+		margin-bottom: 22px !important;
+		margin-top: 5px !important;
+		margin: 0px;
+	}
+	.pageContacto .inputCar:nth-child(4) .hold {
+		margin-top: 0px;
+	}
+}
+
+
+@media (max-width: 1000px) {
+	.page-comunidad .cardShirtContainer .cardShirt {
+		width: 33%;
+	}
+}
+
+@media (max-width: 744px) {
+	.page-comunidad .cardShirtContainer .cardShirt {
+		width: 50%;
+	}
+}
+
+@media (max-width: 519px) {
+	.page-comunidad .cardShirtContainer .cardShirt {
+		width: 100%;
+	}
+}
