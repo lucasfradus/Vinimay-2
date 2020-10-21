@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900:500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500;1,900&display=swap');
 /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,wght@0,300;0,400;1,300;1,500;1,700;1,900&display=swap');*/
 
 
@@ -732,4 +732,12 @@ h1, h2, h3, h4, h5, h6 {
 	.page-comunidad .cardShirtContainer .cardShirt {
 		width: 100%;
 	}
+}
+
+.flexible-container iframe {
+	width: 100%;
+	height: calc(100vh - 100px);
+}
+.flexible-container div {
+	width: 100% !important;
 }

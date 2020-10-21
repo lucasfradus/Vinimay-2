@@ -9,8 +9,6 @@ export default function Video() {
             <ReactPlayer url='https://www.youtube.com/watch?v=X4dhGbWCtGA'
                 playing
                 controls
-                width = "30em"
-                height = "20em"
                 />
         </Container>
         
@@ -21,7 +19,7 @@ export default function Video() {
 
 const Container = styled.div`
 display: block;
-padding: 1rem 0rem 1rem;
+padding: 0rem;
 min-height:40em;
 
 .flexible-container {
@@ -31,17 +29,22 @@ min-height:40em;
     overflow: hidden;
     justify-content: center;
     padding: 10px;
-    
+    padding: 0px !important;
   }
   
   .flexible-container iframe,
+  .flexible-container div,
   .flexible-container object,
   .flexible-container embed {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
+  }
+
+  .flexible-container iframe {
+    min-height: calc(100vh - 80px);
   }
 
 

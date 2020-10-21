@@ -10,8 +10,8 @@ export default function InfoCollection() {
         <CollectionSection>
             <div className='mocups'>
                 <img src={Mock} alt='Moc' className='moc1' />  
-                <Link  className="discover" to="/video">DESCUBRI VINIMAY</Link>
-
+                <br/>
+                <Link  className="discover" to="/video">DESCUBRÍ VINIMAY</Link>
             </div>
 
             <div className='info'>
@@ -36,7 +36,7 @@ const CollectionSection = styled.div`
         font-family: 'Montserrat', sans-serif!important;
         font-style: italic;
         font-size: 30px;
-        font-weight: bold;
+        font-weight: 900 !important;
         color:#A8C813;
         text-decoration: none;
         text-align:center;
