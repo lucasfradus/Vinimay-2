@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900:500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500;1,900&display=swap');
 /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,wght@0,300;0,400;1,300;1,500;1,700;1,900&display=swap');*/
 
 
@@ -338,12 +338,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .page-comunidad .topi .mockup-float-right {
 	bottom: -225px;
-	right: -5px;
+	right: -15px;
     transform: rotate(-8deg);
 }
 .page-comunidad .topi .mockup-float-left {
 	bottom: -400px;
-	left: -25px;
+	left: -43px;
     transform: rotate(10deg);
 }
 
@@ -386,15 +386,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .page-comunidad .preguntas-container .item-container .item .caret-facing-down {
 	color: #A8C813;
-	font-size: 38px;
+	font-size: 20px;
 	position: absolute;
-	line-height: 16px;
+	line-height: 28px;
 	right: 10px;
 }
 .page-comunidad .preguntas-container .item-container .item .caret-facing-right {
 	display: none;
 	color: #A8C813;
-	font-size: 38px;
+	font-size: 20px;
 	position: absolute;
 	line-height: 24px;
 	right: 10px;
@@ -732,4 +732,12 @@ h1, h2, h3, h4, h5, h6 {
 	.page-comunidad .cardShirtContainer .cardShirt {
 		width: 100%;
 	}
+}
+
+.flexible-container iframe {
+	width: 100%;
+	height: calc(100vh - 100px);
+}
+.flexible-container div {
+	width: 100% !important;
 }
