@@ -5,13 +5,14 @@ import styled from 'styled-components'
 export default function CardShirt(props) {
     return (
         <Card className='cardShirt' style={{
+            height: '600px',
 		  backgroundImage: "url(" + props.image + ")",
 		  backgroundPosition: 'center',
 		  backgroundSize: 'cover',
 		  backgroundRepeat: 'no-repeat'
 		}}>
           <div className='infoShirt'>
-            <img src={props.image} alt='Imae' className='ImgBk'/>
+            <img src={props.tipo} alt='Imae' className='ImgBk'/>
                <div className='info'>
                    <div>
                         <h2>Usuario Vinimay</h2>
@@ -34,7 +35,7 @@ export default function CardShirt(props) {
                         <div className='type'>  <img src={props.tipo} alt='Imae' className='ImgBk'/></div>
                    </div>
 
-                   </div>
+                </div>
 
 
             </div>
@@ -47,22 +48,19 @@ export default function CardShirt(props) {
 const Card = styled.div`
     /* There will be 4 cards per row */
 
-    .infoShirt {
-        bakcground-image: url({props.image});
-    }
-
 
     .ImgBk{
         height: 20rem;
         /* margin-left: 10]0vh; */
         /* position: absolute; */
     }
+
     .type{
       float:right;
-      font-size: 20px!important;
+      z-index: 2;
+      /* font-size: 40px!important;
       right:1em!important;
-      margin-bottom:2em!important;
-
+      margin-bottom:2em!important; */
     }
 
 
@@ -70,7 +68,7 @@ const Card = styled.div`
         flex-basis: 5%;
         display: flex;
         /* width: 100%; */
-        justify-content: space-around;
+        justify-content: center;
         &:hover{
             .info{
                 opacity: 1;
@@ -80,19 +78,22 @@ const Card = styled.div`
 
     h2{
         margin:0;
+        font-size: 50px;
     }
 
     .Sec{
         /* margin:]s0; */
         color:#171E36;
-        font-size: 20px;
+        font-size: 090px;
     }
 
 
     .info{
         position: absolute;
         background-color: rgba(168, 200, 19, 0.7);
-        width: 15rem;
+        width: 55rem;
+        margin: auto;
+        padding:auto;
         z-index: 3;
         color: white;
         opacity: 0;
