@@ -12,6 +12,7 @@ export default function NavBar() {
 
     const  handleToggle = () =>{
           setIsOpen(!isOpen);
+          console.log('Hola perro')
       }
       
 
@@ -54,8 +55,21 @@ export default function NavBar() {
                             onClick={handleToggle}
 
                         className="nav-btn2">
-                            <li className="nav-item">
-                            <Link to="/">Descarga</Link>
+                            <li>
+                            <div className='drop-menu'>
+                                
+                                <a href='www'>
+                                    Descarga
+                                </a>
+
+                                
+                                <div className='drop-conten'>
+                                    <ul>
+                                        <li className='drop-item'>Android</li>
+                                        <li className='drop-item'>IOS</li>
+                                    </ul>
+                                </div>
+                            </div>
                             </li>
                         </button>
 
@@ -90,7 +104,7 @@ const NavBar2 = styled.div`
         .nav-header {
             display: flex;
             justify-content: space-between;
-            }
+        }
 
         .nav-btn {
             background: transparent;
@@ -100,12 +114,12 @@ const NavBar2 = styled.div`
         }
         .nav-btn2 {
             margin-bottom: 5px;
-                display:block;
-                border: none;
-                cursor: pointer;
-                outline: none;
-                background: transparent;
-            }
+            display:block;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            background: transparent;
+        }
             .nav-icon {
                 font-size: 1.5rem;
                 color: #fff;
@@ -113,11 +127,58 @@ const NavBar2 = styled.div`
             .nav-links {
                 /* text-align:center; */
                 justify-content:right;
-            height: 0;
+            height: 0px;
             overflow: hidden;
             transition: all 0.3s linear;
             list-style-type: none;
         }
+
+        .drop-menu{
+            position:relative;
+        }
+        .drop-menu:hover .drop-conten{
+            /* position:relative; */
+            /* position:absolute; */
+            display: block;
+        }
+        .drop-menu:hover  .nav-links a{
+            height: 10px;
+            position:absolute;
+            right: 239px;
+            display: block;
+        }
+
+        .drop-conten{
+            
+            right:10px;
+            padding-top: 4px;
+            position: absolute;
+            top: 100%;
+            display:none;
+            justify-content:center;
+            align-self: auto;
+
+         
+            background-color: transparent;
+            z-Index: 30000;
+            text-align: right;
+
+            
+            height: 240px;
+            width: 200px;
+        }
+
+        .drop-item{
+            font-size: 23px;
+            font-weight: bold;
+            color:white;
+            text-decoration: none;
+            list-style: none;
+            display: block;
+            z-index:10000;
+            margin-bottom: 10px;
+        }
+
         .nav-links a {
             background: transparent;
             font-family: 'Montserrat', sans-serif!important;
@@ -128,7 +189,7 @@ const NavBar2 = styled.div`
             color: #A8C813;
             transition: all 0.3s linear;
             text-align: center;
-            /* font-size: 1rem; */
+            
             font-weight: 100;
             letter-spacing: 1px;
             font-weight: 400;
@@ -173,9 +234,12 @@ const NavBar2 = styled.div`
 
             }
             .nav-links {
-                height: auto;
+                height: 150px;
+                position:absolute;
                 display: flex;
-                margin-left: 0rem;
+                top:-50px;
+                right: 10%;
+                margin-left: 7rem;
             }
             .nav-links a {
                 margin: 0 .5rem;
