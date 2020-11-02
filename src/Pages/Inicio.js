@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState}  from 'react'
 import Nov from '../images/archivos-17.png'
 import Mockup from '../images/mockup-banner.png'
 import AndroidImg from '../images/archivos-06.png'
@@ -11,10 +11,22 @@ import { Animated } from 'react-animated-css'
 import Options from '../Components/Options'
 import Download from '../Components/Download'
 import FanMap from '../Components/Inicio/FanMap'
+import Modal from '../Components/Modal'
+import Video from '../Components/Video/Video'
 
 export default function Inicio() {
+
+    const [modal, setModal] = useState(false);
+
+    const showModal = () => {
+        setModal(!modal)
+    }
+
     return (
         <div className='boar'>
+            <Modal show={modal}  close={showModal}>
+                <Video show={modal}/>
+            </Modal>
             <DivHome>
                 <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
 
@@ -38,7 +50,7 @@ export default function Inicio() {
                 </div>
                 </Animated>
             </DivHome>
-            <InfoCollection/>
+            <InfoCollection show={showModal}/>
             <Options/>
             <FanMap/>
             <Download/>

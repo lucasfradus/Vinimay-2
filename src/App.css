@@ -15,10 +15,10 @@ body {
 	width: 100vw;
 }
 
-h1, h2, h3, h4, h5, h6 {
+/* h1, h2, h3, h4, h5, h6 {
 	font-weight: 900 !important;
 	font-style: italic !important;
-}
+} */
 
 .App {
   text-align: center;
@@ -65,10 +65,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 15px;
 }
 
-{
+/* {
 	min-height: 100vh !important;
 	height: auto !important;
-}
+} */
 .buttons {
 	display: block !important;
 }
@@ -246,7 +246,12 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both !important;
 }
 .page-comunidad .cardShirtContainer .cardShirt img {
-	visibility: hidden;
+	/* visibility: hidden; */
+	float:right;
+	height: 6rem;
+	left:10px;
+	bottom: 10px;
+	position: absolute;
 }
 .page-comunidad .cardShirtContainer .info {
 	text-align: center;
@@ -259,12 +264,16 @@ h1, h2, h3, h4, h5, h6 {
 .page-comunidad .cardShirtContainer .info h2 {
 	font-family: 'FSJoey';
 	font-weight: 500 !important;
-	font-size: 16px;
+	font-size: 26px;
 }
 .page-comunidad .cardShirtContainer .info .Sec {
 	margin-top: 0px !important;
 	font-weight: 900;
-	font-size: 25px;
+	font-size: 35px;
+}
+.page-comunidad .cardShirtContainer .info .type {
+	float:right;
+	font-size: 35px;
 }
 
 .page-comunidad .moci {

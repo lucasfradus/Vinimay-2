@@ -2,16 +2,19 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import Mock from '../../images/mockups/archivo-mockups-02.png'
-import Arrow from '../../images/arrow.png'
+// import Arrow from '../../images/arrow.png'
 
 
-export default function InfoCollection() {
+export default function InfoCollection(props) {
+
+    console.log(props);
+
     return (
         <CollectionSection>
             <div className='mocups'>
                 <img src={Mock} alt='Moc' className='moc1' />  
                 <br/>
-                <Link  className="discover" to="/video">DESCUBRÍ VINIMAY</Link>
+                <Link  className="discover" to="/" onClick={props.show}>DESCUBRÍ VINIMAY</Link>
             </div>
 
             <div className='info'>
@@ -49,7 +52,7 @@ const CollectionSection = styled.div`
     .mocups{
         flex:1;
         display:block;
-        text-decortion:none;
+        text-decoration:none;
         align-items: center;
     }
 

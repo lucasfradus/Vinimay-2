@@ -3,11 +3,11 @@ import ReactPlayer from 'react-player/lazy'
 import styled from 'styled-components'
 
 
-export default function Video() {
+export default function Video(props) {
     return (
         <Container className="flexible-container">
             <ReactPlayer url='https://www.youtube.com/watch?v=X4dhGbWCtGA'
-                playing
+                playing= {props.show}
                 controls
                 />
         </Container>
@@ -18,14 +18,15 @@ export default function Video() {
 
 
 const Container = styled.div`
-display: block;
+display: flex;
 padding: 0rem;
-min-height:40em;
+min-height:0em;
+width: 100% !important;
 
 .flexible-container {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; 
+    padding-top: 20px; height: 0; 
     overflow: hidden;
     justify-content: center;
     padding: 10px;
@@ -39,12 +40,11 @@ min-height:40em;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100% !important;
     height: 100%;
   }
 
   .flexible-container iframe {
-    min-height: calc(100vh - 80px);
+    min-height: calc(10vh - 800px);
   }
 
 
