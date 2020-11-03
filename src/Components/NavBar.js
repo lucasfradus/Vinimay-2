@@ -14,6 +14,7 @@ export default function NavBar() {
           setIsOpen(!isOpen);
           console.log('Hola perro')
       }
+
       
 
     return (
@@ -53,20 +54,16 @@ export default function NavBar() {
                         </button>
                         <button type="button"
                             onClick={handleToggle}
-
                         className="nav-btn2">
                             <li>
                             <div className='drop-menu'>
-                                
                                 <a href='www'>
-                                    Descarga
+                                    Descarga<span className='caret-facing-down'>&#9660;</span>
                                 </a>
-
-                                
                                 <div className='drop-conten'>
                                     <ul>
-                                        <li className='drop-item'><a href='contacto' target='_blank'>Android</a></li>
-                                        <li className='drop-item'><a  href='www.google.com'>IOS</a></li>
+                                        <li className='drop-item'><a target='_blank' href='contacto'>Android</a></li>
+                                        <li className='drop-item'><a target='_blank' href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -125,9 +122,10 @@ const NavBar2 = styled.div`
                 color: #fff;
             }
             .nav-links {
-                /* text-align:center; */
-                justify-content:right;
+            /* text-align:center; */
+            justify-content:right;
             height: 0px;
+            /*min-height:300px; */
             overflow: hidden;
             transition: all 0.3s linear;
             list-style-type: none;
@@ -158,12 +156,8 @@ const NavBar2 = styled.div`
             display:none;
             justify-content:center;
             align-self: center;
-
-         
             background-color: #171E36;
             z-Index: 30000;
-
-            
             height: 450px;
             width: 140px;
         }
@@ -173,12 +167,14 @@ const NavBar2 = styled.div`
             right:32px;
             font-size: 23px;
             position:relative;
-    
             font-weight: bold;
             color: #A8C813;
             text-decoration: none;
-            list-style: none;
-            display: inline-flex;
+            text-align:left;
+            /*list-style: none;*/
+            list-style-type: square;
+            margin-left:10px;
+            display: inline-list;
             z-index:10000;
             margin-bottom: 10px;
         }
@@ -205,6 +201,7 @@ const NavBar2 = styled.div`
 
             .show-nav {
             height: 160px;
+            min-height:300px;
             }
 
             /* Cuando no es para dispositivos moviles */
@@ -216,7 +213,6 @@ const NavBar2 = styled.div`
 
             .nav-btn {
                 display: none;
-
             }
 
             .imgLogo{

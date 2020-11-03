@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import TitleApShirt from './TitleApShirt'
 import TopTen from './TopTen'
-import Mockup from '../../images/mockup-banner.png'
+import Mockup from '../../images/mockups/archivo mockups nuevos-03.png'
 import ButtomTitle from './ButtomTitle'
 
 export default function Museo() {
