@@ -201,7 +201,6 @@ const NavBar2 = styled.div`
 
             .show-nav {
             height: 160px;
-            min-height:300px;
             }
 
             /* Cuando no es para dispositivos moviles */
@@ -211,6 +210,10 @@ const NavBar2 = styled.div`
         @media screen and (min-width: 768px){
             background: linear-gradient(to top, rgba(42, 58, 64, 0.0), #171E36);
 
+
+            .show-nav {
+                height: 160px;
+                }
             .nav-btn {
                 display: none;
             }
