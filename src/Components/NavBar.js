@@ -52,18 +52,28 @@ export default function NavBar() {
                             </li>
                         </button>
                         <button type="button"
+
                             // onClick={handleToggle}
                         className="nav-btn2">
                             <li>
                             <div className='drop-menu'>
                                 <a href='#'>
+
+                            onClick={handleToggle}
+                        className="nav-btn2">
+                            <li>
+                            <div className='drop-menu'>
+                                <a href='www'>
+
                                     Descarga<span className='caret-facing-down'>&#9660;</span>
                                 </a>
                                 <div className='drop-conten'>
                                     <ul>
 
+
                                         {/* <li className='drop-item'><a href='contacto' target='_blank'>Android</a></li>
                                         <li className='drop-item'><a  href='www.google.com'>IOS</a></li> */}
+
 
                                         <li className='drop-item'><a target='_blank' href='contacto'>Android</a></li>
                                         <li className='drop-item'><a target='_blank' href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
@@ -127,7 +137,11 @@ const NavBar2 = styled.div`
             /* text-align:center; */
             justify-content:right;
             height: 0px;
+
             /* min-height:300px; */
+
+            /*min-height:300px; */
+
             overflow: hidden;
             transition: all 0.3s linear;
             list-style-type: none;
@@ -162,6 +176,7 @@ const NavBar2 = styled.div`
             display:none;
             justify-content:center;
             align-self: center;
+
             border-radius: 30px;
 
          
@@ -175,6 +190,12 @@ const NavBar2 = styled.div`
 
             height: 70px;
             width: 160px;
+
+            background-color: #171E36;
+            z-Index: 30000;
+            height: 450px;
+            width: 140px;
+
         }
 
         .drop-item{
@@ -182,6 +203,7 @@ const NavBar2 = styled.div`
             right:30px;
             font-size: 23px;
             position:relative;
+
 
     
             font-weight: bold;
@@ -195,6 +217,16 @@ const NavBar2 = styled.div`
             /* text-align:left; */
             /*list-style: none;*/
             list-style-type: square;
+
+            font-weight: bold;
+            color: #A8C813;
+            text-decoration: none;
+            text-align:left;
+            /*list-style: none;*/
+            list-style-type: square;
+            margin-left:10px;
+            display: inline-list;
+
             z-index:10000;
             margin-bottom: 10px;
         }
