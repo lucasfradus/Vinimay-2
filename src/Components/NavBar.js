@@ -65,8 +65,8 @@ export default function NavBar() {
                                 
                                 <div className='drop-conten'>
                                     <ul>
-                                        <li className='drop-item'>Android</li>
-                                        <li className='drop-item'>IOS</li>
+                                        <li className='drop-item'><a href='contacto' target='_blank'>Android</a></li>
+                                        <li className='drop-item'><a  href='www.google.com'>IOS</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -141,40 +141,44 @@ const NavBar2 = styled.div`
             /* position:absolute; */
             display: block;
         }
-        .drop-menu:hover  .nav-links a{
-            height: 10px;
-            position:absolute;
-            right: 239px;
+        .drop-menu:hover  .nav-links {
+            /* height: 10px; */
+            /* position:absolute; */
+            /* right: 239px; */
             display: block;
         }
 
         .drop-conten{
             
-            right:10px;
             padding-top: 4px;
+            /* padding-right: 10px; */
+            padding-bottom: 24px;
             position: absolute;
             top: 100%;
             display:none;
             justify-content:center;
-            align-self: auto;
+            align-self: center;
 
          
-            background-color: transparent;
+            background-color: #171E36;
             z-Index: 30000;
-            text-align: right;
 
             
-            height: 240px;
-            width: 200px;
+            height: 450px;
+            width: 140px;
         }
 
         .drop-item{
+            text-align: right;
+            right:32px;
             font-size: 23px;
+            position:relative;
+    
             font-weight: bold;
-            color:white;
+            color: #A8C813;
             text-decoration: none;
             list-style: none;
-            display: block;
+            display: inline-flex;
             z-index:10000;
             margin-bottom: 10px;
         }
@@ -243,7 +247,7 @@ const NavBar2 = styled.div`
             }
             .nav-links a {
                 margin: 0 .5rem;
-                padding: 4.5rem 0;
+                /* padding: 4.5rem 0; */
             }
         }
 `
