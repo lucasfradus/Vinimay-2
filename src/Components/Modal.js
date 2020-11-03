@@ -11,7 +11,7 @@ export default function Modal(props) {
   })
   return (
       <Modale>
-          <div className="Modal">
+          <div className="Modal" style={{display: props.show ?'block' : 'none'}}>
               {props.show && 
               <div className="Modal-overlay" onClick={props.close}/>
               }

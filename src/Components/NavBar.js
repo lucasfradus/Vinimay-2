@@ -12,8 +12,8 @@ export default function NavBar() {
 
     const  handleToggle = () =>{
           setIsOpen(!isOpen);
-          console.log('Hola perro')
       }
+
       
 
     return (
@@ -52,21 +52,21 @@ export default function NavBar() {
                             </li>
                         </button>
                         <button type="button"
-                            onClick={handleToggle}
-
+                            // onClick={handleToggle}
                         className="nav-btn2">
                             <li>
                             <div className='drop-menu'>
-                                
-                                <a href='www'>
-                                    Descarga
+                                <a href='#'>
+                                    Descarga<span className='caret-facing-down'>&#9660;</span>
                                 </a>
-
-                                
                                 <div className='drop-conten'>
                                     <ul>
-                                        <li className='drop-item'><a href='contacto' target='_blank'>Android</a></li>
-                                        <li className='drop-item'><a  href='www.google.com'>IOS</a></li>
+
+                                        {/* <li className='drop-item'><a href='contacto' target='_blank'>Android</a></li>
+                                        <li className='drop-item'><a  href='www.google.com'>IOS</a></li> */}
+
+                                        <li className='drop-item'><a target='_blank' href='contacto'>Android</a></li>
+                                        <li className='drop-item'><a target='_blank' href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -99,7 +99,6 @@ const NavBar2 = styled.div`
         .nav-center{
             padding:0pc;
             margin:0;
-
         }
         .nav-header {
             display: flex;
@@ -125,9 +124,10 @@ const NavBar2 = styled.div`
                 color: #fff;
             }
             .nav-links {
-                /* text-align:center; */
-                justify-content:right;
+            /* text-align:center; */
+            justify-content:right;
             height: 0px;
+            /* min-height:300px; */
             overflow: hidden;
             transition: all 0.3s linear;
             list-style-type: none;
@@ -141,16 +141,20 @@ const NavBar2 = styled.div`
             /* position:absolute; */
             display: block;
         }
-        .drop-menu:hover  .nav-links {
-            /* height: 10px; */
+        .drop-menu:hover  .nav-links .show-nav{
+            /* height: 160px; */
             /* position:absolute; */
             /* right: 239px; */
             display: block;
         }
+        .drop-menu:hover .show-nav{
+            height: 290px;
+            
+        }
 
         .drop-conten{
             
-            padding-top: 4px;
+            padding-top:14px;
             /* padding-right: 10px; */
             padding-bottom: 24px;
             position: absolute;
@@ -158,27 +162,39 @@ const NavBar2 = styled.div`
             display:none;
             justify-content:center;
             align-self: center;
+            border-radius: 30px;
 
          
             background-color: #171E36;
             z-Index: 30000;
 
             
-            height: 450px;
-            width: 140px;
+
+            background-color: #171E36;
+            z-Index: 30000;
+
+            height: 70px;
+            width: 160px;
         }
 
         .drop-item{
-            text-align: right;
-            right:32px;
+            /* text-align: right; */
+            right:30px;
             font-size: 23px;
             position:relative;
+
     
             font-weight: bold;
             color: #A8C813;
             text-decoration: none;
-            list-style: none;
-            display: inline-flex;
+            /* list-style: none; */
+            display: inline-block;
+
+            color: #A8C813;
+            text-decoration: none;
+            /* text-align:left; */
+            /*list-style: none;*/
+            list-style-type: square;
             z-index:10000;
             margin-bottom: 10px;
         }
@@ -204,7 +220,7 @@ const NavBar2 = styled.div`
             }
 
             .show-nav {
-            height: 160px;
+            height: 290px;
             }
 
             /* Cuando no es para dispositivos moviles */
@@ -214,9 +230,12 @@ const NavBar2 = styled.div`
         @media screen and (min-width: 768px){
             background: linear-gradient(to top, rgba(42, 58, 64, 0.0), #171E36);
 
+
+            .show-nav {
+                height: 160px;
+                }
             .nav-btn {
                 display: none;
-
             }
 
             .imgLogo{
@@ -238,10 +257,10 @@ const NavBar2 = styled.div`
 
             }
             .nav-links {
-                height: 150px;
+                height: 250px;
                 position:absolute;
                 display: flex;
-                top:-50px;
+                top:-100px;
                 right: 10%;
                 margin-left: 7rem;
             }
