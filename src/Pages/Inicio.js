@@ -1,6 +1,8 @@
 import React, {useState}  from 'react'
 import Nov from '../images/archivos-17.png'
-import Mockup from '../images/mockup-banner.png'
+//import Mockup from '../images/mockup-banner.png'
+import Mockup from '../images/mockups/mockup-banner.png'
+
 import AndroidImg from '../images/archivos-06.png'
 
 import IOSImg from '../images/archivos-05.png'
@@ -118,7 +120,7 @@ const DivHome = styled.div`
 
     .ImgMoc{
         padding-top:5rem;
-        height: 40em;
+        height: 45em;
         filter: drop-shadow(6px 16px 35px rgba(0, 0, 0, .5));
     }
 

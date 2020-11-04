@@ -12,7 +12,6 @@ export default function Video() {
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
                 <Box/>
                  <Video_Container/>
-             
             </Animated>
         
     )

@@ -51,29 +51,16 @@ export default function NavBar() {
                             <Link to="/contacto">Contacto</Link>
                             </li>
                         </button>
-                        <button type="button"
-                            // onClick={handleToggle}
-                                 className="nav-btn2">
+                        <button type="button" className="nav-btn2">
                             <li>
                             <div className='drop-menu'>
-                                <a href='#'>
-                            <li>
-                            <div className='drop-menu'>
-                                <a href='www'>
-
-                                    Descarga<span className='caret-facing-down'>&#9660;</span>
-                                </a>
+                            <a href='#'>
+                                 Descarga <span className='caret-facing-down'>&#9660;</span>                              
+                            </a>                                
                                 <div className='drop-conten'>
                                     <ul>
-
-
-
-                                        {/* <li className='drop-item'><a href='contacto' target='_blank'>Android</a></li>
-                                        <li className='drop-item'><a  href='www.google.com'>IOS</a></li> */}
-
-
-                                        <li className='drop-item'><a target='_blank' href='contacto'>Android</a></li>
-                                        <li className='drop-item'><a target='_blank' href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
+                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>Android</a></li>
+                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
 
                                     </ul>
                                 </div>
@@ -136,11 +123,6 @@ const NavBar2 = styled.div`
             /* text-align:center; */
             justify-content:right;
             height: 0px;
-
-            /* min-height:300px; */
-
-            /*min-height:300px; */
-
             overflow: hidden;
             transition: all 0.3s linear;
             list-style-type: none;
@@ -166,7 +148,6 @@ const NavBar2 = styled.div`
         }
 
         .drop-conten{
-            
             padding-top:14px;
             /* padding-right: 10px; */
             padding-bottom: 24px;
@@ -175,30 +156,11 @@ const NavBar2 = styled.div`
             display:none;
             justify-content:center;
             align-self: center;
-
             border-radius: 30px;
-
-         
             background-color: #171E36;
             z-Index: 30000;
-
-            
-
-            background-color: #171E36;
-            z-Index: 30000;
-
             height: 70px;
             width: 160px;
-
-            background-color: #171E36;
-            z-Index: 30000;
-            height: 450px;
-<<<<<<< HEAD
-            width: 160px;
-=======
-            width: 140px;
-
->>>>>>> 179a2b57ba8b25289dc6fd6ee25a07a6993fa0f7
         }
 
         .drop-item{
@@ -302,13 +264,7 @@ const NavBar2 = styled.div`
                 /* padding: 4.5rem 0; */
             }
         }
-
-        /*VERSION MOBILE*/
-        @media only screen and (max-width: 600px) {
-            .show-nav{
-                min-height:280px;
-            }
-            
+  
        
           }
 `

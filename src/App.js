@@ -11,7 +11,6 @@ import Terms from './Pages/Terms';
 import Privacity from './Pages/Privacity';
 import NotFoundPage from './Pages/NotFoundPage';
 import Video from './Pages/Video';
-import Modal from './Components/Modal';
 
 
 
