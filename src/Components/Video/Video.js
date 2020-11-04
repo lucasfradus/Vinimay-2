@@ -6,7 +6,7 @@ import styled from 'styled-components'
 export default function Video(props) {
     return (
         <Container className="flexible-container">
-            <ReactPlayer url='https://www.youtube.com/watch?v=X4dhGbWCtGA'
+            <ReactPlayer url='https://www.youtube.com/watch?v=ScXy66Nl8uA'
                 playing= {props.show}
                 controls
                 />

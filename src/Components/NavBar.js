@@ -62,8 +62,8 @@ export default function NavBar() {
                                 </a>
                                 <div className='drop-conten'>
                                     <ul>
-                                        <li className='drop-item'><a target='_blank' href='contacto'>Android</a></li>
-                                        <li className='drop-item'><a target='_blank' href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
+                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='contacto'>Android</a></li>
+                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -87,6 +87,7 @@ const NavBar2 = styled.div`
         /* padding: 0.75rem 0.20rem; */
         z-index: 1;
 
+        /* Estilos para mobile */
 
         .imgLogo{
             margin: 20px;
@@ -159,7 +160,7 @@ const NavBar2 = styled.div`
             background-color: #171E36;
             z-Index: 30000;
             height: 450px;
-            width: 140px;
+            width: 160px;
         }
 
         .drop-item{
@@ -171,7 +172,7 @@ const NavBar2 = styled.div`
             color: #A8C813;
             text-decoration: none;
             text-align:left;
-            /*list-style: none;*/
+            list-style: none;
             list-style-type: square;
             margin-left:10px;
             display: inline-list;
@@ -203,24 +204,22 @@ const NavBar2 = styled.div`
             height: 160px;
             }
 
-            /* Cuando no es para dispositivos moviles */
 
 
-
+            /* Estilos para desktop */
         @media screen and (min-width: 768px){
             background: linear-gradient(to top, rgba(42, 58, 64, 0.0), #171E36);
 
-
             .show-nav {
-                height: 160px;
-                }
+            min-height: 220px;
+            }
             .nav-btn {
                 display: none;
             }
 
             .imgLogo{
-                margin: 20px;
-                    height: 50px;
+            margin: 20px;
+            height: 50px;
                 }
             .nav-btn2 {
                 background: transparent;
@@ -249,4 +248,13 @@ const NavBar2 = styled.div`
                 /* padding: 4.5rem 0; */
             }
         }
+
+        /*VERSION MOBILE*/
+        @media only screen and (max-width: 600px) {
+            .show-nav{
+                min-height:280px;
+            }
+            
+       
+          }
 `
