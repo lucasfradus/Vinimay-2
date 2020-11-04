@@ -52,15 +52,11 @@ export default function NavBar() {
                             </li>
                         </button>
                         <button type="button"
-
                             // onClick={handleToggle}
-                        className="nav-btn2">
+                                 className="nav-btn2">
                             <li>
                             <div className='drop-menu'>
                                 <a href='#'>
-
-                            onClick={handleToggle}
-                        className="nav-btn2">
                             <li>
                             <div className='drop-menu'>
                                 <a href='www'>
@@ -69,10 +65,7 @@ export default function NavBar() {
                                 </a>
                                 <div className='drop-conten'>
                                     <ul>
-<<<<<<< HEAD
-                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='contacto'>Android</a></li>
-                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
-=======
+
 
 
                                         {/* <li className='drop-item'><a href='contacto' target='_blank'>Android</a></li>
@@ -81,7 +74,7 @@ export default function NavBar() {
 
                                         <li className='drop-item'><a target='_blank' href='contacto'>Android</a></li>
                                         <li className='drop-item'><a target='_blank' href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
->>>>>>> 179a2b57ba8b25289dc6fd6ee25a07a6993fa0f7
+
                                     </ul>
                                 </div>
                             </div>
