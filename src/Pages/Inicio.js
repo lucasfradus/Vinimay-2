@@ -1,5 +1,5 @@
 import React, {useState}  from 'react'
-import Nov from '../images/archivos-17.png'
+import Nov from '../images/archivos-17.jpg'
 //import Mockup from '../images/mockup-banner.png'
 import Mockup from '../images/mockups/mockup-banner.png'
 

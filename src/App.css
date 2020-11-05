@@ -277,7 +277,7 @@ body {
 }
 
 .page-comunidad .moci {
-	left: 6em !important;
+	left: 2em !important;
 	margin-top: 25px;
 }
 
@@ -572,6 +572,11 @@ body {
 
 
 @media (max-width: 768px) {
+
+	.navbar {
+		top: 25px !important;
+		background: #171E36 !important;
+	}
 
 	.nav-header img {
 		height: 30px !important;

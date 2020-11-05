@@ -157,7 +157,7 @@ const NavBar2 = styled.div`
             justify-content:center;
             align-self: center;
             border-radius: 30px;
-            background-color: #171E36;
+            /*background-color: #171E36;*/
             z-Index: 30000;
             height: 70px;
             width: 160px;

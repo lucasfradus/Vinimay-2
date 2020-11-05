@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-// import Tem from '../../images/ministry-3.jpg'
-import Tem from '../../images/archivos-17.png'
+import Tem from '../../images/archivos-17.jpg'
 import Log from '../../images/logo-sin-camiseta.png'
 
 import CardTeam from './CardTeam'

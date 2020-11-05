@@ -60,6 +60,7 @@ const Container = styled.div`
         font-size: 20px;
         color:#171E36;
         margin:0;
+        padding-right:15px;
     }
     h2{
         font-size: 625px;
