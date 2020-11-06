@@ -42,7 +42,6 @@ export default function Inicio() {
                         <div className="buttons">
                           <a target="_blank" rel="noopener noreferrer"  href="https://apps.apple.com/ar/app/vinimay/id1506565366"><img src={IOSImg} alt='Mockup' className='Ios'/></a>
                             <img src={AndroidImg} alt='Mockup' className='android'/>
-
                         </div>
                     </div>
 
@@ -120,7 +119,6 @@ const DivHome = styled.div`
 
     .ImgMoc{
         padding-top:5rem;
-        height: 45em;
         filter: drop-shadow(6px 16px 35px rgba(0, 0, 0, .5));
     }
 
