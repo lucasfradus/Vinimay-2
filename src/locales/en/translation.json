@@ -1,0 +1,23 @@
+{
+    "navbar": {
+        "home": "Home",
+        "comunity": "Comunity",
+        "contact": "Contact",
+        "download":{
+            "download": "Download",
+            "android": "Android",
+            "ios": "iOS"
+        }
+    },
+    "home": {
+        "start":{
+            "line1":"THE FIRST",
+            "line2":"DIGITAL MUSEUM",
+            "line3":"OF",
+            "line4":"AUTHENTINC",
+            "line5":"FOOTBALL SHIRTS",
+            "line6":"DOWNLOAD THE APP!"
+        }
+
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "navbar": {
+        "home": "Home",
+        "comunity": "Comunidad",
+        "contact": "Contacto",
+        "download":{
+            "download": "Descargar",
+            "android": "Android",
+            "ios": "iOS"
+        }
+    },    
+    "home": {
+        "start":{
+            "line1":"EL PRIMER",
+            "line2":"MUSEO DIGITAL",
+            "line3":"DE",
+            "line4":"CAMISETAS DE",
+            "line5":"FÚTBOL OFICIALES",
+
+            "line6":"¡BAJATE LA APP!"
+        }
+
+    }
+}

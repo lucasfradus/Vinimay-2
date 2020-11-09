@@ -2,11 +2,14 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import {FaAlignRight} from 'react-icons/fa'
+import {useTranslation} from "react-i18next";
 
 import logo from '../images/logo.png'
 
 
+
 export default function NavBar() {
+    const [t, i18n] = useTranslation('common');
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -34,39 +37,40 @@ export default function NavBar() {
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li className="nav-item">
-                                <Link to="/">Home</Link>
+                                <Link to="/">{t('navbar.home')}</Link>
                             </li>
                         </button>
                         <button type="button"
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li className="nav-item">
-                                <Link to="/comunidad">Comunidad</Link>
+                                <Link to="/comunidad">{t('navbar.comunity')}</Link>
                             </li>
                         </button>
                         <button type="button"
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li className="nav-item">
-                            <Link to="/contacto">Contacto</Link>
+                            <Link to="/contacto">{t('navbar.contact')}</Link>
                             </li>
                         </button>
                         <button type="button" className="nav-btn2">
                             <li>
                             <div className='drop-menu'>
                             <a href='#'>
-                                 Descarga <span className='caret-facing-down'>&#9660;</span>                              
+                            {t('navbar.download.download')} <span className='caret-facing-down'>&#9660;</span>                              
                             </a>                                
                                 <div className='drop-conten'>
                                     <ul>
-                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>Android</a></li>
-                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>IOS</a></li>
-
+                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>{t('navbar.download.android')}</a></li>
+                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>{t('navbar.download.ios')}</a></li>
                                     </ul>
                                 </div>
                             </div>
                             </li>
                         </button>
+                        <button onClick={() => i18n.changeLanguage('es')}>es</button>
+                        <button onClick={() => i18n.changeLanguage('en')}>en</button>
 
                     </ul>
                 </div>
