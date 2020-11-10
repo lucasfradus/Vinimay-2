@@ -4,22 +4,22 @@ import Exibe from '../images/archivos-01.png'
 import Inter from '../images/archivos-02.png'
 import Vend from '../images/archivos-03.png'
 
-export default function Options() {
+export default function Options(props) {
     return (
         <Optione className="Opts-Container">
-            <h1>ELEGÍ QUE TE GUSTARIA HACER CON TU CAMISETA</h1>
+            <h1>{props.translate('home.options.line1')}</h1>
             <div className='Opts'>
                 <div className='opt'>
                     <img src={Exibe} alt='com' className='ImgOp'/>
-                    <p>EXHIBIR</p>
+                    <p>{props.translate('home.options.line2')}</p>
                 </div>
                 <div className='opt'>
                     <img src={Inter} alt='com' className='ImgOp'/>
-                    <p>INTERCAMBIAR</p>
+                    <p>{props.translate('home.options.line3')}</p>
                 </div>
                 <div className='opt'>
                     <img src={Vend} alt='com' className='ImgOp'/>
-                    <p>VENDER</p>
+                    <p>{props.translate('home.options.line4')}</p>
                 </div>
             </div>
         </Optione>

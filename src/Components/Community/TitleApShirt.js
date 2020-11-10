@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function TitleApShirt() {
+export default function TitleApShirt(props) {
     return (
         <Contain>
-            <h1 className='shirt'>MIRÁ TODAS LAS CAMISETAS</h1>
-            <h1 className='app'>DESDE LA APP</h1>
+            <h1 className='shirt'>{props.translate('comunity.TitleApShirt.line1')}</h1>
+            <h1 className='app'>{props.translate('comunity.TitleApShirt.line2')}</h1>
         </Contain>
     )
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function ButtomTitle() {
+export default function ButtomTitle(props) {
     return (
         <Contain>
-            <h1 className='shirt title-fanaticos-10'>¿QUIÉNES VAN A SER LOS PROXIMOS FANÁTICOS EN EL TOP 10?</h1>
+            <h1 className='shirt title-fanaticos-10'>{props.translate('comunity.ButtomTitle')}</h1>
         </Contain>
     )
 }

@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components'
 import AcordionTile from './AcordionTile'
 
-export default function Questions() {
+export default function Questions(props) {
     return (
         <Querys className='preguntas-container' id={'faq'}>
-            <h1 className='line1'>PREGUNTAS FRECUENTES</h1>
+            <h1 className='line1'>{props.translate('comunity.Questions.line1')}</h1>
             <div className='list'>
                 <AcordionTile key="1" pregunta="¿Cómo creo una cuenta en Vinimay?" respuesta={["Nota: Debes tener al menos 13 años para crear una cuenta de Vinimay.", <br/>, <br/>, "Para crear una cuenta de Vinimay:", <br/>, <br/>, "A- Descárgate Vinimay en el App Store / Play Store", <br/>, "B- Escribe tu nombre, correo electrónico, nombre de usuario, celular y contraseña.", <br/>, "C- Aceptar Términos y Condiciones.", <br/>, "D- Haz clic en ", <strong>Registrarte</strong>,  " ."]} />
                 <AcordionTile key="2" pregunta="¿Cómo inicio sesión en Vinimay?" respuesta={["Para iniciar sesión en Vinimay:", <br/>, <br/>, "A- Ir a iniciar sesión con el email registrado.", <br/>, "B- Luego colocar la contraseña y continuamente ingresar."]} />

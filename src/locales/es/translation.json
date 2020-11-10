@@ -16,9 +16,71 @@
             "line3":"DE",
             "line4":"CAMISETAS DE",
             "line5":"FÚTBOL OFICIALES",
-
             "line6":"¡BAJATE LA APP!"
+        },
+        "fanmap":{
+            "line1":"INTERACTUÁ CON FANÁTICOS DE OTROS PAISES",
+            "line2":"BUSCÁ LAS MEJORES CAMISETAS DE TODO EL MUNDO"
+        },
+        "infocollection":{
+            "line1":"DESCUBRÍ VINIMAY",
+            "line2":"CREÁ TU MUSEO",
+            "line3":"Publicá tu colección de camisetas para exhibir, vender o intercambiar con otros fanáticos",
+            "line4":"INTERACTÚA",
+            "line5":"Likeá y comentá tus camisetas preferidas de otros usuarios",
+            "line6":"CHATEÁ",
+            "line7":"Mandale mensaje privados a otros fanáticos para charlar sobre sus reliquias"
+        },
+        "options":{
+            "line1":"ELEGÍ QUE TE GUSTARIA HACER CON TU CAMISETA",
+            "line2":"EXHIBIR",
+            "line3":"INTERCAMBIAR",
+            "line4":"VENDER"
+        },
+        "download":{
+            "line1":"MUY PRONTO DISPONIBLE EN OTROS PAÍSES",
+            "line2":"¡BAJATE LA APP!"        
         }
-
+    },
+    "comunity": {
+        "titlecom":{
+            "line1":"AGOSTO 2020",
+            "line2":"LAS MEJORES CAMISETAS",
+            "line3":"DE NUESTRA COMUNIDAD"        
+        },
+        "ListShirt":{
+            "argentina" : "Argentina",
+            "france" : "Francia",
+            "chile" : "Chile",
+            "germany" : "Alemania"
+        },
+        "card":{
+            "vini-user" : "Usuario Vinimay",
+            "club" : "Club",
+            "country" : "País",
+            "year" : "Año"
+        },
+        "museum" : {
+            "line1":"MUSEOS",
+            "line2":"+200",
+            "line3":"CAMISETAS",
+            "line4":"+550"
+        },
+        "TitleApShirt":{
+            "line1":"MIRÁ TODAS LAS CAMISETA",
+            "line2":"DESDE LA APP"
+        },
+        "TopTen":{
+            "line1":"TOP 10",
+            "line2":"MUSEOS CON MÁS CAMISETAS"
+        },
+        "CardTop" : {
+            "line1":"CANTIDAD DE CAMISETAS",
+            "line2":"USUARIO VINIMAY"
+        }, 
+        "TopItems": {
+            "line1":"Usuario: ",
+            "line2":"CAMISETAS"
+        }
     }
 }

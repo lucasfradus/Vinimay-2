@@ -6,30 +6,29 @@ import TopItems from './TopItems'
 import Mockup_left from '../../images/mockups/mockups_05.png'
 import Mockup_right from '../../images/mockups/mockups_06.png'
 
-export default function TopTen() {
+export default function TopTen(props) {
     return (
         <Container>
             <div className='topi'>
                 <img src={Mockup_left} alt="mpckup" className='mockup-float-left'/>
-                <h1 className='line3'>TOP 10</h1>
-                <h1 className='line5'>MUSEOS CON MÁS CAMISETAS</h1>
+                <h1 className='line3'>{props.translate('comunity.TopTen.line1')}</h1>
+                <h1 className='line5'>{props.translate('comunity.TopTen.line2')}</h1>
                 <div className='cards'>
-                    <CardTop number="-1"/>
-                    <CardTop number="2"/>
-                    <CardTop number="1"/>
-                    <CardTop number="3"/>
-                    <CardTop number="-1"/>
+                    <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores1' number="-1"/>
+                    <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores2' number="2"/>
+                    <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores3' number="1"/>
+                    <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores4' number="3"/>
+                    <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores5' number="-1"/>
                 </div>
                 <img alt="" src={Mockup_right} className='mockup-float-right'/>
             </div>
             <div className='items'>
-
-                <TopItems count={4} user='Victoria Flores' countShirt={200}/>
-                <TopItems count={5} user='Victoria Flores' countShirt={200}/>
-                <TopItems count={6} user='Victoria Flores' countShirt={200}/>
-                <TopItems count={7} user='Victoria Flores' countShirt={200}/>
-                <TopItems count={8} user='Victoria Flores' countShirt={200}/>
-                <TopItems count={9} user='Victoria Flores' countShirt={200}/>
+                <TopItems translate={props.translate} count={4} user='Victoria Flores' countShirt={200}/>
+                <TopItems translate={props.translate} count={5} user='Victoria Flores' countShirt={200}/>
+                <TopItems translate={props.translate} count={6} user='Victoria Flores' countShirt={200}/>
+                <TopItems translate={props.translate} count={7} user='Victoria Flores' countShirt={200}/>
+                <TopItems translate={props.translate} count={8} user='Victoria Flores' countShirt={200}/>
+                <TopItems translate={props.translate} count={9} user='Victoria Flores' countShirt={200}/>
             </div>
         </Container>
     )

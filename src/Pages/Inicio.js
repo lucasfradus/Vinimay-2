@@ -56,10 +56,10 @@ export default function Inicio() {
                 </div>
                 </Animated>
             </DivHome>
-            <InfoCollection show={showModal}/>
-            <Options/>
-            <FanMap/>
-            <Download/>
+            <InfoCollection translate={t} show={showModal}/>
+            <Options translate={t}/>
+            <FanMap translate={t}/>
+            <Download translate={t}/>
         </div>
     )
 }

@@ -25,7 +25,6 @@ i18next.init({
 
 
 
-
 ReactDOM.render(
 
   <Router>

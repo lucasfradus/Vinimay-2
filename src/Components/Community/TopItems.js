@@ -5,18 +5,18 @@ export default function TopItems(props) {
     return (
         <Contain className='top-item'>
             <div className='position'>
-                <h1>{props.count} -</h1>
+                <h1>{props.count} - </h1>
             </div>
             <div className='userDate'>
                 <h1>{props.user} </h1>
-                <h1 className='us'>Usuario: {props.user}</h1>
+                <h1 className='us'>{props.translate('comunity.TopItems.line1')} {props.user}</h1>
             </div>
             <br/>
             <div className='row'>
                 <h1>&nbsp;&#187;&nbsp;</h1>
             </div>
             <div className='countShirt'>
-                <h1> {props.countShirt} CAMISETAS</h1>
+                <h1> {props.countShirt} {props.translate('comunity.TopItems.line2')}</h1>
             </div>
         </Contain>
     )

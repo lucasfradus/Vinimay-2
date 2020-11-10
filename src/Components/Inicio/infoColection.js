@@ -14,16 +14,16 @@ export default function InfoCollection(props) {
             <div className='mocups'>
                 <img src={Mock} alt='Moc' className='moc1' />  
                 <br/>
-                <Link  className="discover" to="/" onClick={props.show}>DESCUBRÍ VINIMAY</Link>
+                <Link  className="discover" to="/" onClick={props.show}>{props.translate('home.infocollection.line1')}</Link>
             </div>
 
             <div className='info'>
-                <h1 className='line1'><big>&#187;</big> CREÁ TU MUSEO</h1>
-                <p className='line2'>Publicá tu colección de camisetas para exhibir, vender o intercambiar con otros fanáticos</p>
-                <h1 className='line1'><big>&#187;</big> INTERACTÚA</h1>
-                <p className='line2'>Likeá y comentá tus camisetas preferidas de otros usuarios</p>
-                <h1 className='line1'><big>&#187;</big> CHATEÁ</h1>
-                <p className='line2'>Mandale mensaje privados a otros fanáticos para charlar sobre sus reliquias</p>
+                <h1 className='line1'><big>&#187;</big> {props.translate('home.infocollection.line2')}</h1>
+                <p className='line2'>{props.translate('home.infocollection.line3')}</p>
+                <h1 className='line1'><big>&#187;</big> {props.translate('home.infocollection.line4')}</h1>
+                <p className='line2'>{props.translate('home.infocollection.line5')}</p>
+                <h1 className='line1'><big>&#187;</big> {props.translate('home.infocollection.line6')}</h1>
+                <p className='line2'>{props.translate('home.infocollection.line7')}</p>
             </div>
         </CollectionSection>
     )
