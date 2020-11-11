@@ -29,7 +29,6 @@ const Form = (props) => {
       .then(result => {
         if (result.data.sent) {
           document.getElementById("contact-form").reset();
-
           setmailSent(result.data.sent)
           setError(false)
         } else {
