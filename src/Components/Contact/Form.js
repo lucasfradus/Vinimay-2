@@ -1,238 +1,122 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, {useState} from "react";
+import PropTypes from "prop-types";
+import axios from "axios";
+import "./styles.css";
 import Mock2 from '../../images/archivos-15.png'
-import NetlifyForm from 'react-netlify-form'
 
+/**
+ * @component Form
+ * @props - { object } -  config
+ */
+const Form = (props) => {
+  const [mailSent, setmailSent] = useState(false);
+  const [error, setError] = useState(null);
+  const [formData, setFormData] = useState({});
+ 
+  /**
+  * @function handleFormSubmit
+  * @param e { obj } - form event
+  * @return void
+  */
+  const handleFormSubmit = e => {
+    e.preventDefault();
+    axios({
+      method: "post",
+      url: props.config.api,
+      headers: { "content-type": "application/json" },
+      data: formData
+    })
+      .then(result => {
+        if (result.data.sent) {
+          document.getElementById("contact-form").reset();
 
-export default function Form() {
-
-    
-
-    /*
-    const handleSubmit = (event) =>{
-        event.preventDefault();
-        console.log("hola")
-         const form = new FormData(event.target);
-         const newDate = new Date().toISOString();
-
-         const data = {
-             'date' : newDate,
-             'name': form.get('name'),
-             'last': form.get('last'),
-             'description': form.get('mesaje'),
-         }
-        console.log(data)
-    }
-
+          setmailSent(result.data.sent)
+          setError(false)
+        } else {
+          setError(true)
+        }
+      })
+      .catch(error => setError( error.message ));
+  };
+  /**
+    * @function handleChange
+    * @param e { obj } - change event
+    * @param field { string } - namve of the field
+    * @return void
     */
+   const handleChange = (e, field) => {
+    let value = e.target.value;
+    setFormData({
+      ...formData,
+      [field]: value,
+    });
+  };
+
+    const { title,description, successMessage, errorMessage, fieldsConfig } = props.config;
     return (
-        <Formula>      
-            <div className='for'>
-                <NetlifyForm name='contact-v1'>
-                      {({ loading, error, success }) => (
-                     <div>
-                     {loading &&
-                            <div class="alert info">
-                                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                                Cargando el formulario...
-                            </div>
-                    }
-                {error &&
-               <div class="alert danger">
-                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                    Ups! Ha ocurrido un error, por favor intenta nuevamente más tarde.             
-                </div>
-                }
-                {success &&
-                <div class="alert success">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                Gracias por ponerte en contacto con nosotros, nos comunicaremos a la brevedad
-              </div>
-                }
-                {!loading && !success &&
+      <div className="contact-form">
+        <div className="contact-form__container">
                 <div>
-
-                <div className='inputCar'>
-                        <p className='hold'>Nombre   </p>
-                        <input name='nombre'  type='text' placeholder='Escribí aca tu nombre' className='Ip' required/>
+                    {mailSent &&
+                    <div class="alert success">
+                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                        {successMessage}
                     </div>
-                    <div className='inputCar'>
-                        <p className='hold'>Apellido </p>
-                        <input name='apellido' type='text' placeholder='Escribí aca tu apellido' className='Ip' required />
+                    }
+                    {error && 
+                    <div class="alert danger">
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                                    {errorMessage}
                     </div>
-                    <div className='inputCar'>
-                        <p className='hold'>Mail</p>
-                        <input name='email'  type='text' placeholder='Escribí aca tu mail' className='Ip' required/>
-                        
-                    </div>
-                    <div className='inputCar'>
-                        <p className='hold'>Mensaje </p>
-                        <textarea name="mensaje" placeholder='Escribí acá tu mensaje' required></textarea>
-                    </div>
-
-                    <div>
-                        <button type="submit" className='btn'>ENVIAR</button>
-                    </div>
+                    }
                 </div>
-                }
+            <form id="contact-form" action="#">
+                {fieldsConfig &&
+                fieldsConfig.map(field => {
+                    return (
+                    <React.Fragment key={field.id}>
+                        {field.type !== "textarea" ? (
+                        <React.Fragment>
+                            <div className='inputCar'>
+                            <p className='hold'>{field.label} </p>
+                            <input
+                            type={field.type}
+                            className={field.klassName}
+                            placeholder={field.placeholder}
+                            value={field.name}
+                            onChange={e => handleChange(e, field.fieldName)}
+                            />
+                            </div>
+                        </React.Fragment>
+                        ) : (
+                        <React.Fragment>
+                            <div className='inputCar'>
+                                <p className='hold'>{field.label} </p>
+                                <textarea className={field.klassName} placeholder={field.placeholder} onChange={e => handleChange(e, field.fieldName)} value={field.name} />
+                            </div>
+                        </React.Fragment>
+                        )}
+                    </React.Fragment>
+                    );
+                })}
+                <div>
+                  <button type="submit"  onClick={e => handleFormSubmit(e)} className='btn'>ENVIAR</button>
                 </div>
-                )}
-                </NetlifyForm>
-            </div>
-            <div className='imageP'>
-                 <img src={Mock2} alt='com' className='Img2'/>
-            </div>
-        </Formula>
-    )
+
+                
+            </form>
+           
+        </div>
+        <div className='imageP'>
+                <img src={Mock2} alt='com' className='Img2'/>
+        </div>
+      </div>
+
+    );
 }
 
-const Formula = styled.div`
-    display: flex;
-    justify-content: space-between;
-    background: radial-gradient(circle farthest-side,#2A355A,#090C17);
-
-
-    .for{
-        display: block;
-        padding: 2rem 3rem;
-        text-align: right;
-    }
-
-    .btn{
-        font-family: 'Montserrat', sans-serif!important;
-        font-size: 20px;
-        border: none;
-        height: 40px;
-        width: 140px;
-        color: #fff;
-        background: #A8C813;
-        margin-right: 1.2rem;
-        border-radius: 6px;
-    }
-    .btn:hover{
-      background: #EAEAEA;
-      color:black;
-    }
-
-    .inputCar{
-        display:flex;
-        align-items: center;
-        text-align: left;
-    }
-
-    .hold{
-      font-size: 28px;
-      color:#A8C813;
-      margin:0;
-      text-transform:uppercase;
-      font-weight: 900 !important;
-      font-style: italic;
-      display: inline-block;
-      text-align: right;
-    }
-
-    .Ip{
-        height: 2rem;
-        width: 30rem;
-        margin: 20px;
-        border-radius: 6px;
-        background-color: #EAEAEA;
-
-    }
-    .IpM{
-        height: 7rem;
-        width: 30rem;
-        margin: 20px;
-        border-radius: 6px;
-        background-color: #EAEAEA;
-
-    }
-
-    .imageP{
-        /* flex:1; */
-    }
-
-    .Img2{
-        height: 40rem;
-    }
-    /* The alert message box */
-    .alert {
-        padding: 20px;
-        color: white;
-        margin-bottom: 15px;
-        text-align: left!important;
-        font-size:18px;
-
-    }
-
-    .danger{
-        background-color: #f44336; }
-
-    }
-    .success{
-        background-color: #A8C813; }
-
-    }
-    .info{
-        background-color: #2196F3; }
-
-    
-    
-
-    /* The close button */
-        .closebtn {
-        margin-left: 15px;
-        color: white;
-        font-weight: bold;
-        float: right;
-        font-size: 22px;
-        line-height: 20px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    /* When moving the mouse over the close button */
-    .closebtn:hover {
-        color: black;
-    }
-
-    @media screen and (max-width: 769px){
-        .for{
-            display: block;
-            padding: 2rem 1rem;
-            text-align: right;
-        }
-        .Img2{
-            display: none;
-        }
-
-        .inputCar{
-            display:block;
-            align-items: center;
-        }
-
-        .Ip{
-            height: 2rem;
-            width: 16rem;
-            margin: 0px;
-            border-radius: 6px;
-        }
-        .IpM{
-            height: 5rem;
-            width: 16rem;
-            margin: 0px;
-            border-radius: 6px;
-        }
-        .btn{
-            font-family: 'Montserrat', sans-serif!important;
-            font-size: 20px;
-            border: none;
-            height: 40px;
-            width: 140px;
-            color: #fff;
-            background: #A8C813;
-            margin-top: .7rem;
-            border-radius: 6px;
-        }
-    }
-`
+export default Form;
+//propTypes for the component
+Form.propTypes = {
+  config: PropTypes.object.isRequired
+};
