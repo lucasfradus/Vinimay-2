@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import {FaAlignRight} from 'react-icons/fa'
+import Selector from "./Navbar/LangSelect"
 import {useTranslation} from "react-i18next";
 
 import logo from '../images/logo.png'
@@ -9,7 +10,7 @@ import logo from '../images/logo.png'
 
 
 export default function NavBar() {
-    const [t, i18n] = useTranslation('common');
+
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -17,7 +18,8 @@ export default function NavBar() {
           setIsOpen(!isOpen);
       }
 
-      
+    const [t, i18n] = useTranslation('common');
+
 
     return (
         <NavBar2 className="navbar" id="navbar">
@@ -57,7 +59,7 @@ export default function NavBar() {
                         <button type="button" className="nav-btn2">
                             <li>
                             <div className='drop-menu'>
-                            <a href='#'>
+                            <a href='/'>
                             {t('navbar.download.download')} <span className='caret-facing-down'>&#9660;</span>                              
                             </a>                                
                                 <div className='drop-conten'>
@@ -69,9 +71,9 @@ export default function NavBar() {
                             </div>
                             </li>
                         </button>
-                        <button onClick={() => i18n.changeLanguage('es')}>es</button>
-                        <button onClick={() => i18n.changeLanguage('en')}>en</button>
-
+                         <button onClick={() => i18n.changeLanguage('es')}>Español</button>
+                <button onClick={() => i18n.changeLanguage('en')}>English</button>
+                        <Selector i18={i18n}/>
                     </ul>
                 </div>
         </NavBar2>

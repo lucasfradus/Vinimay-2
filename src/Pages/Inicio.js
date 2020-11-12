@@ -23,7 +23,7 @@ import {useTranslation} from "react-i18next";
 export default function Inicio() {
 
     const [modal, setModal] = useState(false);
-    const [t, i18n] = useTranslation('common');
+    const [t] = useTranslation('common');
 
     const showModal = () => {
         setModal(!modal)

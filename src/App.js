@@ -15,12 +15,11 @@ import {useTranslation} from "react-i18next";
 
 
 function App() {
-  const [t, i18n] = useTranslation('common');
+  const [t] = useTranslation('common');
 
   return (
     <div className="App">
-      
-        <NavBar/>
+        <NavBar />
         <Switch>
             <Route exact path='/' component={Inicio}/>
             <Route exact path='/comunidad' component={Comunity}/>
@@ -29,11 +28,9 @@ function App() {
             <Route exact path='/condiciones' component={Terms}/>
             <Route exact path='/video' component={Video}/>
             <Route component={NotFoundPage} />
-
         </Switch>
-        <Follow/>
-
-        <Footer/>
+        <Follow translate={t}/>
+        <Footer translate={t}/>
     </div>
   );
 }

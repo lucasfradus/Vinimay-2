@@ -11,7 +11,7 @@ import Carret from '../images/double_carret.jpg'
 import {useTranslation} from "react-i18next";
 
 export default function Comunity() {
-    const [t, i18n] = useTranslation('common');
+    const [t] = useTranslation('common');
 
     return (
         <div className="page-comunidad">
