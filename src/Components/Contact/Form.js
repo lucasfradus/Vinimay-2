@@ -3,23 +3,27 @@ import PropTypes from "prop-types";
 import axios from "axios";
 import "./styles.css";
 import Mock2 from '../../images/archivos-15.png'
+import LoadingSpinner from './LoadingSpinner';
 
-/**
- * @component Form
- * @props - { object } -  config
- */
+
+
+
 const Form = (props) => {
   const [mailSent, setmailSent] = useState(false);
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState({});
- 
-  /**
-  * @function handleFormSubmit
-  * @param e { obj } - form event
-  * @return void
-  */
+
+
+  const [loading , setIsOpen] = useState(false);
+
+
+
+
+
+  
   const handleFormSubmit = e => {
     e.preventDefault();
+    setIsOpen(true);
     axios({
       method: "post",
       url: props.config.api,
@@ -27,6 +31,7 @@ const Form = (props) => {
       data: formData
     })
       .then(result => {
+        setIsOpen(false);
         if (result.data.sent) {
           document.getElementById("contact-form").reset();
           setmailSent(result.data.sent)
@@ -37,12 +42,7 @@ const Form = (props) => {
       })
       .catch(error => setError( error.message ));
   };
-  /**
-    * @function handleChange
-    * @param e { obj } - change event
-    * @param field { string } - namve of the field
-    * @return void
-    */
+
    const handleChange = (e, field) => {
     let value = e.target.value;
     setFormData({
@@ -51,24 +51,26 @@ const Form = (props) => {
     });
   };
 
-    const { title,description, successMessage, errorMessage, fieldsConfig } = props.config;
+
+
+    const { successMessage, errorMessage, fieldsConfig } = props.config;
     return (
       <div className="contact-form">
         <div className="contact-form__container">
                 <div>
                     {mailSent &&
                     <div class="alert success">
-                         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                         {successMessage}
                     </div>
                     }
                     {error && 
                     <div class="alert danger">
-                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
-                                    {errorMessage}
+                        {errorMessage}
                     </div>
                     }
                 </div>
+                    
+ 
             <form id="contact-form" action="#">
                 {fieldsConfig &&
                 fieldsConfig.map(field => {
@@ -99,7 +101,9 @@ const Form = (props) => {
                     );
                 })}
                 <div>
-                  <button type="submit"  onClick={e => handleFormSubmit(e)} className='btn'>ENVIAR</button>
+                {loading ? <LoadingSpinner /> :  <button type="submit"  onClick={e => handleFormSubmit(e)} className='btn'>ENVIAR</button>  }
+
+                    
                 </div>
 
                 

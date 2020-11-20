@@ -63,9 +63,6 @@ text-align: right;
 
 }
 
-.imageP{
-  /* flex:1; */
-}
 
 .Img2{
   height: 40rem;
@@ -79,6 +76,12 @@ text-align: right;
   font-size:18px;
 
 }
+.loading{
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+  font-size:22px;
+}
 
 .danger{
   background-color: #f44336; }
@@ -86,12 +89,6 @@ text-align: right;
 
 .success{
   background-color: #A8C813; }
-
-
-.info{
-  background-color: #2196F3; }
-
-
 
 
 /* The close button */
@@ -112,6 +109,14 @@ text-align: right;
 }
 
 @media screen and (max-width: 769px){
+
+
+.contact-form__container{
+  display: block;
+  padding: 2rem 1rem;
+  text-align: right;
+}
+
   .for{
       display: block;
       padding: 2rem 1rem;
