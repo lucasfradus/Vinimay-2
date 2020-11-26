@@ -5,23 +5,23 @@ import TopTen from './TopTen'
 import Mockup from '../../images/mockups/archivo mockups nuevos-03.png'
 import ButtomTitle from './ButtomTitle'
 
-export default function Museo() {
+export default function Museo(props) {
     return (
         <Top>
             <img src={Mockup} alt='na' className='moci'/>
-            <TitleApShirt/>
+            <TitleApShirt translate={props.translate}/>
             <div className='count'>
                 <div className='muse'>
-                    <h1 className='line1'>MUSEOS</h1>
-                    <h1 className='line2'>+200</h1>
+                    <h1 className='line1'>{props.translate('comunity.museum.line1')}</h1>
+                    <h1 className='line2'>{props.translate('comunity.museum.line2')}</h1>
                 </div>
                 <div className='shirt'>
-                    <h1 className='line1'>CAMISETAS</h1>
-                    <h1 className='line2'>+550</h1>
+                    <h1 className='line1'>{props.translate('comunity.museum.line3')}</h1>
+                    <h1 className='line2'>{props.translate('comunity.museum.line4')}</h1>
                 </div>
             </div>
-            <TopTen/>
-            <ButtomTitle/>
+            <TopTen translate={props.translate}/>
+            <ButtomTitle translate={props.translate}/>
         </Top>
     )
 }

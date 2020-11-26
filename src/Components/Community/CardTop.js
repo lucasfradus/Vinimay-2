@@ -5,11 +5,11 @@ export default function CardTop(props) {
     return (
         <Contain className='cardItem'>
             <div className='carTop'>
-                <h1 className='name'>VICTORIA FLORES</h1>
-                <h1 className='shir'>CANTIDAD DE CAMISETAS</h1>
-                <h1 className='counter'>200</h1>
-                <h1 className='us'>USUARIO VINIMAY</h1>
-                <h1 className='usname'>VICTORIA FLORES</h1>
+                <h1 className='name'>{props.user}</h1>
+                <h1 className='shir'>{props.translate('comunity.CardTop.line1')}</h1>
+                <h1 className='counter'>{props.countShirt}</h1>
+                <h1 className='us'>{props.translate('comunity.CardTop.line2')}</h1>
+                <h1 className='usname'>{props.username}</h1>
             </div>
             <div className='carBot'>
                 <h1>{props.number}</h1>

@@ -15,19 +15,19 @@ export default function CardShirt(props) {
             <img src={props.tipo} alt='Imae' className='ImgBk'/>
                <div className='info'>
                    <div>
-                        <h2>Usuario Vinimay</h2>
+                        <h2>{props.translate('comunity.card.vini-user')}</h2>
                         <p className='Sec'>{props.user}</p>
                    </div>
                    <div>
-                        <h2>Club</h2>
+                        <h2>{props.translate('comunity.card.club')}</h2>
                         <p className='Sec'>{props.club}</p>
                    </div>
                    <div>
-                        <h2>País</h2>
+                        <h2>{props.translate('comunity.card.country')}</h2>
                         <p className='Sec'>{props.country}</p>
                    </div>
                    <div>
-                        <h2>Año</h2>
+                        <h2>{props.translate('comunity.card.year')}</h2>
                         <div className='Sec'>{props.year}</div>
 
                    </div>

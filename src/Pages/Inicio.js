@@ -15,10 +15,15 @@ import Download from '../Components/Download'
 import FanMap from '../Components/Inicio/FanMap'
 import Modal from '../Components/Modal'
 import Video from '../Components/Video/Video'
+import {useTranslation} from "react-i18next";
+
+
+
 
 export default function Inicio() {
 
     const [modal, setModal] = useState(false);
+    const [t] = useTranslation('common');
 
     const showModal = () => {
         setModal(!modal)
@@ -34,11 +39,11 @@ export default function Inicio() {
 
                 <div className='content'>
                     <div className='title'>
-                        <h1 className='line1'>EL PRIMER</h1>
-                        <h1 className='line2'>MUSEO DIGITAL</h1>
-                        <h1 className='line1'>DE</h1>
-                        <h1 className='line3'>CAMISETAS DE<br/>FÚTBOL OFICIALES</h1>
-                        <h1 className='line4'>¡BAJATE LA APP!</h1>
+                        <h1 className='line1'>{t('home.start.line1')}</h1>
+                        <h1 className='line2'>{t('home.start.line2')}</h1>
+                        <h1 className='line1'>{t('home.start.line3')}</h1>
+                        <h1 className='line3'>{t('home.start.line4')}<br/>{t('home.start.line5')}</h1>
+                        <h1 className='line4'>{t('home.start.line6')}</h1>
                         <div className="buttons">
                           <a target="_blank" rel="noopener noreferrer"  href="https://apps.apple.com/ar/app/vinimay/id1506565366"><img src={IOSImg} alt='Mockup' className='Ios'/></a>
                             <img src={AndroidImg} alt='Mockup' className='android'/>
@@ -51,10 +56,10 @@ export default function Inicio() {
                 </div>
                 </Animated>
             </DivHome>
-            <InfoCollection show={showModal}/>
-            <Options/>
-            <FanMap/>
-            <Download/>
+            <InfoCollection translate={t} show={showModal}/>
+            <Options translate={t}/>
+            <FanMap translate={t}/>
+            <Download translate={t}/>
         </div>
     )
 }

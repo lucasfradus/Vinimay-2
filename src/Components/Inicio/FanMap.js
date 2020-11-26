@@ -4,11 +4,13 @@ import Mocku1 from '../../images/mockups/mockups_03.png'
 import Mocku2 from '../../images/mockups/mockups_04.png'
 import Map from '../../images/mockups_20.png'
 
-export default function FanMap() {
+
+
+export default function FanMap(props) {
     return (
         <Fanat className='fanMap'>
-            <h1 className='line3'>INTERACTUÁ CON FANÁTICOS DE OTROS PAISES</h1>
-            <p className='line2'>BUSCÁ LAS MEJORES CAMISETAS DE TODO EL MUNDO</p>
+            <h1 className='line3'>{props.translate('home.fanmap.line1')}</h1>
+            <p className='line2'>{props.translate('home.fanmap.line2')}</p>
             <div className='maped row'>
                 <img src={Mocku1} alt='Co' className='ImgR'/>
                 <img src={Map} alt='Co' className='ImgM'/>

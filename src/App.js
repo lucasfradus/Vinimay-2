@@ -11,15 +11,15 @@ import Terms from './Pages/Terms';
 import Privacity from './Pages/Privacity';
 import NotFoundPage from './Pages/NotFoundPage';
 import Video from './Pages/Video';
-
+import {useTranslation} from "react-i18next";
 
 
 function App() {
+  const [t] = useTranslation('common');
 
   return (
     <div className="App">
-        <NavBar/>
-
+        <NavBar />
         <Switch>
             <Route exact path='/' component={Inicio}/>
             <Route exact path='/comunidad' component={Comunity}/>
@@ -28,10 +28,9 @@ function App() {
             <Route exact path='/condiciones' component={Terms}/>
             <Route exact path='/video' component={Video}/>
             <Route component={NotFoundPage} />
-
         </Switch>
-        <Follow/>
-        <Footer/>
+        <Follow translate={t}/>
+        <Footer translate={t}/>
     </div>
   );
 }

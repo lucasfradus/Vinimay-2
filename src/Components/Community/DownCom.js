@@ -4,10 +4,10 @@ import styled from 'styled-components'
 //import Ios from '../../images/archivos-07.png'
 //import Android from '../../images/archivos-08.png'
 
-export default function DownCom() {
+export default function DownCom(props) {
     return (
         <DownComun>
-            <h1 className='line-3-listo'>¿ESTÁS LISTO PARA COMPARTIR TU PASIÓN?</h1>
+            <h1 className='line-3-listo'>{props.translate('comunity.DownCom.down')}</h1>
         </DownComun>
     )
 }

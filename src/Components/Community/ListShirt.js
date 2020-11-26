@@ -16,18 +16,18 @@ import Inter from '../../images/archivos-02.png'
 import Vend from '../../images/archivos-03.png'
 
 
-export default function ListShirt() {
+export default function ListShirt(props) {
     return (
         <div>
             <Contain className='cardShirtContainer'>
-                <CardShirt className='cardShirt' user='@VickyFlores' year="2005" club="River" country="Argentina" image={Imagen1} tipo={Exibe}/>
-                <CardShirt className='cardShirt' user='@VickyFlores' year="2005" club="Francia" country="Francia" image={Imagen2} tipo={Inter}/>
-                <CardShirt className='cardShirt' user='@VickyFlores' year="2005" club="River" country="Argentina" image={Imagen3} tipo={Vend}/>
-                <CardShirt className='cardShirt' user='@VickyFlores' year="2005" club="Universidad Católica" country="Chile" image={Imagen4} tipo={Exibe}/>
-                <CardShirt className='cardShirt' user='@VickyFlores' year="2005" club="Bayern Munich" country="Alemania"  image={Imagen5} tipo={Inter}/>
-                <CardShirt className='cardShirt' user='@VickyFlores' year="2005" club="Boca" country="Argentina"  image={Imagen6} tipo={Vend}/>
-                <CardShirt className='cardShirt' user='@VickyFlores' year="2005" club="Velez" country="Argentina"  image={Imagen7} tipo={Exibe}/>
-                <CardShirt className='cardShirt' user='@VickyFlores' year="2005" club="Argentina" country="Argentina"  image={Imagen8} tipo={Inter}/>
+                <CardShirt translate={props.translate} className='cardShirt' user='@VickyFlores' year="2005" club="River" country={props.translate('comunity.ListShirt.argentina')} image={Imagen1} tipo={Exibe}/>
+                <CardShirt translate={props.translate} className='cardShirt' user='@VickyFlores' year="2005" club="Francia" country={props.translate('comunity.ListShirt.france')} image={Imagen2} tipo={Inter}/>
+                <CardShirt translate={props.translate} className='cardShirt' user='@VickyFlores' year="2005" club="River" country={props.translate('comunity.ListShirt.argentina')} image={Imagen3} tipo={Vend}/>
+                <CardShirt translate={props.translate} className='cardShirt' user='@VickyFlores' year="2005" club="Universidad Católica" country={props.translate('comunity.ListShirt.chile')} image={Imagen4} tipo={Exibe}/>
+                <CardShirt translate={props.translate} className='cardShirt' user='@VickyFlores' year="2005" club="Bayern Munich" country={props.translate('comunity.ListShirt.germany')}  image={Imagen5} tipo={Inter}/>
+                <CardShirt translate={props.translate} className='cardShirt' user='@VickyFlores' year="2005" club="Boca" country={props.translate('comunity.ListShirt.argentina')}  image={Imagen6} tipo={Vend}/>
+                <CardShirt translate={props.translate} className='cardShirt' user='@VickyFlores' year="2005" club="Velez" country={props.translate('comunity.ListShirt.argentina')}  image={Imagen7} tipo={Exibe}/>
+                <CardShirt translate={props.translate} className='cardShirt' user='@VickyFlores' year="2005" club="Argentina" country={props.translate('comunity.ListShirt.argentina')}  image={Imagen8} tipo={Inter}/>
             </Contain>
             <div className="clearBoth"></div>
         </div>

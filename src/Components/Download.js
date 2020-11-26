@@ -4,11 +4,11 @@ import styled from 'styled-components'
 import Ios from '../images/archivos-07.png'
 import Android from '../images/archivos-08.png'
 
-export default function Download() {
+export default function Download(props) {
     return (
         <Down>
-            <h1 className='line3'>MUY PRONTO DISPONIBLE EN OTROS PAÍSES</h1>
-            <p className='line2 line-bajate-app'>¡BAJATE LA APP!</p>
+            <h1 className='line3'>{props.translate('home.download.line1')}</h1>
+            <p className='line2 line-bajate-app'>{props.translate('home.download.line2')}</p>
             <div>
                 <a target="_blank" rel="noopener noreferrer"  href="https://apps.apple.com/ar/app/vinimay/id1506565366"><img src={Ios} alt='com' className='ImgD'/></a>
                 <img src={Android} alt='com' className='ImgD'/>

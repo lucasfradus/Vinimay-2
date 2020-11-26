@@ -21,7 +21,7 @@ import flecha5 from '../../images/team/flecha-5.png'
 
 
 
-export default function TeamVini() {
+export default function TeamVini(props) {
     return (
         <Team className="equipo-container">
             <h1 className='line1'>Equipo</h1>
@@ -29,13 +29,13 @@ export default function TeamVini() {
             <br/>
             <br/>
             <div className='lista'>
-                <CardTeam imagen={Equipo2} nombre="Gabriel" apellido="Benito" posicion="CEO-Founder" flecha_numero={1} flecha={flecha1} />
-                <CardTeam imagen={Equipo1} nombre="Tomás" apellido="Moyano" posicion="Responsable de producto" flecha_numero={4} flecha={flecha4} />
-                <CardTeam imagen={Equipo5} nombre="Ignacio" apellido="Benito" posicion="Desarrollo" flecha_numero={3} flecha={flecha3} />
-                <CardTeam imagen={Equipo7} nombre="Victoria" apellido="Flores" posicion="Marketing y diseño" flecha_numero={5} flecha={flecha5} />
-                <CardTeam imagen={Equipo6} nombre="Benjamin" apellido="Buchanan" posicion="Finanzas" flecha_numero={1} flecha={flecha1} />
-                <CardTeam imagen={Equipo3} nombre="Martin" apellido="Benito" posicion="Satisfacción al cliente" flecha_numero={2} flecha={flecha2} />
-                <CardTeam imagen={Equipo4} nombre="KULWINDERJIT" apellido="Singh" posicion="Programacion" />
+                <CardTeam imagen={Equipo2} nombre="Gabriel" apellido="Benito" posicion={props.translate('comunity.TeamVini.ceo')} flecha_numero={1} flecha={flecha1} />
+                <CardTeam imagen={Equipo1} nombre="Tomás" apellido="Moyano" posicion={props.translate('comunity.TeamVini.product')} flecha_numero={4} flecha={flecha4} />
+                <CardTeam imagen={Equipo5} nombre="Ignacio" apellido="Benito" posicion={props.translate('comunity.TeamVini.dev')} flecha_numero={3} flecha={flecha3} />
+                <CardTeam imagen={Equipo7} nombre="Victoria" apellido="Flores" posicion={props.translate('comunity.TeamVini.mkt')} flecha_numero={5} flecha={flecha5} />
+                <CardTeam imagen={Equipo6} nombre="Benjamin" apellido="Buchanan" posicion={props.translate('comunity.TeamVini.finance')} flecha_numero={1} flecha={flecha1} />
+                <CardTeam imagen={Equipo3} nombre="Martin" apellido="Benito" posicion={props.translate('comunity.TeamVini.customer')} flecha_numero={2} flecha={flecha2} />
+                <CardTeam imagen={Equipo4} nombre="KULWINDERJIT" apellido="Singh" posicion={props.translate('comunity.TeamVini.programming')} />
             </div>
         </Team>
     )

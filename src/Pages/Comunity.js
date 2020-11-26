@@ -8,29 +8,29 @@ import Questions from '../Components/Community/Questions'
 import TeamVini from '../Components/Community/TeamVini'
 import TitleCom from '../Components/Community/TitleCom'
 import Carret from '../images/double_carret.jpg'
-//import Mockup from '../images/mockup-banner.png'
+import {useTranslation} from "react-i18next";
 
 export default function Comunity() {
+    const [t] = useTranslation('common');
+
     return (
         <div className="page-comunidad">
             <Box/>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-
-                <TitleCom/>
+                <TitleCom translate={t}/>
                 <br/>
                 <img alt="" src={Carret} className="carret"/>
             </Animated>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-
-                <ListShirt/>
+                <ListShirt translate={t}/>
             </Animated>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-                <Museo/>
+                <Museo translate={t}/>
             </Animated>
 
-            <Questions/>
-            <TeamVini/>
-            <DownCom/>
+            <Questions translate={t}/>
+            <TeamVini translate={t}/>
+            <DownCom translate={t}/>
         </div>
     )
 }

@@ -8,7 +8,7 @@ import red2 from '../images/archivos-12.png'
 import red3 from '../images/archivos-13.png'
 import red4 from '../images/archivos-14.png'
 
-export default function Follow() {
+export default function Follow(props) {
     return (
         <Following className='follow-container'>
             <div className='moc1'>
@@ -16,7 +16,7 @@ export default function Follow() {
             </div>
             <div className='Foll'>
                 <img src={Mock3} alt='com' className='Img3'/>
-                <h1>¡SEGUINOS EN NUESTRAS REDES!</h1>
+                <h1>{props.translate('Follow')}</h1>
                 <div>
                   <a target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/vinimayapp/"><img src={red1} alt='com' className='redImg'/></a>
                   <a target="_blank" rel="noopener noreferrer"  href="https://www.facebook.com/vinimayapp/"><img src={red2} alt='com' className='redImg'/></a>

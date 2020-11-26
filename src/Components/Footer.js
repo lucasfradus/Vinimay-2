@@ -1,26 +1,25 @@
 import React from 'react'
-//antiguo manejador de rutas
-//import { Links } from 'react-router-dom'
+
 
 import styled from 'styled-components'
 import { HashLink as Link } from 'react-router-hash-link';
 
 
-export default function Footer() {
+export default function Footer(props) {
     return (
         <Foote className='footer-parent'>
             <div className='footer'>
                 <div className='legal'>
-                    <h1>LEGAL</h1>
+                    <h1>{props.translate('Footer.legal.legal')}</h1>
                     <ul className='navLink'>
                         <li>
-                            <Link target="_blank" to='/condiciones'>Condiciones de servicio</Link>
+                            <Link target="_blank" to='/condiciones'>{props.translate('Footer.legal.ln1')}</Link>
                         </li>
                         <li>
-                            <Link target="_blank" to='/privacidad'>Política de privacidad</Link>
+                            <Link target="_blank" to='/privacidad'>{props.translate('Footer.legal.ln2')}</Link>
                         </li>
                         <li>
-                            <Link to='/contacto#top'>Denunciar una infracción</Link>
+                            <Link to='/contacto#top'>{props.translate('Footer.legal.ln3')}</Link>
                         </li>
                     </ul>
 
@@ -28,25 +27,24 @@ export default function Footer() {
                     <p></p>
                 </div>
                 <div className='pab'>
-                    <h1>PUBLICIDAD</h1>
+                    <h1>{props.translate('Footer.ads.ads')}</h1>
                     <ul className='navLink'>
                         <li>
-                            <Link to='/'>Comprar anuncios</Link>
+                            <Link to='/'>{props.translate('Footer.ads.ln1')}</Link>
                         </li>
                         <li>
-                            <Link to='/'>Normas de publicidad</Link>
+                            <Link to='/'>{props.translate('Footer.ads.ln3')}</Link>
                         </li>
                         <li>
-                            <Link to='/'>Pautas de la marca</Link>
+                            <Link to='/'>{props.translate('Footer.ads.ln3')}</Link>
                         </li>
                     </ul>
                 </div>
                 <div className='pab'>
-                    <h1>COMUNIDAD</h1>
+                    <h1>{props.translate('Footer.comunity.comunity')}</h1>
                     <ul className='navLink'>
                         <li>
-                            <Link to='/comunidad#faq'>Preguntas frecuentes</Link>
-
+                            <Link to='/comunidad#faq'>{props.translate('Footer.comunity.ln1')}</Link>
                         </li>
                     </ul>
                     <p></p>
