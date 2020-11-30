@@ -52,7 +52,10 @@
             "argentina" : "Argentina",
             "france" : "France",
             "chile" : "Chile",
-            "germany" : "Germany"
+            "germany" : "Germany",
+            "england" : "England",
+            "spain" : "Spain",
+            "uruguay": "Uruguay"
         },
         "card":{
             "vini-user" : "Vinimay User",

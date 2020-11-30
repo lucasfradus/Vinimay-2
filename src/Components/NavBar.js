@@ -73,19 +73,22 @@ export default function NavBar() {
                             </div>
                             </li>
                         </button>
-                        <button type="button" className="nav-btn2">
-                            <li>
-                            <div className='drop-menu'>
-                            <div className={i18n.language} >&nbsp;</div>                            
-                                <div className='drop-conten'>
-                                    <ul>
-                                        <li className='drop-item2' onClick={() => i18n.changeLanguage('es')}><div className='es'>&nbsp;</div></li>
-                                        <li className='drop-item2' onClick={() => i18n.changeLanguage('en')}><div className='en'>&nbsp;</div></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            </li>
-                        </button>
+                        {/*
+                             <button type="button" className="nav-btn2">
+                             <li>
+                             <div className='drop-menu'>
+                             <div className={i18n.language} >&nbsp;</div>                            
+                                 <div className='drop-conten'>
+                                     <ul>
+                                         <li className='drop-item2' onClick={() => i18n.changeLanguage('es')}><div className='es'>&nbsp;</div></li>
+                                         <li className='drop-item2' onClick={() => i18n.changeLanguage('en')}><div className='en'>&nbsp;</div></li>
+                                     </ul>
+                                 </div>
+                             </div>
+                             </li>
+     </button>
+                        */}
+                     
                 
                     </ul>
                 </div>

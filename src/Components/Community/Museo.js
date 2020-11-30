@@ -1,9 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import TitleApShirt from './TitleApShirt'
-import TopTen from './TopTen'
 import Mockup from '../../images/mockups/archivo mockups nuevos-03.png'
-import ButtomTitle from './ButtomTitle'
 
 export default function Museo(props) {
     return (
@@ -13,15 +11,13 @@ export default function Museo(props) {
             <div className='count'>
                 <div className='muse'>
                     <h1 className='line1'>{props.translate('comunity.museum.line1')}</h1>
-                    <h1 className='line2'>{props.translate('comunity.museum.line2')}</h1>
+                    <h1 className='line2'>+{props.counter[0]}</h1>
                 </div>
                 <div className='shirt'>
                     <h1 className='line1'>{props.translate('comunity.museum.line3')}</h1>
-                    <h1 className='line2'>{props.translate('comunity.museum.line4')}</h1>
+                    <h1 className='line2'>+{props.counter[1]}</h1>
                 </div>
             </div>
-            <TopTen translate={props.translate}/>
-            <ButtomTitle translate={props.translate}/>
         </Top>
     )
 }

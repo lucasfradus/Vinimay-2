@@ -7,6 +7,18 @@ import Mockup_left from '../../images/mockups/mockups_05.png'
 import Mockup_right from '../../images/mockups/mockups_06.png'
 
 export default function TopTen(props) {
+
+
+    const listItems3 = props.Top3.map(function(d, idx){
+        return  (<CardTop translate={props.translate} key={idx} countShirt={d.countShirt} user={d.username} username={d.user} number={d.number}/>)
+    });
+
+    const listItems10 = props.Top10.map(function(d, idx){
+        return  (
+            <TopItems translate={props.translate} key={idx} count={d.number} user={d.user} countShirt={d.countShirt}/>
+        )
+    });
+
     return (
         <Container>
             <div className='topi'>
@@ -15,20 +27,15 @@ export default function TopTen(props) {
                 <h1 className='line5'>{props.translate('comunity.TopTen.line2')}</h1>
                 <div className='cards'>
                     <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores1' number="-1"/>
-                    <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores2' number="2"/>
-                    <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores3' number="1"/>
-                    <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores4' number="3"/>
+
+                    {listItems3}
+                   
                     <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores5' number="-1"/>
                 </div>
                 <img alt="" src={Mockup_right} className='mockup-float-right'/>
             </div>
             <div className='items'>
-                <TopItems translate={props.translate} count={4} user='Victoria Flores' countShirt={200}/>
-                <TopItems translate={props.translate} count={5} user='Victoria Flores' countShirt={200}/>
-                <TopItems translate={props.translate} count={6} user='Victoria Flores' countShirt={200}/>
-                <TopItems translate={props.translate} count={7} user='Victoria Flores' countShirt={200}/>
-                <TopItems translate={props.translate} count={8} user='Victoria Flores' countShirt={200}/>
-                <TopItems translate={props.translate} count={9} user='Victoria Flores' countShirt={200}/>
+                     {listItems10}
             </div>
         </Container>
     )
