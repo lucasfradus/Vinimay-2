@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 import {FaAlignRight} from 'react-icons/fa'
-import Selector from "./Navbar/LangSelect"
 import {useTranslation} from "react-i18next";
+import "./styles.css";
 
 import logo from '../images/logo.png'
 
@@ -20,13 +20,14 @@ export default function NavBar() {
 
     const [t, i18n] = useTranslation('common');
 
+    console.log("lenguaje:"+i18n.language )
 
     return (
         <NavBar2 className="navbar" id="navbar">
             <div className="nav-center">
                     <div className="nav-header">
                         <Link to="/">
-                            <img src={logo} alt="Beach resort" className='imgLogo'/>
+                            <img src={logo} alt="Logo" className='imgLogo'/>
                         </Link>
                         <button type="button"
                         onClick={handleToggle}
@@ -66,20 +67,31 @@ export default function NavBar() {
                                     <ul>
                                         <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>{t('navbar.download.android')}</a></li>
                                         <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>{t('navbar.download.ios')}</a></li>
+
                                     </ul>
                                 </div>
                             </div>
                             </li>
                         </button>
-                         <button onClick={() => i18n.changeLanguage('es')}>Español</button>
-                <button onClick={() => i18n.changeLanguage('en')}>English</button>
-                        <Selector i18={i18n}/>
+                        <button type="button" className="nav-btn2">
+                            <li>
+                            <div className='drop-menu'>
+                            <div className={i18n.language} >&nbsp;</div>                            
+                                <div className='drop-conten'>
+                                    <ul>
+                                        <li className='drop-item2' onClick={() => i18n.changeLanguage('es')}><div className='es'>&nbsp;</div></li>
+                                        <li className='drop-item2' onClick={() => i18n.changeLanguage('en')}><div className='en'>&nbsp;</div></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </li>
+                        </button>
+                
                     </ul>
                 </div>
         </NavBar2>
     )
 }
-
 
 const NavBar2 = styled.div`
         position: absolute;
@@ -153,54 +165,26 @@ const NavBar2 = styled.div`
             
         }
 
-        .drop-conten{
-            padding-top:14px;
-            /* padding-right: 10px; */
-            padding-bottom: 24px;
-            position: absolute;
-            top: 100%;
-            display:none;
-            justify-content:center;
-            align-self: center;
-            border-radius: 30px;
-            /*background-color: #171E36;*/
-            z-Index: 30000;
-            height: 70px;
-            width: 160px;
-        }
+   
 
         .drop-item{
-            /* text-align: right; */
             right:30px;
             font-size: 23px;
             position:relative;
-
-
-    
-            font-weight: bold;
-            color: #A8C813;
             text-decoration: none;
-            /* list-style: none; */
             display: inline-block;
-
-            color: #A8C813;
-            text-decoration: none;
-            /* text-align:left; */
-            /*list-style: none;*/
             list-style-type: square;
-
             font-weight: bold;
             color: #A8C813;
-            text-decoration: none;
             text-align:left;
             list-style: none;
             list-style-type: square;
             margin-left:10px;
-            display: inline-list;
-
             z-index:10000;
             margin-bottom: 10px;
         }
+
+      
 
         .nav-links a {
             background: transparent;
@@ -223,7 +207,7 @@ const NavBar2 = styled.div`
             }
 
             .show-nav {
-            height: 290px;
+            height: 350px;
             }
 
 

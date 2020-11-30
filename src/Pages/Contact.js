@@ -10,7 +10,7 @@ import Title from '../Components/Contact/Title'
 export default function Contact() {
 
     const config = {
-        api: `https://vinimay.com/api/contact/index.php`,
+        api: `http://www.vinimayapp.com/api/contact/index.php`,
        
         successMessage: 'Gracias por ponerte en contacto con nosotros, nos comunicaremos a la brevedad',
         errorMessage: 'Por favor completa todos los campos antes de enviar el mensaje!',

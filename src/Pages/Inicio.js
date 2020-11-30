@@ -1,7 +1,6 @@
 import React, {useState}  from 'react'
 import Nov from '../images/archivos-17.jpg'
 //import Mockup from '../images/mockup-banner.png'
-import Mockup from '../images/mockups/mockup-banner.png'
 
 import AndroidImg from '../images/archivos-06.png'
 
@@ -16,6 +15,8 @@ import FanMap from '../Components/Inicio/FanMap'
 import Modal from '../Components/Modal'
 import Video from '../Components/Video/Video'
 import {useTranslation} from "react-i18next";
+import Mockup_es from '../images/es/home.png'
+import Mockup_en from '../images/en/home.png'
 
 
 
@@ -23,11 +24,13 @@ import {useTranslation} from "react-i18next";
 export default function Inicio() {
 
     const [modal, setModal] = useState(false);
-    const [t] = useTranslation('common');
+    const [t, i18n] = useTranslation('common');
 
     const showModal = () => {
         setModal(!modal)
     }
+
+
 
     return (
         <div className='boar'>
@@ -51,7 +54,7 @@ export default function Inicio() {
                     </div>
 
                     <div className='bannerImg'>
-                        <img src={Mockup} alt='Mockup' className='ImgMoc'/>
+                     <img src={Mockup_es} alt='Mockup' className='ImgMoc'/>
                     </div>
                 </div>
                 </Animated>

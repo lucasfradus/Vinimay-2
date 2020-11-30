@@ -111,7 +111,7 @@ body {
 }
 .navbar.active {
     background: #171E36 !important;
-    transition: 0.2s;
+	transition: 0.2s;
     top: 0px !important;
 }
 .info .line2 {

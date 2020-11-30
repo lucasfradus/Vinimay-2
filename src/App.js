@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router';
 import './App.css';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar';
+
 import Follow from './Components/Follow'
 import Inicio from './Pages/Inicio';
 import Comunity from './Pages/Comunity';

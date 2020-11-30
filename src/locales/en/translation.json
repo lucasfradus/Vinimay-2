@@ -14,8 +14,8 @@
             "line1":"THE FIRST",
             "line2":"DIGITAL MUSEUM",
             "line3":"OF",
-            "line4":"AUTHENTINC",
-            "line5":"FOOTBALL SHIRTS",
+            "line4":"AUTHENTIC",
+            "line5":"FOOTBALL T-SHIRTS",
             "line6":"DOWNLOAD THE APP!"
         },
         "fanmap":{
@@ -23,23 +23,23 @@
             "line2":"BUSCÁ LAS MEJORES CAMISETAS DE TODO EL MUNDO"
         },
         "infocollection":{
-            "line1":"DESCUBRÍ VINIMAY",
-            "line2":"CREÁ TU MUSEO",
-            "line3":"Publicá tu colección de camisetas para exhibir, vender o intercambiar con otros fanáticos",
-            "line4":"INTERACTÚA",
-            "line5":"Likeá y comentá tus camisetas preferidas de otros usuarios",
-            "line6":"CHATEÁ",
-            "line7":"Mandale mensaje privados a otros fanáticos para charlar sobre sus reliquias"
+            "line1":"DISCOVER VINIMAY",
+            "line2":"CREATE YOUR MUSEUM",
+            "line3":"Publish your collection of t-shirts to display, sell or trade with other fans",
+            "line4":"INTERACT",
+            "line5":"Likea and discuss your favorite shirts from other users",
+            "line6":"Chat",
+            "line7":"Send a private message to other fans to chat about their relics"
         },
         "options":{
-            "line1":"ELEGÍ QUE TE GUSTARIA HACER CON TU CAMISETA",
-            "line2":"EXHIBIR",
-            "line3":"INTERCAMBIAR",
-            "line4":"VENDER"
+            "line1":"CHOSE WHAT YOU WOULD LIKE TO DO WITH YOUR T-SHIRT",
+            "line2":"DISPLAY",
+            "line3":"TRADE",
+            "line4":"SELL"
         },
         "download":{
-            "line1":"MUY PRONTO DISPONIBLE EN OTROS PAÍSES",
-            "line2":"¡BAJATE LA APP!"        
+            "line1":"SOON AVAILABLE IN OTHER COUNTRIES",
+            "line2":"¡GET THE APP!"        
         }
     },
     "comunity": {
@@ -61,73 +61,73 @@
             "year" : "Year"
         },
         "museum" : {
-            "line1":"MUSEOS",
+            "line1":"MUSEUMS",
             "line2":"+200",
-            "line3":"CAMISETAS",
+            "line3":"T-SHIRTS",
             "line4":"+550"
         },
         "TitleApShirt":{
-            "line1":"MIRÁ TODAS LAS CAMISETA",
-            "line2":"DESDE LA APP"
+            "line1":"CHECK OUT ALL THE T-SHIRTS",
+            "line2":"FROM OUR APP"
         },
         "TopTen":{
             "line1":"TOP 10",
-            "line2":"MUSEOS CON MÁS CAMISETAS"
+            "line2":"MUSEUMS WITH MORE T-SHIRTS"
         },
         "CardTop" : {
-            "line1":"CANTIDAD DE CAMISETAS",
-            "line2":"USUARIO VINIMAY"
+            "line1":"NUMBER OF T-SHIRTS",
+            "line2":"VINIMAY USER"
         },
         "TopItems": {
-            "line1":"Usuario: ",
-            "line2":"CAMISETAS"
+            "line1":"USER: ",
+            "line2":"T-SHIRTS"
         },
-        "ButtomTitle" : "¿QUIÉNES VAN A SER LOS PROXIMOS FANÁTICOS EN EL TOP 10?",
+        "ButtomTitle" : "WHO WILL BE THE NEXT COUPLE OF FANS IN THE TOP 10?",
         "Questions" : {
-            "line1":"PREGUNTAS FRECUENTES:",
-            "question1": "¿Cómo creo una cuenta en Vinimay?",
-            "question2": "¿Cómo inicio sesión en Vinimay?",
-            "question3": "¿No puedo iniciar sesión en Vinimay?",
-            "question4": "¿Cómo cambio o restablezco mi contraseña de Vinimay?",
-            "question5": "¿Como hago para que mi contraseña de Vinimay sea segura?",
-            "question6": "¿Desde que año se verifican las camisetas?",
-            "question7": "¿ En todos los casos las camisetas se van a verificar?",
-            "question8": "¿Las camisetas antiguas/retros, se van a verificar?",
-            "question9": "¿Cómo ingreso camisetas a Vinimay?",
-            "answer1ln1": "Nota: Debes tener al menos 13 años para crear una cuenta de Vinimay.",
-            "answer1ln2": "Para crear una cuenta de Vinimay:",
-            "answer1ln3": "A- Descárgate Vinimay en el App Store / Play Store",
-            "answer1ln4": "B- Escribe tu nombre, correo electrónico, nombre de usuario, celular y contraseña. \n",
-            "answer1ln5": "C- Aceptar Términos y Condiciones.",
-            "answer1ln6": "D- Haz clic en Registrarte.",
-            "answer2ln1": "Para iniciar sesión en Vinimay:",
-            "answer2ln2": "A- Ir a iniciar sesión con el email registrado.",
-            "answer2ln3": "B- Luego colocar la contraseña y continuamente ingresar.",
-            "answer3ln1": "Si tienes problemas para iniciar sesión en tu cuenta de Vinimay, prueba alguna de las siguientes sugerencias:",
-            "answer3ln2": "A- Intenta recuperar tu cuenta de Facebook.",
-            "answer3ln3": "B- Si tu inconveniente es que no recordás la contraseña:",
-            "answer3ln4": "C- Ve a recuperar contraseña en nuestra app para que te envíenos un enlace para recuperarla y luego iniciar sesión con la nueva contraseña.",
-            "answer3ln5": "Si tienes inconveniente con tu correo electrónico, ponte en contacto con nosotros vía:",
-            "answer3ln6": "Email: soporte@vinimayapp.com",
-            "answer4ln1": "A- Tienes que colocar tu email y luego colocar recuperar contraseña.",
-            "answer4ln2": "B- Recibirás un enlace de recuperar contraseña desde vinimayok@gmail.com a tu E-mail registrado.",
-            "answer4ln3": "C- Ingresa al enlace que recibas para luego colocar la nueva contraseña.",
-            "answer5ln1": "A- Siempre siguiendo nuestras recomendaciones de seguridad.",
-            "answer5ln2": "B- Crea tu contraseña con 8 caracteres o más. Puede ser cualquier combinación de letras, números y símbolos .No se admiten acentos ni caracteres acentuados.",
-            "answer6ln1": "A- Desde el 2005 en adelante.",
-            "answer7ln1": "A- No debido a que dependemos de la información que nos provea el usuario.",
-            "answer7ln2": "B- Estado de la camiseta.",
-            "answer7ln3": "C- Código de la misma.",
-            "answer7ln4": "D- Donde fue fabricada.",
-            "answer8ln1": "A-Dependiendo que información que nos provea el usuario.",
-            "answer8ln2": "B-La información que tenga el mercado sobre esa camiseta.",
-            "answer9ln1": "A- Ingreso a la sección “agregar”.",
-            "answer9ln2": "B- Elijo, país seguido de equipo de la camiseta.",
-            "answer9ln3": "C- Coloco, titulo, marca, año, talle y descripción.",
-            "answer9ln4": "D- Si es titular / suplente o nueva / usada.",
-            "answer9ln5": "E- Si la camiseta es para Exhibir, intercambiar o vender.",
-            "answer9ln6": "F- Código de la camiseta.",
-            "answer9ln7": "G- Ingreso las imágenes desde la cámara o biblioteca."
+            "line1":"FREQUENT QUESTIONS:",
+            "question1":"How to create your Vinimay account? ",
+            "question2":"How do I log into Vinimay ?",
+            "question3":"I can't log into my Vinimay account",
+            "question4":"How do I change or reset my Vinimay password ",
+            "question5":"How do I create a safe Vinimay password",
+            "question6":"Since when are shirts verified?",
+            "question7":"T-Shirt will be verified in all cases?",
+            "question8":"Are old / retro shirts are to verify ?",
+            "question9":"How do I enter a Vinimay t ?",
+            "answer1ln1":"Note: You must have at the least 13 to create a Vinimay account .",
+            "answer1ln2":"To create a Vinimay account: ",
+            "answer1ln3":"A- Download Vinimay App in the App Store / Play Store",
+            "answer1ln4":"B- Enter your name email username and password.",
+            "answer1ln5":"C- Accept Terms and Conditions.",
+            "answer1ln6":"D- Click on Register.",
+            "answer2ln1":"To log on to Vinimay :",
+            "answer2ln2":"A- Go to sign in with the registered email.",
+            "answer2ln3":"B- Then place the password and continuously enter.",
+            "answer3ln1":"If you have trouble logging into your account Vinimay some of the following suggestions : test",
+            "answer3ln2":"A- You try to retrieve your Facebook account.",
+            "answer3ln3":"B- If your downside is that you remember the password :",
+            "answer3ln4":"C- password Go get our app for you to send a link to retrieve it and then log in with the new password.",
+            "answer3ln5":"If you have trouble with your email please contact us via :",
+            "answer3ln6":"Email: soporte@vinimayapp.com",
+            "answer4ln1":"A- You have to put your email and then place recover password.",
+            "answer4ln2":"B- receive a link to retrieve your password from vinimayok@gmail.com E-mail registered.",
+            "answer4ln3":"C- Login to the link you receive and then place the new password.",
+            "answer5ln1":"A- Always following our safety recommendations.",
+            "answer5ln2":"B- Create a password with 8 characters or more. It can be any combination of letters numbers and symbols .No accents or accented characters allowed.",
+            "answer6ln1":"A- From 2005 onwards.",
+            "answer7ln1":"A- Not because we depend on the information you provide us the user.",
+            "answer7ln2":"B- singlet state.",
+            "answer7ln3":"C code it.",
+            "answer7ln4":"D- Where was manufactured.",
+            "answer8ln1":"A-Depending on what information you provide the user.",
+            "answer8ln2":"B-The information that has the market on that shirt.",
+            "answer9ln1":"A- Admission to the 'add'.",
+            "answer9ln2":"B- Elijo followed by country team shirt.",
+            "answer9ln3":"C- Coloco title brand year carve and description.",
+            "answer9ln4":"D- If the owner / substitute or new / used.",
+            "answer9ln5":"E- If the shirt is to display exchange or sell.",
+            "answer9ln6":"F- Code shirt.",
+            "answer9ln7":"G- Join images from the camera or library."
         },
         "TeamVini":{
             "ceo":"CEO-Founder",
