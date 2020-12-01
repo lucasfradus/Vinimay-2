@@ -34,8 +34,12 @@ export default function TopTen(props) {
                 </div>
                 <img alt="" src={Mockup_right} className='mockup-float-right'/>
             </div>
+          
+        
             <div className='items'>
+
                      {listItems10}
+
             </div>
         </Container>
     )
@@ -54,6 +58,11 @@ const Container = styled.div`
         background-image: linear-gradient(to bottom, rgba(168, 200, 19, 0.7),#A8C813), url(${Nov});
         background-attachment: fixed;
         background-size: cover;
+    }
+    .table{
+        display: flex!important,
+        justify-content: center!important,
+        align-items: center!important;
     }
 
     .cards{
@@ -77,7 +86,6 @@ const Container = styled.div`
 
     .items{
         justify-content: center;
-        text-align: center;
         padding: 2rem 0rem;
     }
 
