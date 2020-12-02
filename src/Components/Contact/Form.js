@@ -59,12 +59,12 @@ const Form = (props) => {
         <div className="contact-form__container">
                 <div>
                     {mailSent &&
-                    <div class="alert success">
+                    <div className="alert success">
                         {successMessage}
                     </div>
                     }
                     {error && 
-                    <div class="alert danger">
+                    <div className="alert danger">
                         {errorMessage}
                     </div>
                     }
