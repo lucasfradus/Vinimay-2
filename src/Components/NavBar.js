@@ -89,22 +89,18 @@ export default function NavBar() {
                             </div>
                             </li>
                         </button>
-                        
-                             <button type="button" className="nav-btn2">
+                        <button type="button" className="nav-btn2">
                              <li>
                              <div className='drop-menu'>
-                             <div className={i18n.language} >&nbsp;</div>                            
-                                 <div className='drop-conten'>
-                                     <ul>
-                                         {LangDropdown}
-                                     </ul>
-                                 </div>
-                             </div>
+                                <div className={i18n.language} >&nbsp;</div>                            
+                                    <div className='drop-conten'>
+                                        <ul>
+                                            {LangDropdown}
+                                        </ul>
+                                    </div>
+                                </div>
                              </li>
-     </button>
-                        
-                     
-                
+                        </button>
                     </ul>
                 </div>
         </NavBar2>

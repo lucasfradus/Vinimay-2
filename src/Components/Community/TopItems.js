@@ -3,43 +3,39 @@ import styled from 'styled-components'
 
 export default function TopItems(props) {
     return (
+            <Contain>
+                <tr>
+                <td className='position'>
+                    <h1>{props.count} - </h1>
+                </td>
+                <td className='userDate'>
+                    <h1> {props.user} </h1>
+                    <h1 className='us'>{props.translate('comunity.TopItems.line1')} {props.user}</h1>
+                </td>
+                <td className='row'>
+                <h1>&nbsp;&#187;&nbsp;</h1>
+                </td>
+                <td className='countShirt'>
+                <h1> {props.countShirt} {props.translate('comunity.TopItems.line2')}</h1>
+                </td>
+                </tr>
+               
+            </Contain>
+
+
         
-        <Contain  className='top-item'>
-                <div className='position'>
-                        <h1>{props.count} - </h1>
-                </div>
-                <div className='userDate'>
-                        <h1>{props.user} </h1>
-                        <h1 className='us'>{props.translate('comunity.TopItems.line1')} {props.user}</h1>
-                </div >
-                <div className='row'> 
-                    <h1>&nbsp;&#187;&nbsp;</h1>
-                </div>
-                <div  className='countShirt'>
-                    <h1> {props.countShirt} {props.translate('comunity.TopItems.line2')}</h1>
-                </div>
-            <br/>
-            
-            
-        </Contain>
     )
 }
 
 const Contain = styled.div `
-    display: flex;
-    justify-content: center;
-    text-align: center;
+
 
     .position{
-        justify-content: left;
-        text-align: left;
+   
         color:#171E36;
     }
     .userDate{
         color:#171E36;
-        text-align: left;
-        margin: 0;
-        padding-top:20px;
     }
     .userDate h1{
         margin: 0;
@@ -65,9 +61,9 @@ const Contain = styled.div `
         justify-content: center;
         text-align: center;
 
-        .position{
+        .position{/*
             justify-content: left!important;
-            text-align: left!important;
+            text-align: left!important;*/
             color:#171E36;
         }
         .row{

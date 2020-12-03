@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Nov from '../../images/archivos-18.jpg'
 import CardTop from './CardTop'
 import TopItems from './TopItems'
-
+import Table from 'react-bootstrap/Table'
 
 
 import Mockup_left_es from '../../images/es/mockups_05.png'
@@ -41,13 +41,19 @@ export default function TopTen(props) {
                 </div>
                 <img alt="" src={Mockup_right} className='mockup-float-right'/>
             </div>
-          
-        
-            <div className='items'>
 
-                     {listItems10}
+            <div className='table'>
+            <Table  striped bordered hover>
+            
+  <tbody>
 
+                            {listItems10}
+                            </tbody>
+
+            </Table>
             </div>
+            
+
         </Container>
     )
 }
@@ -67,9 +73,8 @@ const Container = styled.div`
         background-size: cover;
     }
     .table{
-        display: flex!important,
-        justify-content: center!important,
-        align-items: center!important;
+        display: flex;
+        justify-content: center;
     }
 
     .cards{
