@@ -30,8 +30,6 @@ export default function Privacity() {
                 <p className='subTitle2'>{t('Terms.point5a')}</p>
                 <p className='text'>{t('Terms.point5b')}</p>
                
-                <p className='subTitle2'>{t('Terms.point5a')}</p>
-                <p className='text'>{t('Terms.point5b')}</p>
                
                 <p className='subTitle2'>{t('Terms.point6a')}</p>
                 <p className='text'>{t('Terms.point6b')}</p>
