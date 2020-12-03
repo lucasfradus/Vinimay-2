@@ -1,13 +1,18 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
-import Mock from '../../images/mockups/archivo-mockups-02.png'
+
+import Mock_es from '../../images/es/archivo-mockups-02.png'
+import Mock_en from '../../images/en/archivo-mockups-02.png'
+
 // import Arrow from '../../images/arrow.png'
 
 
 export default function InfoCollection(props) {
 
-    console.log(props);
+
+    var Mock  =  props.i18n.language ==='es' ? Mock_es : Mock_en
+
 
     return (
         <CollectionSection>

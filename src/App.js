@@ -23,10 +23,10 @@ function App() {
         <NavBar />
         <Switch>
             <Route exact path='/' component={Inicio}/>
-            <Route exact path='/comunidad' component={Comunity}/>
-            <Route exact path='/contacto' component={Contact}/>
-            <Route exact path='/privacidad' component={Privacity}/>
-            <Route exact path='/condiciones' component={Terms}/>
+            <Route exact path='/comunity' component={Comunity}/>
+            <Route exact path='/contact' component={Contact}/>
+            <Route exact path='/privacy' component={Privacity}/>
+            <Route exact path='/terms' component={Terms}/>
             <Route exact path='/video' component={Video}/>
             <Route component={NotFoundPage} />
         </Switch>

@@ -20,7 +20,23 @@ export default function NavBar() {
 
     const [t, i18n] = useTranslation('common');
 
-    console.log("lenguaje:"+i18n.language )
+    /*
+        Selecto de lenguaje, agrego al dropdown unicamente la lista de lenguajes que no estan seleccinados
+    */
+    const langs = ['es','en']
+
+    let filterLangs = langs.filter( lng => lng !== i18n.language )
+
+    const LangDropdown = filterLangs.map(function(d, idx){
+        return  (
+            <li 
+                key={idx}
+                className='drop-item2' 
+                onClick={() => i18n.changeLanguage(d)}>
+                <div className={d}>&nbsp;</div>
+            </li>
+        )
+    });
 
     return (
         <NavBar2 className="navbar" id="navbar">
@@ -47,14 +63,14 @@ export default function NavBar() {
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li className="nav-item">
-                                <Link to="/comunidad">{t('navbar.comunity')}</Link>
+                                <Link to="/comunity">{t('navbar.comunity')}</Link>
                             </li>
                         </button>
                         <button type="button"
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li className="nav-item">
-                            <Link to="/contacto">{t('navbar.contact')}</Link>
+                            <Link to="/contact">{t('navbar.contact')}</Link>
                             </li>
                         </button>
                         <button type="button" className="nav-btn2">
@@ -73,21 +89,20 @@ export default function NavBar() {
                             </div>
                             </li>
                         </button>
-                        {/*
+                        
                              <button type="button" className="nav-btn2">
                              <li>
                              <div className='drop-menu'>
                              <div className={i18n.language} >&nbsp;</div>                            
                                  <div className='drop-conten'>
                                      <ul>
-                                         <li className='drop-item2' onClick={() => i18n.changeLanguage('es')}><div className='es'>&nbsp;</div></li>
-                                         <li className='drop-item2' onClick={() => i18n.changeLanguage('en')}><div className='en'>&nbsp;</div></li>
+                                         {LangDropdown}
                                      </ul>
                                  </div>
                              </div>
                              </li>
      </button>
-                        */}
+                        
                      
                 
                     </ul>

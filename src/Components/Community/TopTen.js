@@ -3,10 +3,19 @@ import styled from 'styled-components'
 import Nov from '../../images/archivos-18.jpg'
 import CardTop from './CardTop'
 import TopItems from './TopItems'
-import Mockup_left from '../../images/mockups/mockups_05.png'
-import Mockup_right from '../../images/mockups/mockups_06.png'
+
+
+
+import Mockup_left_es from '../../images/es/mockups_05.png'
+import Mockup_right_es from '../../images/es/mockups_06.png'
+
+import Mockup_left_en from '../../images/en/mockups_05.png'
+import Mockup_right_en from '../../images/en/mockups_06.png'
 
 export default function TopTen(props) {
+
+    var Mockup_left =  props.i18n.language ==='es' ? Mockup_left_es : Mockup_left_en
+    var Mockup_right  =  props.i18n.language ==='es' ? Mockup_right_es : Mockup_right_en
 
 
     const listItems3 = props.Top3.map(function(d, idx){
@@ -27,9 +36,7 @@ export default function TopTen(props) {
                 <h1 className='line5'>{props.translate('comunity.TopTen.line2')}</h1>
                 <div className='cards'>
                     <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores1' number="-1"/>
-
                     {listItems3}
-                   
                     <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores5' number="-1"/>
                 </div>
                 <img alt="" src={Mockup_right} className='mockup-float-right'/>

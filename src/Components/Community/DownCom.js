@@ -1,8 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-//import Ios from '../../images/archivos-07.png'
-//import Android from '../../images/archivos-08.png'
+
 
 export default function DownCom(props) {
     return (

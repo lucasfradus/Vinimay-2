@@ -28,7 +28,7 @@ import Inter from '../images/archivos-02.png'
 import Vend from '../images/archivos-03.png'
 
 export default function Comunity() {
-    const [t] = useTranslation('common');
+    const [t, i18n] = useTranslation('common');
 
     /* Datos a actualizar todos los meses */
 
@@ -173,8 +173,8 @@ export default function Comunity() {
                 <ListShirt  TopShirts={TopShirts}  translate={t}/>
             </Animated>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-                <Museo counter={TopCounter} translate={t}/>
-                <TopTen Top3={Top3} Top10={Top10} translate={t}/>
+                <Museo i18n={i18n} counter={TopCounter} translate={t}/>
+                <TopTen  i18n={i18n} Top3={Top3} Top10={Top10} translate={t}/>
                 <ButtomTitle translate={t}/>
 
             </Animated>

@@ -13,13 +13,13 @@ export default function Footer(props) {
                     <h1>{props.translate('Footer.legal.legal')}</h1>
                     <ul className='navLink'>
                         <li>
-                            <Link target="_blank" to='/condiciones'>{props.translate('Footer.legal.ln1')}</Link>
+                            <Link target="_blank" to='/terms'>{props.translate('Footer.legal.ln1')}</Link>
                         </li>
                         <li>
-                            <Link target="_blank" to='/privacidad'>{props.translate('Footer.legal.ln2')}</Link>
+                            <Link target="_blank" to='/privacty'>{props.translate('Footer.legal.ln2')}</Link>
                         </li>
                         <li>
-                            <Link to='/contacto#top'>{props.translate('Footer.legal.ln3')}</Link>
+                            <Link to='/contact#top'>{props.translate('Footer.legal.ln3')}</Link>
                         </li>
                     </ul>
 
@@ -33,7 +33,7 @@ export default function Footer(props) {
                             <Link to='/'>{props.translate('Footer.ads.ln1')}</Link>
                         </li>
                         <li>
-                            <Link to='/'>{props.translate('Footer.ads.ln3')}</Link>
+                            <Link to='/'>{props.translate('Footer.ads.ln2')}</Link>
                         </li>
                         <li>
                             <Link to='/'>{props.translate('Footer.ads.ln3')}</Link>
@@ -44,7 +44,7 @@ export default function Footer(props) {
                     <h1>{props.translate('Footer.comunity.comunity')}</h1>
                     <ul className='navLink'>
                         <li>
-                            <Link to='/comunidad#faq'>{props.translate('Footer.comunity.ln1')}</Link>
+                            <Link to='/comunity#faq'>{props.translate('Footer.comunity.ln1')}</Link>
                         </li>
                     </ul>
                     <p></p>

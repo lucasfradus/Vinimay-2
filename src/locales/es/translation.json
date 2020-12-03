@@ -65,9 +65,7 @@
         },
         "museum" : {
             "line1":"MUSEOS",
-            "line2":"+200",
-            "line3":"CAMISETAS",
-            "line4":"+550"
+            "line3":"CAMISETAS"
         },
         "TitleApShirt":{
             "line1":"MIRÁ TODAS LAS CAMISETA",
@@ -133,13 +131,13 @@
             "answer9ln7": "G- Ingreso las imágenes desde la cámara o biblioteca."
         },
         "TeamVini":{
-            "ceo":"CEO-Founder",
+            "ceo":"CEO-Fundador",
             "product":"Responsable de producto",
-            "dev":"Desarrollo",
+            "dev":"Desarrollo Back-End",
             "mkt":"Marketing y diseño",
             "finance":"Finanzas",
             "customer":"Satisfacción al cliente",
-            "programming":"Programacion"
+            "programming":"Desarrollo Front-End"
         },
         "DownCom":{
             "down":"¿ESTÁS LISTO PARA COMPARTIR TU PASIÓN?"

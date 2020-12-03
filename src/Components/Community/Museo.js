@@ -1,9 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
 import TitleApShirt from './TitleApShirt'
-import Mockup from '../../images/mockups/archivo mockups nuevos-03.png'
+
+
+import Mocku1_es from '../../images/es/archivo mockups nuevos-03.png'
+import Mocku1_en from '../../images/en/archivo mockups nuevos-03.png'
+
 
 export default function Museo(props) {
+
+    var Mockup  =  props.i18n.language==='es' ? Mocku1_es : Mocku1_en
+
+
     return (
         <Top>
             <img src={Mockup} alt='na' className='moci'/>

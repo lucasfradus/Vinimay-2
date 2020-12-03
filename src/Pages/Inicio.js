@@ -1,10 +1,12 @@
 import React, {useState}  from 'react'
 import Nov from '../images/archivos-17.jpg'
-//import Mockup from '../images/mockup-banner.png'
 
 import AndroidImg from '../images/archivos-06.png'
-
 import IOSImg from '../images/archivos-05.png'
+
+import Mockup_es from '../images/es/home.png'
+import Mockup_en from '../images/en/home.png'
+
 import styled from 'styled-components'
 import InfoCollection from '../Components/Inicio/infoColection'
 
@@ -15,8 +17,8 @@ import FanMap from '../Components/Inicio/FanMap'
 import Modal from '../Components/Modal'
 import Video from '../Components/Video/Video'
 import {useTranslation} from "react-i18next";
-import Mockup_es from '../images/es/home.png'
-import Mockup_en from '../images/en/home.png'
+
+
 
 
 
@@ -30,7 +32,7 @@ export default function Inicio() {
         setModal(!modal)
     }
 
-
+    var image  =  i18n.language ==='es' ? Mockup_es : Mockup_en
 
     return (
         <div className='boar'>
@@ -54,14 +56,15 @@ export default function Inicio() {
                     </div>
 
                     <div className='bannerImg'>
-                     <img src={Mockup_es} alt='Mockup' className='ImgMoc'/>
+                     <img src={image} alt='Mockup' className='ImgMoc'/>
+
                     </div>
                 </div>
                 </Animated>
             </DivHome>
-            <InfoCollection translate={t} show={showModal}/>
-            <Options translate={t}/>
-            <FanMap translate={t}/>
+            <InfoCollection i18n={i18n} translate={t} show={showModal}/>
+            <Options translate={t}  />
+            <FanMap translate={t} i18n={i18n}/>
             <Download translate={t}/>
         </div>
     )
