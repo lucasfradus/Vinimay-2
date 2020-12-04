@@ -237,6 +237,30 @@
         "point11b":"Vinimay may modify and update these Privacy Policies at any time. As a User, you must review the Privacy Policies periodically. Vinimay may notify those modifications that are of greater importance by e-mail or by other means, to those Users who have consented to receive notifications of this nature. The modifications will become effective from the date indicated by Vinimay or, failing that, from their publication or communication. In the event that you do not agree with the modifications made by Vinimay, you can immediately stop using the Services and request the removal of the Account. The use of the App, the Website and / or the Services implies acceptance of these Privacy Policies. ",
         "point12a":"12. Entire Agreement",
         "point12b":"These Privacy Policies are an integral part of the General Terms and Conditions of Vinimay, and the clauses of the General Terms and Conditions on Interpretation, Assignment, Jurisdiction and Applicable Law, and Parties and Address, are included here by reference and applicable, except here otherwise indicated. ",
-        "date":"Version effective from August 27, 2020."
+          "date":"Version effective from August 27, 2020."
+    },"Contact-form":{
+        "placeholders":{
+            "placeholder-name":"Write here your Name",
+            "placeholder-last-name":"Write here your Last Name",
+            "placeholder-email":"Write here your Email",
+            "placeholder-message":"Write here your Message"
+        },"labels":{
+            "name":"name",
+            "surname":"surname",
+            "email":"email",
+            "message":"message"
+        },"messages":{
+            "success" : "Thank you for contacting us, we will contact you shortly",
+            "bad" : "Please complete all the fields before sending the message!"
+        },"title":{
+            "ln1":"LEAVE US YOUR MESSAGE",
+            "ln2":"THIS TEAM IS MADE UP OF ALL OF US!"
+        },"buttons":{
+            "send":"Send",
+            "sending":"Sending"
+        },"downme":{
+            "down":"GET THE APP NOW!"
+        }
+        
     }
 }

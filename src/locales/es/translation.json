@@ -238,5 +238,29 @@
         "point12a":"12. Acuerdo entero",
         "point12b":"Estas Políticas de Privacidad son parte integral de los Términos y Condiciones Generales de Vinimay, y resultan incluidas aquí por referencia y aplicables las cláusulas de los Términos y Condiciones Generales sobre Interpretación, Cesión, Jurisdicción y Ley Aplicable, y Partes y Domicilio, salvo que aquí se indique de otra forma.",
         "date":"Versión vigente desde el 27 de agosto de 2020."
+    },"Contact-form":{
+        "placeholders":{
+            "placeholder-name":"Escribí aca tu nombre",
+            "placeholder-last-name":"Escribí aca tu apellido",
+            "placeholder-email":"Escribí aca tu email",
+            "placeholder-message":"Escribí aca tu mensaje"
+        },"labels":{
+            "name":"Nombre",
+            "surname":"Apellido",
+            "email":"Email",
+            "message":"Mensaje"
+        },"messages":{
+            "success" : "Gracias por ponerte en contacto con nosotros, nos comunicaremos a la brevedad",
+            "bad" : "Por favor completa todos los campos antes de enviar el mensaje!"
+        },"title":{
+            "ln1":"DEJANOS TU MENSAJE",
+            "ln2":"¡ESTE EQUIPO LO FORMAMOS ENTRE TODOS!"
+        },"buttons":{
+            "send":"Enviar",
+            "sending":"Enviando"
+        },"downme":{
+            "down":"¡BAJATE LA APP!"
+        }
     }
+           
 }

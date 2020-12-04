@@ -1,10 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Ios from '../images/archivos-07.png'
-import Android from '../images/archivos-08.png'
+import Ios_en from '../images/en/archivos-07.png'
+import Ios_es from '../images/es/archivos-07.png'
+
+import Android_es from '../images/es/archivos-08.png'
+import Android_en from '../images/en/archivos-08.png'
+
+
 
 export default function Download(props) {
+
+    var Ios  =  props.i18n.language ==='es' ? Ios_es : Ios_en
+    var Android  =  props.i18n.language ==='es' ? Android_es : Android_en
+
+
     return (
         <Down>
             <h1 className='line3'>{props.translate('home.download.line1')}</h1>

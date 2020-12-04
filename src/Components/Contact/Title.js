@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function Titles() {
+export default function Titles(props) {
     return (
         <Title id="top">
-            <p className='line3'>DEJANOS TU MENSAJE</p>
-            <p className='line2'>¡ESTE EQUIPO LO FORMAMOS ENTRE TODOS!</p>
+            <p className='line3'>{props.translate('Contact-form.title.ln1')} </p>
+            <p className='line2'>{props.translate('Contact-form.title.ln2')}</p>
         </Title>
     )
 }

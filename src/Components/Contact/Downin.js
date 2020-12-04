@@ -1,13 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Ios from '../../images/archivos-07.png'
-import Android from '../../images/archivos-08.png'
+import Ios_en from '../../images/en/archivos-07.png'
+import Ios_es from '../../images/es/archivos-07.png'
 
-export default function Downin() {
+import Android_es from '../../images/es/archivos-08.png'
+import Android_en from '../../images/en/archivos-08.png'
+
+export default function Downin(props) {
+
+    var Ios  =  props.i18n.language ==='es' ? Ios_es : Ios_en
+    var Android  =  props.i18n.language ==='es' ? Android_es : Android_en
+
     return (
         <Dw>
-            <p className='line2 line-bajate-app' id={'download'}>¡BAJATE LA APP!</p>
+            <p className='line2 line-bajate-app' id={'download'}>{props.translate('Contact-form.downme.down')} </p>
             <div>
                 <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/ar/app/vinimay/id1506565366"><img src={Ios} alt='com' className='ImgD'/></a>
                 <img src={Android} alt='com' className='ImgD'/>

@@ -17,10 +17,6 @@ const Form = (props) => {
   const [loading , setIsOpen] = useState(false);
 
 
-
-
-
-  
   const handleFormSubmit = e => {
     e.preventDefault();
     setIsOpen(true);
@@ -101,7 +97,7 @@ const Form = (props) => {
                     );
                 })}
                 <div>
-                {loading ? <LoadingSpinner /> :  <button type="submit"  onClick={e => handleFormSubmit(e)} className='btn'>ENVIAR</button>  }
+                {loading ? <LoadingSpinner translate={props.translate} /> :  <button type="submit"  onClick={e => handleFormSubmit(e)} className='btn'>{props.translate('Contact-form.buttons.send')}  </button>  }
 
                     
                 </div>

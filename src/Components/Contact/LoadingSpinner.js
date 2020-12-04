@@ -2,9 +2,9 @@ import React from 'react';
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const LoadingSpinner = () => (
+const LoadingSpinner = (props) => (
   <div className="loading">
-    <FontAwesomeIcon icon={faSpinner} spin/> Enviando
+    <FontAwesomeIcon icon={faSpinner} spin/> {props.translate('Contact-form.buttons.sending')}
   </div>
 );
 

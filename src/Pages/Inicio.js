@@ -1,8 +1,11 @@
 import React, {useState}  from 'react'
 import Nov from '../images/archivos-17.jpg'
 
-import AndroidImg from '../images/archivos-06.png'
-import IOSImg from '../images/archivos-05.png'
+import AndroidImg_es from '../images/es/archivos-06.png'
+import AndroidImg_en from '../images/en/archivos-06.png'
+
+import IOSImg_es from '../images/es/archivos-05.png'
+import IOSImg_en  from '../images/en/archivos-05.png'
 
 import Mockup_es from '../images/es/home.png'
 import Mockup_en from '../images/en/home.png'
@@ -33,6 +36,11 @@ export default function Inicio() {
     }
 
     var image  =  i18n.language ==='es' ? Mockup_es : Mockup_en
+
+    var AndroidImg  =  i18n.language ==='es' ? AndroidImg_es : AndroidImg_en
+
+    var IOSImg  =  i18n.language ==='es' ? IOSImg_es : IOSImg_en
+
 
     return (
         <div className='boar'>
@@ -65,7 +73,7 @@ export default function Inicio() {
             <InfoCollection i18n={i18n} translate={t} show={showModal}/>
             <Options translate={t}  />
             <FanMap translate={t} i18n={i18n}/>
-            <Download translate={t}/>
+            <Download translate={t} i18n={i18n}/>
         </div>
     )
 }

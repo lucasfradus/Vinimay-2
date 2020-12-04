@@ -3,16 +3,20 @@ import Box from '../Components/box'
 import Downin from '../Components/Contact/Downin'
 import { Animated } from 'react-animated-css'
 import Form from '../Components/Contact/Form'
+import {useTranslation} from "react-i18next";
 
 
 import Title from '../Components/Contact/Title'
 
 export default function Contact() {
 
+    const [t, i18n] = useTranslation('common');
+
+
     const config = {
         api: `http://www.vinimayapp.com/api/contact/index.php`,
-        successMessage: 'Gracias por ponerte en contacto con nosotros, nos comunicaremos a la brevedad',
-        errorMessage: 'Por favor completa todos los campos antes de enviar el mensaje!',
+        successMessage: t('Contact-form.messages.success'),
+        errorMessage: t('Contact-form.messages.bad'),
         fields:{
           firstName: '',
           lastName: '',
@@ -20,10 +24,10 @@ export default function Contact() {
           msg: ''
         },
         fieldsConfig:  [
-         { id: 1, label: 'Nombre', fieldName: 'firstName', type: 'text',placeholder:'Escribí aca tu nombre', isRequired: true , klassName:'Ip'},
-         { id: 2, label: 'Apellido', fieldName: 'lastName', type: 'text', placeholder: 'Escribí aca tu apellido', isRequired: true , klassName:'Ip'},
-         { id: 3, label: 'Email', fieldName: 'email', type: 'email', placeholder: 'Escribí aca tu mail', isRequired: true , klassName:'Ip'},
-         { id: 4, label: 'Mensaje', fieldName: 'msg', type: 'textarea',placeholder:'Escribí aca tu mensaje', isRequired: true , klassName:'Ip'}
+         { id: 1, label: t('Contact-form.labels.name'), fieldName: 'firstName', type: 'text',placeholder:t('Contact-form.placeholders.placeholder-name'), isRequired: true , klassName:'Ip'},
+         { id: 2, label: t('Contact-form.labels.surname'), fieldName: 'lastName', type: 'text', placeholder: t('Contact-form.placeholders.placeholder-last-name'), isRequired: true , klassName:'Ip'},
+         { id: 3, label: t('Contact-form.labels.email'), fieldName: 'email', type: 'email', placeholder: t('Contact-form.placeholders.placeholder-email'), isRequired: true , klassName:'Ip'},
+         { id: 4, label: t('Contact-form.labels.message'), fieldName: 'msg', type: 'textarea',placeholder:t('Contact-form.placeholders.placeholder-message'), isRequired: true , klassName:'Ip'}
         ]
       }
 
@@ -32,13 +36,13 @@ export default function Contact() {
         <div className='pageContacto'>
             <Box/>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-                <Title/>
+                <Title translate={t}/>
             </Animated>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-                <Form config={config} />
+                <Form translate={t} config={config} />
             </Animated>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-                <Downin/>
+                <Downin translate={t} i18n={i18n} />
             </Animated>
         </div>
     )
