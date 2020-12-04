@@ -1,16 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
-import {useTranslation} from "react-i18next";
 
-export default function Form() {
-    const [t] = useTranslation('common');
+export default function Form(props) {
 
 
     return (
         <Title>
             <div className='for'>
-              <p className='line3'>{t('notFound.ups')}!</p>
-              <p className='line2'>{t('notFound.ln1')}</p>
+              <p className='line3'>{props.translate('notFound.ups')}!</p>
+              <p className='line2'>{props.translate('notFound.ln1')}</p>
             </div>
         </Title>
     )
