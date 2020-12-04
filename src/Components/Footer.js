@@ -13,10 +13,10 @@ export default function Footer(props) {
                     <h1>{props.translate('Footer.legal.legal')}</h1>
                     <ul className='navLink'>
                         <li>
-                            <Link target="_blank" to='/terms'>{props.translate('Footer.legal.ln1')}</Link>
+                            <Link  to='/terms#top'>{props.translate('Footer.legal.ln1')}</Link>
                         </li>
                         <li>
-                            <Link target="_blank" to='/privacy'>{props.translate('Footer.legal.ln2')}</Link>
+    <Link  to='/privacy#top'>{props.translate('Footer.legal.ln2')}</Link>
                         </li>
                         <li>
                             <Link to='/contact#top'>{props.translate('Footer.legal.ln3')}</Link>
