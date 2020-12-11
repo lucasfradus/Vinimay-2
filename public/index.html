@@ -11,10 +11,13 @@
   />
   <meta property="og:title" content="El primer museo digital de camisetas originales" />
   <meta property="og:description" content="Crea tu museo digital de camisetas de fútbol oficiales para exhibir, comprar, vender o intercambiar todas esas camisetas. Interactúa con los demas fanáticos para conventirte en un experto">
-  <meta property="og:image" content="//cdn.example.com/uploads/images/webpage_300x200.png">
+  <meta property="og:image" content="%PUBLIC_URL%/favicon.png">
 
-  <meta property="og:url" content="%PUBLIC_URL%/favicon.png" />
+  <meta property="og:url" content="https://vinimayapp.com" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
+
+
+
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -37,13 +40,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-       <!-- A little help for the Netlify post-processing bots -->
-       <form name="contact-v1" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="nombre" />
-        <input type="text" name="apellido" />
-        <input type="email" name="email" />
-        <textarea name="mensaje"></textarea>
-      </form>
+  
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -69,11 +66,7 @@
     });
   </script>
   <script type="text/javascript">
-    // $(".page-comunidad .preguntas-container .item-container").click(function() {
-    //   $(this).find('.conten').slideToggle();
-    //   $(this).find('.caret-facing-down').toggle();
-    //   $(this).find('.caret-facing-right').toggle();
-    // });
+
     $(window).click(function(event) {
       var $target = $(event.target);
       if ($($target).hasClass('head') || $($target).hasClass('caret-facing-down') || $($target).hasClass('caret-facing-right') || $($target).hasClass('line3')) {
