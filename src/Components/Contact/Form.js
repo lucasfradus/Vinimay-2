@@ -21,7 +21,7 @@ const Form = (props) => {
     e.preventDefault();
     setIsOpen(true);
     axios({
-      method: "post",
+      method: "GET",
       url: props.config.api,
       headers: { "content-type": "application/json" },
       data: formData

@@ -79,7 +79,7 @@ export default function NavBar() {
                             <a href='/'>
                             {t('navbar.download.download')} <span className='caret-facing-down'>&#9660;</span>                              
                             </a>                                
-                                <div className='drop-conten'>
+                                <div className='drop-conten right'>
                                     <ul>
                                         <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>{t('navbar.download.android')}</a></li>
                                         <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>{t('navbar.download.ios')}</a></li>
@@ -145,6 +145,7 @@ const NavBar2 = styled.div`
             border: none;
             cursor: pointer;
             outline: none;
+            color:red!important;
             background: transparent;
         }
             .nav-icon {
@@ -158,6 +159,9 @@ const NavBar2 = styled.div`
             overflow: hidden;
             transition: all 0.3s linear;
             list-style-type: none;
+        }
+        .right{
+            right:30px;
         }
 
         .drop-menu{

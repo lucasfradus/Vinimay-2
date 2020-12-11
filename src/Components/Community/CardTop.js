@@ -24,7 +24,6 @@ const Contain = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     flex: 1;
 
     margin: 10px 8px;
@@ -39,9 +38,11 @@ const Contain = styled.div`
 
     .name{
         color:#171E36;
-        font-size: 30px;
+        font-size: 18px;
         margin:0;
     }
+
+
     .shir{
         color:#A8C813;
         font-size: 15px;

@@ -64,9 +64,20 @@ export default function Privacity() {
 const COntinaer = styled.div`
     text-align: left;
 
-    .conte{
-        padding: 2rem 6rem;
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .conte{
+          padding: 2rem 2rem;
+      }
     }
+  
+  
+    @media (min-width: 768px) {
+      .conte{
+          padding: 2rem 6rem;
+      }
+    }
+      
 
     .title{
         color:#171E36;
