@@ -18,7 +18,7 @@ import {useTranslation} from "react-i18next";
 
 
 function App() {
-
+/*
   const trackingId = "G-ZWJ15Y3F1R"; 
   ReactGA.initialize(trackingId);
 
@@ -28,7 +28,7 @@ function App() {
     ReactGA.set({ page: location.pathname }); // Update the user's current page
     ReactGA.pageview(location.pathname); // Record a pageview for the given page
   });
-
+*/
   const [t] = useTranslation('common');
 
   return (
