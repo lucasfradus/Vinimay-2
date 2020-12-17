@@ -19,7 +19,7 @@ import {useTranslation} from "react-i18next";
 
 function App() {
 
-  const trackingId = "G-E6HJ4RKQEH"; 
+  const trackingId = "G-ZWJ15Y3F1R"; 
   ReactGA.initialize(trackingId);
 
   const history = createBrowserHistory();
