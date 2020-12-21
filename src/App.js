@@ -3,8 +3,7 @@ import { Route, Switch } from 'react-router';
 import './App.css';
 import Footer from './Components/Footer';
 import NavBar from './Components/NavBar';
-import ReactGA from 'react-ga';
-import { createBrowserHistory } from 'history';
+
 
 import Follow from './Components/Follow'
 import Inicio from './Pages/Inicio';
@@ -18,17 +17,7 @@ import {useTranslation} from "react-i18next";
 
 
 function App() {
-/*
-  const trackingId = "G-ZWJ15Y3F1R"; 
-  ReactGA.initialize(trackingId);
 
-  const history = createBrowserHistory();
-  // Initialize google analytics page view tracking
-  history.listen(location => {
-    ReactGA.set({ page: location.pathname }); // Update the user's current page
-    ReactGA.pageview(location.pathname); // Record a pageview for the given page
-  });
-*/
   const [t] = useTranslation('common');
 
   return (

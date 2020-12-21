@@ -17,7 +17,8 @@ export default function Downin(props) {
             <p className='line2 line-bajate-app' id={'download'}>{props.translate('Contact-form.downme.down')} </p>
             <div>
                 <a target="_blank" rel="noopener noreferrer" href="https://apps.apple.com/ar/app/vinimay/id1506565366"><img src={Ios} alt='com' className='ImgD'/></a>
-                <img src={Android} alt='com' className='ImgD'/>
+                <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.vinimay.app"><img src={Android} alt='com' className='ImgD'/></a>
+                
             </div>
         </Dw>
     )

@@ -81,7 +81,7 @@ export default function NavBar() {
                             </a>                                
                                 <div className='drop-conten right'>
                                     <ul>
-                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>{t('navbar.download.android')}</a></li>
+                                        <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://play.google.com/store/apps/details?id=com.vinimay.app'>{t('navbar.download.android')}</a></li>
                                         <li className='drop-item'><a target='_blank' rel="noopener noreferrer" href='https://apps.apple.com/ar/app/vinimay/id1506565366'>{t('navbar.download.ios')}</a></li>
 
                                     </ul>

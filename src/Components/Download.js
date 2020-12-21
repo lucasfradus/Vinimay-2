@@ -21,7 +21,7 @@ export default function Download(props) {
             <p className='line2 line-bajate-app'>{props.translate('home.download.line2')}</p>
             <div>
                 <a target="_blank" rel="noopener noreferrer"  href="https://apps.apple.com/ar/app/vinimay/id1506565366"><img src={Ios} alt='com' className='ImgD'/></a>
-                <img src={Android} alt='com' className='ImgD'/>
+                <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.vinimay.app"><img src={Android} alt='com' className='ImgD'/></a>
             </div>
         </Down>
     )

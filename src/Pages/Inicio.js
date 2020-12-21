@@ -59,7 +59,8 @@ export default function Inicio() {
                         <h1 className='line4'>{t('home.start.line6')}</h1>
                         <div className="buttons">
                           <a target="_blank" rel="noopener noreferrer"  href="https://apps.apple.com/ar/app/vinimay/id1506565366"><img src={IOSImg} alt='Mockup' className='Ios'/></a>
-                            <img src={AndroidImg} alt='Mockup' className='android'/>
+                          <a target="_blank" rel="noopener noreferrer"  href="https://play.google.com/store/apps/details?id=com.vinimay.app"><img src={AndroidImg} alt='Mockup' className='android'/></a>
+
                         </div>
                     </div>
 
