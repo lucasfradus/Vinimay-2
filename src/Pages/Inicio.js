@@ -53,6 +53,7 @@ export default function Inicio() {
                 <div className='content'>
                     <div className='title'>
                         <h1 className='line1'>{t('home.start.line1')}</h1>
+
                         <h1 className='line2'>{t('home.start.line2')}</h1>
                         <h1 className='line1'>{t('home.start.line3')}</h1>
                         <h1 className='line3'>{t('home.start.line4')}<br/>{t('home.start.line5')}</h1>
@@ -60,7 +61,6 @@ export default function Inicio() {
                         <div className="buttons">
                           <a target="_blank" rel="noopener noreferrer"  href="https://apps.apple.com/ar/app/vinimay/id1506565366"><img src={IOSImg} alt='Mockup' className='Ios'/></a>
                           <a target="_blank" rel="noopener noreferrer"  href="https://play.google.com/store/apps/details?id=com.vinimay.app"><img src={AndroidImg} alt='Mockup' className='android'/></a>
-
                         </div>
                     </div>
 
