@@ -21,13 +21,13 @@ export default function Contact() {
           firstName: '',
           lastName: '',
           email: '',
-          msg: ''
+          message: ''
         },
         fieldsConfig:  [
          { id: 1, label: t('Contact-form.labels.name'), fieldName: 'firstName', type: 'text',placeholder:t('Contact-form.placeholders.placeholder-name'), isRequired: true , klassName:'Ip'},
          { id: 2, label: t('Contact-form.labels.surname'), fieldName: 'lastName', type: 'text', placeholder: t('Contact-form.placeholders.placeholder-last-name'), isRequired: true , klassName:'Ip'},
          { id: 3, label: t('Contact-form.labels.email'), fieldName: 'email', type: 'email', placeholder: t('Contact-form.placeholders.placeholder-email'), isRequired: true , klassName:'Ip'},
-         { id: 4, label: t('Contact-form.labels.message'), fieldName: 'msg', type: 'textarea',placeholder:t('Contact-form.placeholders.placeholder-message'), isRequired: true , klassName:'Ip'}
+         { id: 4, label: t('Contact-form.labels.message'), fieldName: 'message', type: 'textarea',placeholder:t('Contact-form.placeholders.placeholder-message'), isRequired: true , klassName:'Ip'}
         ]
       }
 

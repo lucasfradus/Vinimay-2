@@ -52,11 +52,13 @@ export default function Form(props) {
                             <div className='inputCar'>
                             <p className='hold'>{field.label} </p>
                             <input
+                            name={field.fieldName}
                             type={field.type}
                             className={field.klassName}
                             placeholder={field.placeholder}
                             value={field.name}
                             onChange={e => handleChange(e, field.fieldName)}
+                            required={field.isRequired}
                             />
                             </div>
                         </React.Fragment>
@@ -64,7 +66,7 @@ export default function Form(props) {
                         <React.Fragment>
                             <div className='inputCar'>
                                 <p className='hold'>{field.label} </p>
-                                <textarea className={field.klassName} placeholder={field.placeholder} onChange={e => handleChange(e, field.fieldName)} value={field.name} />
+                                <textarea className={field.klassName} placeholder={field.placeholder} name={field.fieldName} onChange={e => handleChange(e, field.fieldName)} value={field.name} />
                             </div>
                         </React.Fragment>
                         )}
