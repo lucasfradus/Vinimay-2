@@ -251,7 +251,8 @@
             "message":"message"
         },"messages":{
             "success" : "Thank you for contacting us, we will contact you shortly",
-            "bad" : "Please complete all the fields before sending the message!"
+            "bad" : "Please complete all the fields before sending the message!",
+            "loading" :"Loading the form..."
         },"title":{
             "ln1":"LEAVE US YOUR MESSAGE",
             "ln2":"THIS TEAM IS MADE UP OF ALL OF US!"

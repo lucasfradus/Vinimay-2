@@ -14,9 +14,9 @@ export default function Contact() {
 
 
     const config = {
-        api: `http://www.vinimayapp.com/api/contact/index.php`,
         successMessage: t('Contact-form.messages.success'),
         errorMessage: t('Contact-form.messages.bad'),
+        loadingMessage : t('Contact-form.messages.loading'),
         fields:{
           firstName: '',
           lastName: '',

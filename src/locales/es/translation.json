@@ -251,7 +251,8 @@
             "message":"Mensaje"
         },"messages":{
             "success" : "Gracias por ponerte en contacto con nosotros, nos comunicaremos a la brevedad",
-            "bad" : "Por favor completa todos los campos antes de enviar el mensaje!"
+            "bad" : "Por favor completa todos los campos antes de enviar el mensaje!",
+            "loading" :"Cargando el formulario..."
         },"title":{
             "ln1":"DEJANOS TU MENSAJE",
             "ln2":"¡ESTE EQUIPO LO FORMAMOS ENTRE TODOS!"
