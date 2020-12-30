@@ -18,16 +18,16 @@ export default function Contact() {
         errorMessage: t('Contact-form.messages.bad'),
         loadingMessage : t('Contact-form.messages.loading'),
         fields:{
-          firstName: '',
-          lastName: '',
+            nombre: '',
+            apellido: '',
           email: '',
-          message: ''
+          mensaje: ''
         },
         fieldsConfig:  [
-         { id: 1, label: t('Contact-form.labels.name'), fieldName: 'firstName', type: 'text',placeholder:t('Contact-form.placeholders.placeholder-name'), isRequired: true , klassName:'Ip'},
-         { id: 2, label: t('Contact-form.labels.surname'), fieldName: 'lastName', type: 'text', placeholder: t('Contact-form.placeholders.placeholder-last-name'), isRequired: true , klassName:'Ip'},
+         { id: 1, label: t('Contact-form.labels.name'), fieldName: 'nombre', type: 'text',placeholder:t('Contact-form.placeholders.placeholder-name'), isRequired: true , klassName:'Ip'},
+         { id: 2, label: t('Contact-form.labels.surname'), fieldName: 'apellido', type: 'text', placeholder: t('Contact-form.placeholders.placeholder-last-name'), isRequired: true , klassName:'Ip'},
          { id: 3, label: t('Contact-form.labels.email'), fieldName: 'email', type: 'email', placeholder: t('Contact-form.placeholders.placeholder-email'), isRequired: true , klassName:'Ip'},
-         { id: 4, label: t('Contact-form.labels.message'), fieldName: 'message', type: 'textarea',placeholder:t('Contact-form.placeholders.placeholder-message'), isRequired: true , klassName:'Ip'}
+         { id: 4, label: t('Contact-form.labels.message'), fieldName: 'mensaje', type: 'textarea',placeholder:t('Contact-form.placeholders.placeholder-message'), isRequired: true , klassName:'Ip'}
         ]
       }
 
