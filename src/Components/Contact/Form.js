@@ -1,10 +1,9 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
-import axios from "axios";
 import "./styles.css";
 import Mock2 from '../../images/archivos-15.png'
 import LoadingSpinner from './LoadingSpinner';
-
+import NetlifyForm from 'react-netlify-form'	
 
 
 
@@ -17,6 +16,13 @@ const Form = (props) => {
   const [loading , setIsOpen] = useState(false);
 
 
+  /*
+  
+      e.preventDefault();
+                document.getElementById("contact-form").reset();
+
+*/
+/*
   const handleFormSubmit = e => {
     e.preventDefault();
     setIsOpen(true);
@@ -39,6 +45,19 @@ const Form = (props) => {
       .catch(error => setError( error.message ));
   };
 
+*/
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    let myForm = document.getElementById('contact-form');
+    let formData = new FormData(myForm)
+    fetch('/', {
+      method: 'POST',
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    }).then(() => console.log('Form successfully submitted')).catch((error) =>
+      alert(error))
+  }
+
    const handleChange = (e, field) => {
     let value = e.target.value;
     setFormData({
@@ -50,6 +69,8 @@ const Form = (props) => {
 
 
     const { successMessage, errorMessage, fieldsConfig } = props.config;
+
+
     return (
       <div className="contact-form">
         <div className="contact-form__container">
@@ -67,7 +88,8 @@ const Form = (props) => {
                 </div>
                     
  
-            <form id="contact-form" action="#">
+              <form id="contact-form" name="contact-v1" method="POST" data-netlify="true">
+               <input type="hidden" name="contact-v1" value="contact" />
                 {fieldsConfig &&
                 fieldsConfig.map(field => {
                     return (
@@ -97,7 +119,10 @@ const Form = (props) => {
                     );
                 })}
                 <div>
-                {loading ? <LoadingSpinner translate={props.translate} /> :  <button type="submit"  onClick={e => handleFormSubmit(e)} className='btn'>{props.translate('Contact-form.buttons.send')}  </button>  }
+                {loading ? 
+                  <LoadingSpinner translate={props.translate} /> :
+                  <button type="submit" onClick={handleSubmit} className='btn'>{props.translate('Contact-form.buttons.send')}  </button>  
+                }
 
                     
                 </div>
