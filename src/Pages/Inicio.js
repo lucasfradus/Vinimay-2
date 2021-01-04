@@ -1,4 +1,6 @@
 import React, {useState}  from 'react'
+import { Helmet } from 'react-helmet';
+
 import Nov from '../images/archivos-17.jpg'
 
 import AndroidImg_es from '../images/es/archivos-06.png'
@@ -22,11 +24,7 @@ import Video from '../Components/Video/Video'
 import {useTranslation} from "react-i18next";
 
 
-
-
-
-
-export default function Inicio() {
+const  Inicio = () => {
 
     const [modal, setModal] = useState(false);
     const [t, i18n] = useTranslation('common');
@@ -41,9 +39,11 @@ export default function Inicio() {
 
     var IOSImg  =  i18n.language ==='es' ? IOSImg_es : IOSImg_en
 
-
     return (
         <div className='boar'>
+            <Helmet>
+                <title>Home</title>
+            </Helmet>
             <Modal show={modal}  close={showModal}>
                 <Video show={modal}/>
             </Modal>
@@ -215,4 +215,5 @@ const DivHome = styled.div`
         }
 
     }
-`
+`;
+export default Inicio;

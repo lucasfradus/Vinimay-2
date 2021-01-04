@@ -22,7 +22,7 @@ export default function InfoCollection(props) {
                 <Link  className="discover" to="/" onClick={props.show}>{props.translate('home.infocollection.line1')}</Link>
             </div>
 
-            <div className='info'>
+            <div className='info-card'>
                 <h1 className='line1'><big>&#187;</big> {props.translate('home.infocollection.line2')}</h1>
                 <p className='line2'>{props.translate('home.infocollection.line3')}</p>
                 <h1 className='line1'><big>&#187;</big> {props.translate('home.infocollection.line4')}</h1>
@@ -66,7 +66,7 @@ const CollectionSection = styled.div`
     }
 
 
-    .info{
+    .info-card{
         flex:1;
         text-align: left;
         align-items: center;
@@ -93,7 +93,7 @@ const CollectionSection = styled.div`
             height: 15em;
         }
 
-        .info{
+        .info-card{
             padding: 0rem 2rem;
             text-align: center;
         }

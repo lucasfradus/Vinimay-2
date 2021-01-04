@@ -55,7 +55,8 @@
             "germany" : "Alemania",
             "england" : "Inglaterra",
             "spain" : "España",
-            "uruguay": "Uruguay"
+            "uruguay": "Uruguay",
+            "italy":"Italia"
         },
         "card":{
             "vini-user" : "Usuario Vinimay",
@@ -262,6 +263,13 @@
         },"downme":{
             "down":"¡BAJATE LA APP!"
         }
+    },
+    "titles":{
+        "home":"Home",
+        "comunity":"Comunidad",
+        "contact"   :"Contacto",
+        "terms" : "Terminos y Condiciones",
+        "privacy" : "Politica de Privacidad"
     }
            
 }

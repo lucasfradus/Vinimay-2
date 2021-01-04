@@ -24,12 +24,12 @@ function App() {
     <div className="App">
         <NavBar />
         <Switch>
-            <Route exact path='/' component={Inicio}/>
-            <Route exact path='/comunity' component={Comunity}/>
-            <Route exact path='/contact' component={Contact}/>
-            <Route exact path='/privacy' component={Privacity}/>
-            <Route exact path='/terms' component={Terms}/>
-            <Route exact path='/video' component={Video}/>
+            <Route exact path='/' component={Inicio} title="Vinimay App"/>
+            <Route exact path='/comunity' component={Comunity} title="Vinimay App"/>
+            <Route exact path='/contact' component={Contact} title="Vinimay App"/>
+            <Route exact path='/privacy' component={Privacity} title="Vinimay App"/>
+            <Route exact path='/terms' component={Terms} title="Vinimay App"/>
+            <Route exact path='/video' component={Video} title="Vinimay App"/>
             <Route component={NotFoundPage} />
         </Switch>
         <Follow translate={t}/>

@@ -2,12 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import Box from '../Components/box'
 import {useTranslation} from "react-i18next";
+import { Helmet } from 'react-helmet';
 
 export default function Privacity() {
     const [t] = useTranslation('common');
 
     return (
         <COntinaer>
+               <Helmet>
+                <title>Politica de Privacidad</title>
+            </Helmet>
             <Box/>
             <div className='conte'>
                 <h1 className='title'>{t('Privacy.title')}</h1>

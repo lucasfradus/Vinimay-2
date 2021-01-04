@@ -4,9 +4,8 @@ import Downin from '../Components/Contact/Downin'
 import { Animated } from 'react-animated-css'
 import Form from '../Components/Contact/Form'
 import {useTranslation} from "react-i18next";
-
-
 import Title from '../Components/Contact/Title'
+import { Helmet } from 'react-helmet';
 
 export default function Contact() {
 
@@ -34,6 +33,9 @@ export default function Contact() {
 
     return (
         <div className='pageContacto'>
+            <Helmet>
+                <title>Contacto</title>
+            </Helmet>
             <Box/>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
                 <Title translate={t}/>
