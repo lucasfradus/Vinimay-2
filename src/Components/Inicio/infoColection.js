@@ -106,6 +106,7 @@ const CollectionSection = styled.div`
         padding: 0;
 
         .discover {
+            transform:translateX(-10px);
             font-size:24px;
         }
         .moc1{
