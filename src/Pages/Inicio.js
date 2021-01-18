@@ -53,9 +53,8 @@ const  Inicio = () => {
                 <div className='content'>
                     <div className='title'>
                         <h1 className='line1'>{t('home.start.line1')}</h1>
-
                         <h1 className='line2'>{t('home.start.line2')}</h1>
-                        <h1 className='line1'>{t('home.start.line3')}</h1>
+                        <h1 className='line4'>{t('home.start.line3')}</h1>
                         <h1 className='line3'>{t('home.start.line4')}<br/>{t('home.start.line5')}</h1>
                         <h1 className='line4'>{t('home.start.line6')}</h1>
                         <div className="buttons">
@@ -97,24 +96,31 @@ const DivHome = styled.div`
 
 
     .line1{
-        font-size: 45px;
-
+        font-size: 55px;
         -webkit-text-fill-color:  #171E36; /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: white;
         color: #171E36;
         margin:0;
-            }
-            .line2{
-                font-size:45px;
-                color: white;
-                margin:0;
-            }
-            .line3{
-                font-size: 55px;
-                color:#A8C813;
-                margin:10px;
-            }
+    }
+    .line4{
+        font-size: 45px;
+        -webkit-text-fill-color:  #171E36; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        color: #171E36;
+        margin:0;
+    }
+    .line2{
+        font-size:45px;
+        color: white;
+        margin:0;
+    }
+    .line3{
+        font-size: 55px;
+        color:#A8C813;
+        margin:10px;
+    }
 
     .content{
         font-family: 'Montserrat', sans-serif!important;
@@ -188,6 +194,13 @@ const DivHome = styled.div`
         }
 
         .line1{
+            font-size: 40px;
+            -webkit-text-fill-color:  #171E36; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+            color: #171E36;
+        }
+        .line4{
             font-size: 30px;
             -webkit-text-fill-color:  #171E36; /* Will override color (regardless of order) */
             -webkit-text-stroke-width: 1px;

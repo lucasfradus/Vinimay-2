@@ -5,7 +5,9 @@ import styled from 'styled-components'
 import Mock_es from '../../images/es/archivo-mockups-02.png'
 import Mock_en from '../../images/en/archivo-mockups-02.png'
 
-// import Arrow from '../../images/arrow.png'
+import { faPlayCircle } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 
 export default function InfoCollection(props) {
@@ -19,7 +21,12 @@ export default function InfoCollection(props) {
             <div className='mocups'>
                 <img src={Mock} alt='Moc' className='moc1' />  
                 <br/>
-                <Link  className="discover" to="/" onClick={props.show}>{props.translate('home.infocollection.line1')}</Link>
+                <Link  className="discover" to="/" onClick={props.show}>
+                     <FontAwesomeIcon icon={faPlayCircle} />
+
+                    {props.translate('home.infocollection.line1')}
+                    </Link>
+
             </div>
 
             <div className='info-card'>
@@ -40,18 +47,27 @@ const CollectionSection = styled.div`
     align-items: center;
     padding: 1rem 5rem;
 
+ 
     .discover {
         font-family: 'Montserrat', sans-serif!important;
         font-style: italic;
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 900 !important;
-        color:#A8C813;
+        color:#171E36;
         text-decoration: none;
         text-align:center;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        transition: 0.3s;
+        &:hover {        
+            color: #A8C813;
         }
-    .discover:hover {
-        color:black;
+        svg{
+            margin-right:10px;
+        }
     }
+   
 
 
     .mocups{
@@ -89,6 +105,9 @@ const CollectionSection = styled.div`
         display: block;
         padding: 0;
 
+        .discover {
+            font-size:24px;
+        }
         .moc1{
             height: 15em;
         }

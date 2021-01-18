@@ -11,10 +11,10 @@
     },    
     "home": {
         "start":{
-            "line1":"EL PRIMER",
+            "line1":"CREA TU",
             "line2":"MUSEO DIGITAL",
             "line3":"DE",
-            "line4":"CAMISETAS DE",
+            "line4":"CAMISETAS",
             "line5":"FÚTBOL OFICIALES",
             "line6":"¡BAJATE LA APP!"
         },
@@ -23,13 +23,13 @@
             "line2":"BUSCÁ LAS MEJORES CAMISETAS DE TODO EL MUNDO"
         },
         "infocollection":{
-            "line1":"DESCUBRÍ VINIMAY",
-            "line2":"CREÁ TU MUSEO",
-            "line3":"Publicá tu colección de camisetas para exhibir, vender o intercambiar con otros fanáticos",
+            "line1":"MIRÁ VINIMAY DESDE ADENTRO",
+            "line2":"CARGÁ TUS CAMISETAS",
+            "line3":"En 30 segundos y tenerlas siempre con vos.",
             "line4":"INTERACTÚA",
-            "line5":"Likeá y comentá tus camisetas preferidas de otros usuarios",
-            "line6":"CHATEÁ",
-            "line7":"Mandale mensaje privados a otros fanáticos para charlar sobre sus reliquias"
+            "line5":"Conoce los museos de otros usuarios. Likeá, comentá y chateá.",
+            "line6":"COMPRÁ, VENDÉ E INTERCAMBÍA",
+            "line7":"Agrega a tu colección las camisetas que siempre soñaste."
         },
         "options":{
             "line1":"ELEGÍ QUE TE GUSTARIA HACER CON TU CAMISETA",
