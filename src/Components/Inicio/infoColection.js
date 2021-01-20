@@ -22,10 +22,10 @@ export default function InfoCollection(props) {
                 <img src={Mock} alt='Moc' className='moc1' />  
                 <br/>
                 <Link  className="discover" to="/" onClick={props.show}>
-                     <FontAwesomeIcon icon={faPlayCircle} />
-
+                <big><FontAwesomeIcon icon={faPlayCircle} /></big>
                     {props.translate('home.infocollection.line1')}
-                    </Link>
+                </Link>
+             
 
             </div>
 
@@ -49,6 +49,7 @@ const CollectionSection = styled.div`
 
  
     .discover {
+        flex:1;
         font-family: 'Montserrat', sans-serif!important;
         font-style: italic;
         font-size: 35px;
@@ -89,8 +90,6 @@ const CollectionSection = styled.div`
         justify-content:center;
     }
 
-
-
     .line1{
         font-size: 45px;
         color:#A8C813;
@@ -107,8 +106,11 @@ const CollectionSection = styled.div`
 
         .discover {
             transform:translateX(-10px);
-            font-size:24px;
+            font-size:22px;
+            padding: 0rem 3rem;
+            text-align: center;
         }
+
         .moc1{
             height: 15em;
         }
