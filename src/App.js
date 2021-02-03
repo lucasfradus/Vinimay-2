@@ -14,6 +14,7 @@ import Privacity from './Pages/Privacity';
 import NotFoundPage from './Pages/NotFoundPage';
 import Video from './Pages/Video';
 import Potrero from './Pages/Potrero';
+import Redirect from './Pages/Redirect';
 
 import {useTranslation} from "react-i18next";
 
@@ -33,6 +34,7 @@ function App() {
             <Route exact path='/terms' component={Terms} />
             <Route exact path='/video' component={Video} />
             <Route exact path='/potrero' component={Potrero}/>
+            <Route exact path='/router' component={Redirect}/>
 
             <Route component={NotFoundPage} />
         </Switch>
