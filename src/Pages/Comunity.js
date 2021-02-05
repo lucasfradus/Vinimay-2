@@ -35,72 +35,73 @@ const Comunity = () => {
 
     const TopShirts = [
         {
-            user:'gaston_matias',
-            year:'2002',
-            club:'Real Sociedad',
-            country:t('comunity.ListShirt.spain'),
+            user:'museo_azulgrana',
+            club:'Cerro Porteño',
+            country:t('comunity.ListShirt.paraguay'),
+            year:'1995',
             image:Imagen1,
             tipo:Exibe
         },
         {
-            user:'casacas_as',
-            year:'2005',
+            user:'ferchu_elcoleccionista2021',
             club:'Lyon',
-            country:t('comunity.ListShirt.france'),
-            image:Imagen2,
-            tipo:Vend
-        },
-        {
-            user:'tanoboca2020',
-            year:'1996',
-            club:'Boca Juniors',
             country:t('comunity.ListShirt.argentina'),
-            image:Imagen3,
+            year:'2010',
+            image:Imagen2,
             tipo:Exibe
         },
         {
-            user:'cekcarp2021',
-            year:'1992',
-            club:'Arsenal',
-            country:t('comunity.ListShirt.england'),
+            user:'fava30',
+            club:'River Plate',
+            country:t('comunity.ListShirt.argentina'),
+            year:'2018',
+            image:Imagen3,
+            tipo:Vend
+        },
+        {
+            user:'bautista17',
+            club:'Los Angeles Galaxy',
+            country:t('comunity.ListShirt.usa'),
+            year:'2015',
             image:Imagen4,
             tipo:Vend
         },
         {
-            user:'coleccióncarp',
-            year:'2006',
-            club:'River Plate',
-            country:t('comunity.ListShirt.argentina'),
+            user:'edu lara',
+            club:'Selección Francia',
+            country:t('comunity.ListShirt.france'),
+            year:'1994',
             image:Imagen5,
-            tipo:Exibe
+            tipo:Inter
         },
         {
-            user:'sacra maglia',
-            year:'1913',
-            club:'Argentina',
-            country:t('comunity.ListShirt.argentina'),
+            user:'gaston matías',
+            club:'Racing Club de Lens',
+            country:t('comunity.ListShirt.france'),
+            year:'1996',
             image:Imagen6,
             tipo:Inter
         },
         {
             user:'camisetas.vzk',
-            year:'2012',
-            club:'Inter',
+            club:'Selección Italia',
             country:t('comunity.ListShirt.italy'),
+            year:'2014',
             image:Imagen7,
             tipo:Vend
         },
         {
-            user:'coleccionista_sap',
-            year:'2001',
-            club:'Selección Argentina',
-            country:t('comunity.ListShirt.argentina'),
+            user:'juancruz514',
+            club:'Liverpool',
+            country:t('comunity.ListShirt.england'),
+            year:'2017',
             image:Imagen8,
             tipo:Exibe
         },
     ]
 
-    const TopCounter = [138,2313];
+    const TopCounter = [204,3260];
+    const month = [t('comunity.months.feb')];
     
     const Top3 = [
         {
@@ -170,7 +171,7 @@ const Comunity = () => {
             </Helmet>
             <Box/>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-                <TitleCom translate={t}/>
+                <TitleCom month={month} translate={t}/>
                 <br/>
                 <img alt="" src={Carret} className="carret"/>
             </Animated>

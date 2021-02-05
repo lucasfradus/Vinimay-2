@@ -43,8 +43,21 @@
         }
     },
     "comunity": {
+        "months":{
+            "jan":"Enero 2021",
+            "feb":"Febrero 2021",
+            "mar":"Marzo 2021",
+            "apr":"Abril 2021",
+            "may":"Mayo 2021",
+            "jun":"Junio 2021",
+            "jul":"Julio 2021",
+            "ago":"Agosto 2021",
+            "sep":"Septiembre 2021",
+            "oct":"Octubre 2021",
+            "nov":"Noviembre 2021",
+            "dec":"Diciembre 2021"
+        },
         "titlecom":{
-            "line1":"ENERO 2021",
             "line2":"LAS MEJORES CAMISETAS",
             "line3":"DE NUESTRA COMUNIDAD"        
         },
@@ -56,7 +69,10 @@
             "england" : "Inglaterra",
             "spain" : "España",
             "uruguay": "Uruguay",
-            "italy":"Italia"
+            "italy":"Italia",
+            "paraguay":"Paraguay",
+            "usa" : "Estados Unidos"
+
         },
         "card":{
             "vini-user" : "Usuario Vinimay",

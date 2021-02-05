@@ -43,8 +43,21 @@
         }
     },
     "comunity": {
+        "months":{
+            "jan":"January 2021",
+            "feb":"February 2021",
+            "mar":"March 2021",
+            "apr":"April 2021",
+            "may":"May 2021",
+            "jun":"June 2021",
+            "jul":"July 2021",
+            "ago":"August2021",
+            "sep":"September 2021",
+            "oct":"October 2021",
+            "nov":"November 2021",
+            "dec":"Dicember 2021"
+        },
         "titlecom":{
-            "line1":"JANUARY 2021",
             "line2":"BESTS SHIRTS",
             "line3":"FROM OUR COMUNITY"        
         },
@@ -56,7 +69,9 @@
             "england" : "England",
             "spain" : "Spain",
             "uruguay": "Uruguay",
-            "italy":"Italy"
+            "italy":"Italy",
+            "paraguay":"Paraguay",
+            "usa" : "United States"
         },
         "card":{
             "vini-user" : "Vinimay User",

@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function TitleCom(props) {
+export default function TitleCom({translate,month}) {
     return (
         <Title>
-            <p className='line1'>{props.translate('comunity.titlecom.line1')}</p>
-            <h1 className='line3'>{props.translate('comunity.titlecom.line2')}</h1>
-            <p className='line2'>{props.translate('comunity.titlecom.line3')}</p>
+            <p className='line1'>{month}</p>
+            <h1 className='line3'>{translate('comunity.titlecom.line2')}</h1>
+            <p className='line2'>{translate('comunity.titlecom.line3')}</p>
         </Title>
     )
 }
