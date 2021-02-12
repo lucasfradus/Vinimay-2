@@ -17,17 +17,25 @@ const Redirect = () =>{
 
     const ios = "https://apps.apple.com/ar/app/vinimay/id1506565366";
     const Android = "https://play.google.com/store/apps/details?id=com.vinimay.app";
-    
-    let button;
-
-    if(isAndroid){
-        button = `Sistema ${osName} - ruta STORE: ${Android}!`;
-    }else if(isIOS){
-        button = `Sistema: ${osName} - ruta STORE: ${ios}!`;
-    }else{
-        button = "browser no soportado";
-    }
-    
+    let redirect;
+    useEffect(() => {
+        if(isAndroid){
+            redirect = `Sistema ${osName} - ruta STORE: ${Android}!`;
+            window.location="instagram://user?username=lucasfradusco"
+            setTimeout(() => {
+                window.location=Android
+            }, 1500);
+        }else if(isIOS){
+            window.location="instagram://user?username=lucasfradusco"
+            setTimeout(() => {
+                window.location=ios
+            }, 1500);
+            redirect = `Sistema: ${osName} - ruta STORE: ${ios}!`;
+        }else{
+            redirect = "browser no soportado";
+            console.log(window.location=Android);
+        }
+    },)
 
     return (
         <div className='pageContacto'>
