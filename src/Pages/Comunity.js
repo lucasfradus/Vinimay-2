@@ -15,14 +15,14 @@ import {useTranslation} from "react-i18next";
 import { Helmet } from 'react-helmet';
 
 
-import Imagen1 from '../images/camisetas/1.jpeg'
-import Imagen2 from '../images/camisetas/2.jpeg'
-import Imagen3 from '../images/camisetas/3.jpeg'
-import Imagen4 from '../images/camisetas/4.jpeg'
-import Imagen5 from '../images/camisetas/5.jpeg'
-import Imagen6 from '../images/camisetas/6.jpeg'
-import Imagen7 from '../images/camisetas/7.jpeg'
-import Imagen8 from '../images/camisetas/8.jpeg'
+import Imagen1 from '../images/camisetas/1.jpg'
+import Imagen2 from '../images/camisetas/2.jpg'
+import Imagen3 from '../images/camisetas/3.jpg'
+import Imagen4 from '../images/camisetas/4.jpg'
+import Imagen5 from '../images/camisetas/5.jpg'
+import Imagen6 from '../images/camisetas/6.jpg'
+import Imagen7 from '../images/camisetas/7.jpg'
+import Imagen8 from '../images/camisetas/8.jpg'
 
 import Exibe from '../images/archivos-01.png'
 import Inter from '../images/archivos-02.png'
