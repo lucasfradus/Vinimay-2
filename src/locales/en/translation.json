@@ -71,7 +71,8 @@
             "uruguay": "Uruguay",
             "italy":"Italy",
             "paraguay":"Paraguay",
-            "usa" : "United States"
+            "usa" : "United States",
+            "belgium":"Belgium"
         },
         "card":{
             "vini-user" : "Vinimay User",
