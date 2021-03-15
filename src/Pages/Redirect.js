@@ -1,61 +1,63 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { isAndroid,isIOS,osName } from 'react-device-detect';
-import styled from 'styled-components'
-import { Animated } from 'react-animated-css'
 
 import Box from '../Components/box'
 
-/*
-    if (isAndroid){
-        window.location.replace("instagram://user?username=lucasfradusco"); setTimeout(function () {
-        window.location.href = Android; }, 25);
-
-    }
-*/
 
 const Redirect = () =>{
 
     const ios = "https://apps.apple.com/ar/app/vinimay/id1506565366";
     const Android = "https://play.google.com/store/apps/details?id=com.vinimay.app";
-    let redirect;
+
+
+    const [redirect, setRedirect] = useState(false);
+
+    
+    var fallbackToStore = function() {
+        window.location = 'market://details?id=com.vinimay.ap';
+        setRedirect("entro aca")
+      };
+      var openApp = function() {
+        window.location.replace('YouTube://');
+        setRedirect("entro al open")
+
+      };
+      var triggerAppOpen = function() {
+        openApp();
+        setTimeout(fallbackToStore, 250);
+    };
+
+
+
     useEffect(() => {
         if(isAndroid){
-            redirect = `Sistema ${osName} - ruta STORE: ${Android}!`;
-            window.location="instagram://user?username=lucasfradusco"
-            setTimeout(() => {
-                window.location=Android
-            }, 1500);
+            triggerAppOpen();
         }else if(isIOS){
-            window.location="instagram://user?username=lucasfradusco"
-            setTimeout(() => {
-                window.location=ios
-            }, 1500);
-            redirect = `Sistema: ${osName} - ruta STORE: ${ios}!`;
+            triggerAppOpen();
         }else{
-            redirect = "browser no soportado";
             console.log(window.location=Android);
         }
-    },)
+    }, [
+       //here you could pass dependencies, or leave it empty to call this effect only on first render
+    ]);        
+
+
+    
 
     return (
         <div className='pageContacto'>
-        <Box/>
-        <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-        {button}       
-        </Animated>
+            <Box/>
+            <form action="YouTube://" target="_blank">
+                 <input type="submit" value="Open App" />
+            </form>
 
-    </div>
+            <a href="http//YouTube://">My Facebook Group</a>
+            <a href="intent://scan/#Intent;scheme=zxing;package=com.google.zxing.client.android;S.browser_fallback_url=http%3A%2F%2Fzxing.org;end"> Take a QR code </a>
+
+            {redirect}       
+        </div>
     );
 }
 
-const Display = styled.div`
-display:flex;
-position:relative;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-height:10vh;
-z-index:99999999;
-`
 
 export default Redirect;

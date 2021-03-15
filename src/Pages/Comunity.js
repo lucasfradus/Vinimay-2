@@ -15,14 +15,14 @@ import {useTranslation} from "react-i18next";
 import { Helmet } from 'react-helmet';
 
 
-import Imagen1 from '../images/camisetas/1.jpeg'
-import Imagen2 from '../images/camisetas/2.jpeg'
-import Imagen3 from '../images/camisetas/3.jpeg'
-import Imagen4 from '../images/camisetas/4.jpeg'
-import Imagen5 from '../images/camisetas/5.jpeg'
-import Imagen6 from '../images/camisetas/6.jpeg'
-import Imagen7 from '../images/camisetas/7.jpeg'
-import Imagen8 from '../images/camisetas/8.jpeg'
+import Imagen1 from '../images/camisetas/1.jpg'
+import Imagen2 from '../images/camisetas/2.jpg'
+import Imagen3 from '../images/camisetas/3.jpg'
+import Imagen4 from '../images/camisetas/4.jpg'
+import Imagen5 from '../images/camisetas/5.jpg'
+import Imagen6 from '../images/camisetas/6.jpg'
+import Imagen7 from '../images/camisetas/7.jpg'
+import Imagen8 from '../images/camisetas/8.jpg'
 
 import Exibe from '../images/archivos-01.png'
 import Inter from '../images/archivos-02.png'
@@ -35,128 +35,129 @@ const Comunity = () => {
 
     const TopShirts = [
         {
-            user:'gaston_matias',
-            year:'2002',
-            club:'Real Sociedad',
-            country:t('comunity.ListShirt.spain'),
+            user:'pielcarp',
+            club:'River Plate',
+            country:t('comunity.ListShirt.argentina'),
+            year:'2021',
             image:Imagen1,
             tipo:Exibe
         },
         {
-            user:'casacas_as',
-            year:'2005',
-            club:'Lyon',
-            country:t('comunity.ListShirt.france'),
+            user:'nacionalcolección',
+            club:'Club Nacional',
+            country:t('comunity.ListShirt.uruguay'),
+            year:'2011',
             image:Imagen2,
             tipo:Vend
         },
         {
-            user:'tanoboca2020',
-            year:'1996',
-            club:'Boca Juniors',
+            user:'camisetaswrs',
+            club:'San Telmo',
             country:t('comunity.ListShirt.argentina'),
+            year:'2015',
             image:Imagen3,
+            tipo:Inter
+        },
+        {
+            user:'lcidfig',
+            club:'Selección Nacional',
+            country:t('comunity.ListShirt.chile'),
+            year:'1996',
+            image:Imagen4,
             tipo:Exibe
         },
         {
-            user:'cekcarp2021',
-            year:'1992',
-            club:'Arsenal',
-            country:t('comunity.ListShirt.england'),
-            image:Imagen4,
-            tipo:Vend
-        },
-        {
-            user:'coleccióncarp',
-            year:'2006',
-            club:'River Plate',
-            country:t('comunity.ListShirt.argentina'),
+            user:'mmf',
+            club:'General Velasquez',
+            country:t('comunity.ListShirt.chile'),
+            year:'1989',
             image:Imagen5,
             tipo:Exibe
         },
         {
-            user:'sacra maglia',
-            year:'1913',
-            club:'Argentina',
-            country:t('comunity.ListShirt.argentina'),
+            user:'camisetas.16',
+            club:'Cercle Brugge',
+            country:t('comunity.ListShirt.belgium'),
+            year:'2013',
             image:Imagen6,
-            tipo:Inter
+            tipo:Vend
         },
         {
-            user:'camisetas.vzk',
-            year:'2012',
-            club:'Inter',
-            country:t('comunity.ListShirt.italy'),
+            user:'frivintageshirts',
+            club:'Selección Nacional',
+            country:t('comunity.ListShirt.uruguay'),
+            year:'1996',
             image:Imagen7,
             tipo:Vend
         },
         {
-            user:'coleccionista_sap',
-            year:'2001',
-            club:'Selección Argentina',
-            country:t('comunity.ListShirt.argentina'),
+            user:'leomessicollector',
+            club:'Barcelona',
+            country:t('comunity.ListShirt.spain'),
+            year:'2019',
             image:Imagen8,
             tipo:Exibe
         },
     ]
 
-    const TopCounter = [138,2313];
+    const TopCounter = [420,6345];
+    const month = [t('comunity.months.mar')];
     
     const Top3 = [
         {
-            username:'SEBACUEVAS32',
+            username:'sebacuevas32',
             number:'2',
-            user: 'SEBACUEVAS32',
-            countShirt:'263'
+            user: 'sebacuevas32',
+            countShirt:'298'
         },  
         {
             username:'PABLORH239',
             number:'1',
             user: 'PABLORH239',
-            countShirt:'365'
+            countShirt:'377'
         },
         {
             username:'MATICALVETE',
             number:'3',
             user: 'MATICALVETE',
-            countShirt:'187'
+            countShirt:'194'
     } 
     ]
     const Top10 = [
         {
             number:'4',
             user: 'LASCASACASQUETENGO',
-            countShirt:'132'
+            countShirt:'146'
         },  
         {
             number:'5',
-            user: 'SEBA',
-            countShirt:'75'
+            user: 'bryan hernandez arellano',
+            countShirt:'145'
         },  
         {
             number:'6',
-            user: 'CASACASCARP',
-            countShirt:'72'
+            user: 'lcidfig',
+            countShirt:'132'
         },      
         {
             number:'7',
-            user: 'FACUGALLARDO14',
-            countShirt:'57'
+            user: 'guga.7',
+            countShirt:'129'
         },      
         {
             number:'8',
-            user: 'CHEVA091218',
-            countShirt:'55'
+            user: 'fabbian_campos',
+            countShirt:'125'
         },
         {
             number:'9',
-            user: 'ELIASTURBAY',
-            countShirt:'42'
+            user: 'feinschteiger',
+            countShirt:'106'
         }, 
         {
             number:'10',
-            user: 'CASACAS_AS',
-            countShirt:'41'
+            user: 'coleccionistaderiver',
+            countShirt:'101'
         },   
     ]
 
@@ -170,7 +171,7 @@ const Comunity = () => {
             </Helmet>
             <Box/>
             <Animated animationIn="fadeInUp" animationOut="flipOutX" animationInDuration={600} animationOutDuration={400} isVisible={true}>
-                <TitleCom translate={t}/>
+                <TitleCom month={month} translate={t}/>
                 <br/>
                 <img alt="" src={Carret} className="carret"/>
             </Animated>
