@@ -185,7 +185,7 @@ const Comunity = () => {
 
             </Animated>
 
-            <Questions translate={t}/>
+            {/*<Questions translate={t}/>*/ }
             <TeamVini translate={t}/>
             <DownCom translate={t}/>
         </div>
