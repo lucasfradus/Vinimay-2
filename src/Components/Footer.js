@@ -44,7 +44,7 @@ export default function Footer(props) {
                     <h1>{props.translate('Footer.comunity.comunity')}</h1>
                     <ul className='navLink'>
                         <li>
-                            <Link to='/comunity#faq'>{props.translate('Footer.comunity.ln1')}</Link>
+                            <Link to='/faq'>{props.translate('Footer.comunity.ln1')}</Link>
                         </li>
                     </ul>
                     <p></p>
