@@ -4,7 +4,6 @@ import Box from '../Components/box'
 import DownCom from '../Components/Community/DownCom'
 import ListShirt from '../Components/Community/ListShirt'
 import Museo from '../Components/Community/Museo'
-import Questions from '../Components/Community/Questions'
 import TopTen from '../Components/Community/TopTen'
 import ButtomTitle from '../Components/Community/ButtomTitle'
 
@@ -181,10 +180,8 @@ const Comunity = () => {
                 <Museo i18n={i18n} counter={TopCounter} translate={t}/>
                 <TopTen  i18n={i18n} Top3={Top3} Top10={Top10} translate={t}/>
                 <ButtomTitle translate={t}/>
-
             </Animated>
 
-            <Questions translate={t}/>
             <DownCom translate={t}/>
         </div>
     )

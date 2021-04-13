@@ -1,20 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export default function AcordionTile(props) {
+export default function AcordionTile({key, pregunta, respuesta}) {
     return (
-        <Container className='item-container' id={props.key}>
-            <div className='item'>
-                <div className='head'>
-                    <h2 className='line3'>{props.pregunta}</h2>
-                    <span className='caret-facing-down'>&#9660;</span>
-                    <span className='caret-facing-right'>&#9660;</span>
+            <Container className='item-container' id={key}>
+                <div className='item'>
+                    <div className='head'>
+                        <h2 className='line3'>{pregunta}</h2>
+                        <span className='caret-facing-down'>&#9660;</span>
+                        <span className='caret-facing-right'>&#9660;</span>
+                    </div>
+                    <div className='conten'>
+                        <p>{respuesta}</p>
+                    </div>
                 </div>
-                <div className='conten'>
-                    <p>{props.respuesta}</p>
-                </div>
-            </div>
-        </Container>
+            </Container>
+   
     )
 }
 
