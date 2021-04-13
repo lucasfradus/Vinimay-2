@@ -19,7 +19,9 @@ export default function TopTen(props) {
 
 
     const listItems3 = props.Top3.map(function(d, idx){
-        return  (<CardTop translate={props.translate} key={idx} countShirt={d.countShirt} user={d.username} username={d.user} number={d.number}/>)
+        return  (
+        <CardTop translate={props.translate} key={idx} countShirt={d.countShirt} user={d.username} username={d.user} number={d.number}/>
+        )
     });
 
     const listItems10 = props.Top10.map(function(d, idx){
@@ -36,7 +38,8 @@ export default function TopTen(props) {
                 <h1 className='line5'>{props.translate('comunity.TopTen.line2')}</h1>
                 <div className='cards'>
                     <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores1' number="-1"/>
-                    {listItems3}
+                        {listItems3}
+
                     <CardTop translate={props.translate} countShirt={200} user='Victoria Flores' username='Victoria Flores5' number="-1"/>
                 </div>
                 <img alt="" src={Mockup_right} className='mockup-float-right'/>
@@ -44,12 +47,9 @@ export default function TopTen(props) {
 
             <div className='table'>
             <Table  striped bordered hover>
-            
-  <tbody>
-
-                            {listItems10}
-                            </tbody>
-
+                <tbody>
+                {listItems10}
+                </tbody>
             </Table>
             </div>
             

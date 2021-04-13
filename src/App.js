@@ -15,6 +15,7 @@ import NotFoundPage from './Pages/NotFoundPage';
 import Video from './Pages/Video';
 import Potrero from './Pages/Potrero';
 import Team from './Pages/Team';
+import Faq from './Pages/Faq';
 
 
 import {useTranslation} from "react-i18next";
@@ -31,6 +32,7 @@ function App() {
             <Route exact path='/' component={Inicio} />
             <Route exact path='/comunity' component={Comunity}/>
             <Route exact path='/team' component={Team}/>
+            <Route exact path='/faq' component={Faq}/>
 
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/privacy' component={Privacity} />

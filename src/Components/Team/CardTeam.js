@@ -21,6 +21,8 @@ const Cardi = styled.div`
     .ImgP{
         height: 17rem;
         border-radius: 10px;
+        background-color:white;
+        width:240px;
     }
 
     .name{

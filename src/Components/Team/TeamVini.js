@@ -10,7 +10,9 @@ import Equipo2 from '../../images/team/gabi.png'
 import Equipo3 from '../../images/team/martin.png'
 import Equipo4 from '../../images/team/kalu.png'
 import Equipo5 from '../../images/team/juan_ignacio.png'
-import Equipo6 from '../../images/team/benjamin.png'
+import Equipo6 from '../../images/team/facu.png'
+import Equipo8 from '../../images/team/santi.png'
+
 import Equipo7 from '../../images/team/vicky.png'
 
 import flecha1 from '../../images/team/flecha-1.png'
@@ -33,7 +35,7 @@ export default function TeamVini(props) {
                 <CardTeam imagen={Equipo1} nombre="Tomás" apellido="Moyano" posicion={props.translate('comunity.TeamVini.product')} flecha_numero={4} flecha={flecha4} />
                 <CardTeam imagen={Equipo5} nombre="Ignacio" apellido="Benito" posicion={props.translate('comunity.TeamVini.dev')} flecha_numero={3} flecha={flecha3} />
                 <CardTeam imagen={Equipo7} nombre="Victoria" apellido="Flores" posicion={props.translate('comunity.TeamVini.design')} flecha_numero={5} flecha={flecha5} />
-                <CardTeam imagen={Equipo6} nombre="Santiago" apellido="García Marra" posicion={props.translate('comunity.TeamVini.social')}  />
+                <CardTeam imagen={Equipo8} nombre="Santiago" apellido="García Marra" posicion={props.translate('comunity.TeamVini.social')}  />
                 <CardTeam imagen={Equipo6} nombre="Facundo" apellido="Martinengo" posicion={props.translate('comunity.TeamVini.mkt')} />
                 <CardTeam imagen={Equipo3} nombre="Martin" apellido="Benito" posicion={props.translate('comunity.TeamVini.customer')} flecha_numero={2} flecha={flecha2} />
                 <CardTeam imagen={Equipo4} nombre="KULWINDERJIT" apellido="Singh" posicion={props.translate('comunity.TeamVini.programming')} />

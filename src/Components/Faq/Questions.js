@@ -47,7 +47,7 @@ export default function Questions(props) {
     const ListFAQ = faq.map(function(d, idx){
         return  (
             <AcordionTile
-                id={idx} 
+                key={idx} 
                 pregunta={d.q} 
                 respuesta={d.a} 
             />
@@ -55,11 +55,14 @@ export default function Questions(props) {
     });
 
 
+
+
+
     return (
         <Querys className='preguntas-container' id={'faq'}>
             <h1 className='line1'>{props.translate('comunity.Questions.line1')}</h1>
             <div className='list'>
-                        {ListFAQ}                
+                {ListFAQ}
             </div>
         </Querys>
     )

@@ -34,6 +34,7 @@ const Header = () => {
         display:flex;
         align-items:center;
         justify-content:center;
+        text-align:center;
         flex-direction:column;
         background-image: url(${background});
         background-repeat: no-repeat;
