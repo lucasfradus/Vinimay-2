@@ -34,7 +34,7 @@ const Cardi = styled.div`
         margin:0;
     }
     .pos{
-        color:#A8C813;
+        color:#171e36;
         font-size: 20px;
         margin:0;
     }

@@ -8,21 +8,20 @@ import Questions from '../Components/Community/Questions'
 import TopTen from '../Components/Community/TopTen'
 import ButtomTitle from '../Components/Community/ButtomTitle'
 
-import TeamVini from '../Components/Community/TeamVini'
 import TitleCom from '../Components/Community/TitleCom'
 import Carret from '../images/double_carret.jpg'
 import {useTranslation} from "react-i18next";
 import { Helmet } from 'react-helmet';
 
 
-import Imagen1 from '../images/camisetas/1.jpg'
-import Imagen2 from '../images/camisetas/2.jpg'
-import Imagen3 from '../images/camisetas/3.jpg'
-import Imagen4 from '../images/camisetas/4.jpg'
-import Imagen5 from '../images/camisetas/5.jpg'
-import Imagen6 from '../images/camisetas/6.jpg'
-import Imagen7 from '../images/camisetas/7.jpg'
-import Imagen8 from '../images/camisetas/8.jpg'
+import Imagen1 from '../images/camisetas/1.jpeg'
+import Imagen2 from '../images/camisetas/2.jpeg'
+import Imagen3 from '../images/camisetas/3.jpeg'
+import Imagen4 from '../images/camisetas/4.jpeg'
+import Imagen5 from '../images/camisetas/5.jpeg'
+import Imagen6 from '../images/camisetas/6.jpeg'
+import Imagen7 from '../images/camisetas/7.jpeg'
+import Imagen8 from '../images/camisetas/8.jpeg'
 
 import Exibe from '../images/archivos-01.png'
 import Inter from '../images/archivos-02.png'
@@ -35,129 +34,129 @@ const Comunity = () => {
 
     const TopShirts = [
         {
-            user:'pielcarp',
-            club:'River Plate',
-            country:t('comunity.ListShirt.argentina'),
-            year:'2021',
+            user:'rrreddevilcai',
+            club:'Porto',
+            country:t('comunity.ListShirt.portugal'),
+            year:'2018',
             image:Imagen1,
-            tipo:Exibe
-        },
-        {
-            user:'nacionalcolección',
-            club:'Club Nacional',
-            country:t('comunity.ListShirt.uruguay'),
-            year:'2011',
-            image:Imagen2,
             tipo:Vend
         },
         {
-            user:'camisetaswrs',
-            club:'San Telmo',
+            user:'alí',
+            club:'River Plate',
             country:t('comunity.ListShirt.argentina'),
-            year:'2015',
+            year:'2006',
+            image:Imagen2,
+            tipo:Inter
+        },
+        {
+            user:'iamchinook',
+            club:'Juventus',
+            country:t('comunity.ListShirt.italy'),
+            year:'2006',
             image:Imagen3,
             tipo:Inter
         },
         {
-            user:'lcidfig',
-            club:'Selección Nacional',
-            country:t('comunity.ListShirt.chile'),
-            year:'1996',
+            user:'agustin maillet',
+            club:'Independiente ',
+            country:t('comunity.ListShirt.argentina'),
+            year:'2017',
             image:Imagen4,
-            tipo:Exibe
+            tipo:Inter
         },
         {
-            user:'mmf',
-            club:'General Velasquez',
-            country:t('comunity.ListShirt.chile'),
-            year:'1989',
+            user:'plunatiok',
+            club:'Selección Nacional',
+            country:t('comunity.ListShirt.paraguay'),
+            year:'2008',
             image:Imagen5,
-            tipo:Exibe
+            tipo:Vend
         },
         {
             user:'camisetas.16',
-            club:'Cercle Brugge',
-            country:t('comunity.ListShirt.belgium'),
-            year:'2013',
+            club:'Crystal Palace',
+            country:t('comunity.ListShirt.england'),
+            year:'2015',
             image:Imagen6,
             tipo:Vend
         },
         {
-            user:'frivintageshirts',
-            club:'Selección Nacional',
-            country:t('comunity.ListShirt.uruguay'),
-            year:'1996',
+            user:'florcamisetas',
+            club:'Atlas Fútbol Club',
+            country:t('comunity.ListShirt.mexico'),
+            year:'1999',
             image:Imagen7,
             tipo:Vend
         },
         {
-            user:'leomessicollector',
-            club:'Barcelona',
-            country:t('comunity.ListShirt.spain'),
-            year:'2019',
+            user:'edu lara',
+            club:'Selección Nacional',
+            country:t('comunity.ListShirt.italy'),
+            year:'1990',
             image:Imagen8,
-            tipo:Exibe
+            tipo:Inter
         },
     ]
 
-    const TopCounter = [420,6345];
-    const month = [t('comunity.months.mar')];
+    const TopCounter = [450,7500];
+    const month = [t('comunity.months.apr')];
     
     const Top3 = [
         {
             username:'sebacuevas32',
             number:'2',
             user: 'sebacuevas32',
-            countShirt:'298'
+            countShirt:'333'
         },  
         {
             username:'PABLORH239',
             number:'1',
             user: 'PABLORH239',
-            countShirt:'377'
+            countShirt:'391'
         },
         {
             username:'MATICALVETE',
             number:'3',
             user: 'MATICALVETE',
-            countShirt:'194'
+            countShirt:'195'
     } 
     ]
     const Top10 = [
         {
             number:'4',
-            user: 'LASCASACASQUETENGO',
-            countShirt:'146'
+            user: 'robertobaigo',
+            countShirt:'165'
         },  
         {
             number:'5',
-            user: 'bryan hernandez arellano',
-            countShirt:'145'
+            user: 'feinschteiger',
+            countShirt:'160'
         },  
         {
             number:'6',
-            user: 'lcidfig',
-            countShirt:'132'
+            user: 'guga.7',
+            countShirt:'150'
         },      
         {
             number:'7',
-            user: 'guga.7',
-            countShirt:'129'
+            user: 'lcidfig',
+            countShirt:'146'
         },      
         {
             number:'8',
-            user: 'fabbian_campos',
-            countShirt:'125'
+            user: 'lascasacasqtengo',
+            countShirt:'146'
         },
         {
             number:'9',
-            user: 'feinschteiger',
-            countShirt:'106'
+            user: 'bryan hernandez arellano',
+            countShirt:'146'
         }, 
         {
             number:'10',
-            user: 'coleccionistaderiver',
-            countShirt:'101'
+            user: 'fabbian_campos',
+            countShirt:'125'
         },   
     ]
 
@@ -186,7 +185,6 @@ const Comunity = () => {
             </Animated>
 
             <Questions translate={t}/>
-            <TeamVini translate={t}/>
             <DownCom translate={t}/>
         </div>
     )

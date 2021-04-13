@@ -3,6 +3,7 @@
         "home": "Home",
         "comunity": "Comunity",
         "contact": "Contact",
+        "team":"Team",
         "download":{
             "download": "Download",
             "android": "Android",
@@ -72,7 +73,11 @@
             "italy":"Italy",
             "paraguay":"Paraguay",
             "usa" : "United States",
-            "belgium":"Belgium"
+            "belgium":"Belgium",
+            "portugal" : "Portugal",
+            "mexico" : "Mexico"
+
+
         },
         "card":{
             "vini-user" : "Vinimay User",
@@ -148,11 +153,12 @@
             "answer9ln7":"G- Add images from the camera or library."
         },
         "TeamVini":{
-            "ceo":"CEO-Founder",
+            "ceo":"CEO-Fundador",
             "product":"Product Responsible",
             "dev":"Back-end Dev",
-            "mkt":"Marketing & Design",
-            "finance":"Finance",
+            "design":"Design Responsible",
+            "mkt":"Marketing Responsible",
+            "social":"Social Media Marketing",
             "customer":"Customer Satisfaction",
             "programming":"Front-end Dev"
         },

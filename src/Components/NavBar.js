@@ -70,6 +70,13 @@ export default function NavBar() {
                         onClick={handleToggle}
                         className="nav-btn2">
                             <li className="nav-item">
+                                <Link to="/team">{t('navbar.team')}</Link>
+                            </li>
+                        </button>
+                        <button type="button"
+                        onClick={handleToggle}
+                        className="nav-btn2">
+                            <li className="nav-item">
                             <Link to="/contact">{t('navbar.contact')}</Link>
                             </li>
                         </button>

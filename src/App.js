@@ -14,7 +14,8 @@ import Privacity from './Pages/Privacity';
 import NotFoundPage from './Pages/NotFoundPage';
 import Video from './Pages/Video';
 import Potrero from './Pages/Potrero';
-import Redirect from './Pages/Redirect';
+import Team from './Pages/Team';
+
 
 import {useTranslation} from "react-i18next";
 
@@ -29,12 +30,13 @@ function App() {
         <Switch>
             <Route exact path='/' component={Inicio} />
             <Route exact path='/comunity' component={Comunity}/>
+            <Route exact path='/team' component={Team}/>
+
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/privacy' component={Privacity} />
             <Route exact path='/terms' component={Terms} />
             <Route exact path='/video' component={Video} />
             <Route exact path='/potrero' component={Potrero}/>
-            <Route exact path='/router' component={Redirect}/>
 
             <Route component={NotFoundPage} />
         </Switch>

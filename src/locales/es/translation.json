@@ -3,6 +3,8 @@
         "home": "Home",
         "comunity": "Comunidad",
         "contact": "Contacto",
+        "team":"Equipo",
+
         "download":{
             "download": "Descargar",
             "android": "Android",
@@ -72,7 +74,10 @@
             "italy":"Italia",
             "paraguay":"Paraguay",
             "usa" : "Estados Unidos",
-            "belgium":"Belgica"
+            "belgium":"Belgica",
+            "portugal" : "Portugal",
+            "mexico" : "Mexico"
+
 
         },
         "card":{
@@ -151,11 +156,12 @@
         "TeamVini":{
             "ceo":"CEO-Fundador",
             "product":"Responsable de producto",
-            "dev":"Desarrollo Back-End",
-            "mkt":"Marketing y diseño",
-            "finance":"Finanzas",
+            "dev":"Desarrollo",
+            "design":"Responsable de Diseño",
+            "mkt":"Responsable de Marketing",
+            "social":"Social Media Marketing",
             "customer":"Satisfacción al cliente",
-            "programming":"Desarrollo Front-End"
+            "programming":"Programación"
         },
         "DownCom":{
             "down":"¿ESTÁS LISTO PARA COMPARTIR TU PASIÓN?"

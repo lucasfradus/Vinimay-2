@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Tem from '../../images/archivos-17.jpg'
+import Nov from '../../images/archivos-18.jpg'
 import Log from '../../images/logo-sin-camiseta.png'
 
 import CardTeam from './CardTeam'
@@ -32,8 +32,9 @@ export default function TeamVini(props) {
                 <CardTeam imagen={Equipo2} nombre="Gabriel" apellido="Benito" posicion={props.translate('comunity.TeamVini.ceo')} flecha_numero={1} flecha={flecha1} />
                 <CardTeam imagen={Equipo1} nombre="Tomás" apellido="Moyano" posicion={props.translate('comunity.TeamVini.product')} flecha_numero={4} flecha={flecha4} />
                 <CardTeam imagen={Equipo5} nombre="Ignacio" apellido="Benito" posicion={props.translate('comunity.TeamVini.dev')} flecha_numero={3} flecha={flecha3} />
-                <CardTeam imagen={Equipo7} nombre="Victoria" apellido="Flores" posicion={props.translate('comunity.TeamVini.mkt')} flecha_numero={5} flecha={flecha5} />
-                <CardTeam imagen={Equipo6} nombre="Benjamin" apellido="Buchanan" posicion={props.translate('comunity.TeamVini.finance')} flecha_numero={1} flecha={flecha1} />
+                <CardTeam imagen={Equipo7} nombre="Victoria" apellido="Flores" posicion={props.translate('comunity.TeamVini.design')} flecha_numero={5} flecha={flecha5} />
+                <CardTeam imagen={Equipo6} nombre="Santiago" apellido="García Marra" posicion={props.translate('comunity.TeamVini.social')}  />
+                <CardTeam imagen={Equipo6} nombre="Facundo" apellido="Martinengo" posicion={props.translate('comunity.TeamVini.mkt')} />
                 <CardTeam imagen={Equipo3} nombre="Martin" apellido="Benito" posicion={props.translate('comunity.TeamVini.customer')} flecha_numero={2} flecha={flecha2} />
                 <CardTeam imagen={Equipo4} nombre="KULWINDERJIT" apellido="Singh" posicion={props.translate('comunity.TeamVini.programming')} />
             </div>
@@ -43,21 +44,23 @@ export default function TeamVini(props) {
 
 
 const Team = styled.div`
-    margin:0;
-    padding: auto;
-    align-content:center;
-    display: block;
-    align-items: center;
-    width: 100%;
-    /* heigh]t: 100vh; */
-    background-image: url(${Tem});
-    background-attachment: fixed;
-    background-size: cover;
+  
+        margin:0;
+        padding: auto;
+        align-content:center;
+        display: block;
+        align-items: center;
+        width: 100%;
+        /* height: 70vh; */
+        background-image: linear-gradient(to bottom, rgba(168, 200, 19, 0.7),#A8C813), url(${Nov});
+        background-attachment: fixed;
+        background-size: cover;
+
 
     .line1{
         margin-top: 10px;
         padding-top: 10px;
-        color:#A8C813;
+        color:#171e36;
         font-size: 30px;
     }
 
