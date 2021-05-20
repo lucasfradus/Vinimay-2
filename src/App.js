@@ -16,7 +16,7 @@ import Video from './Pages/Video';
 import Potrero from './Pages/Potrero';
 import Team from './Pages/Team';
 import Faq from './Pages/Faq';
-import Ads from './Pages/ads';
+import Ads from './Pages/Ads';
 
 
 import {useTranslation} from "react-i18next";

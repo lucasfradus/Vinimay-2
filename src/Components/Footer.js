@@ -30,7 +30,7 @@ export default function Footer(props) {
                     <h1>{props.translate('Footer.ads.ads')}</h1>
                     <ul className='navLink'>
                         <li>
-                            <Link to='/ads'>{props.translate('Footer.ads.ln1')}</Link>
+                            <Link to='/'>{props.translate('Footer.ads.ln1')}</Link>
                         </li>
                         <li>
                             <Link to='/'>{props.translate('Footer.ads.ln2')}</Link>
