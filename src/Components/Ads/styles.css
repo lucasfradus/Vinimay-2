@@ -1,0 +1,152 @@
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  background: radial-gradient(circle farthest-side, #2a355a, #090c17);
+}
+
+.contact-form__container {
+  display: block;
+  padding: 2rem 5rem;
+  text-align: right;
+}
+
+.btn {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 20px;
+  border: none;
+  height: 40px;
+  width: 140px;
+  color: #fff;
+  background: #a8c813;
+  margin-right: 1.2rem;
+  border-radius: 6px;
+}
+.btn:hover {
+  background: #eaeaea;
+  color: black;
+}
+
+.inputCar {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.hold {
+  font-size: 28px;
+  color: #a8c813;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  font-style: italic;
+  display: inline-block;
+  text-align: right;
+}
+
+.Ip {
+  height: 2rem;
+  width: 30rem;
+  margin: 20px;
+  border-radius: 6px;
+  background-color: #eaeaea;
+}
+.IpM {
+  height: 7rem;
+  width: 30rem;
+  margin: 20px;
+  border-radius: 6px;
+  background-color: #eaeaea;
+}
+
+.Img2 {
+  height: 40rem;
+}
+/* The alert message box */
+.alert {
+  padding: 20px;
+  color: white;
+  margin: 0 15px 15px 0;
+  text-align: left;
+  font-size: 18px;
+}
+.loading {
+  padding: 20px;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.danger {
+  background-color: #f44336;
+}
+
+.success {
+  background-color: #a8c813;
+}
+
+.info {
+  background-color: rgb(69, 188, 228);
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+@media screen and (max-width: 769px) {
+  .contact-form__container {
+    display: block;
+    padding: 2rem 1rem;
+    text-align: right;
+  }
+
+  .for {
+    display: block;
+    padding: 2rem 1rem;
+    text-align: right;
+  }
+  .Img2 {
+    display: none;
+  }
+
+  .inputCar {
+    display: block;
+    align-items: center;
+  }
+
+  .Ip {
+    height: 2rem;
+    width: 16rem;
+    margin: 0px;
+    border-radius: 6px;
+  }
+  .IpM {
+    height: 5rem;
+    width: 16rem;
+    margin: 0px;
+    border-radius: 6px;
+  }
+  .btn {
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 20px;
+    border: none;
+    height: 40px;
+    width: 140px;
+    color: #fff;
+    background: #a8c813;
+    margin-top: 0.7rem;
+    border-radius: 6px;
+  }
+}

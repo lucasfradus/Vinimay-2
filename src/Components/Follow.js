@@ -18,7 +18,7 @@ export default function Follow(props) {
                 <img src={Mock3} alt='com' className='Img3'/>
                 <h1>{props.translate('Follow')}</h1>
                 <div>
-                  <a target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/vinimayapp/"><img src={red1} alt='com' className='redImg'/></a>
+                  <a target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/vinimayapp_es"><img src={red1} alt='com' className='redImg'/></a>
                   <a target="_blank" rel="noopener noreferrer"  href="https://www.facebook.com/vinimayapp/"><img src={red2} alt='com' className='redImg'/></a>
                   <a target="_blank" rel="noopener noreferrer"  href="https://twitter.com/appvinimay"><img src={red3} alt='com' className='redImg'/></a>
                   <a target="_blank" rel="noopener noreferrer"  href="https://www.linkedin.com/company/vinimay-app/"><img src={red4} alt='com' className='redImg'/></a>
