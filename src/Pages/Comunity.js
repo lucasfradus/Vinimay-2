@@ -33,73 +33,73 @@ const Comunity = () => {
 
     const TopShirts = [
         {
-            user:'rrreddevilcai',
-            club:'Porto',
-            country:t('comunity.ListShirt.portugal'),
-            year:'2018',
+            user:'casacascarp',
+            club:'River Plate',
+            country:t('comunity.ListShirt.argentina'),
+            year:'2015',
             image:Imagen1,
             tipo:Vend
         },
         {
-            user:'alí',
-            club:'River Plate',
-            country:t('comunity.ListShirt.argentina'),
-            year:'2006',
+            user:'maxigandolfi',
+            club:'Inter ',
+            country:t('comunity.ListShirt.italy'),
+            year:'1987',
             image:Imagen2,
-            tipo:Inter
+            tipo:Vend
         },
         {
-            user:'iamchinook',
-            club:'Juventus',
-            country:t('comunity.ListShirt.italy'),
-            year:'2006',
-            image:Imagen3,
-            tipo:Inter
-        },
-        {
-            user:'agustin maillet',
-            club:'Independiente ',
+            user:'pollogol_camisetas ',
+            club:'Newells',
             country:t('comunity.ListShirt.argentina'),
-            year:'2017',
+            year:'1995',
+            image:Imagen3,
+            tipo:Vend
+        },
+        {
+            user:'camisetas.vzk',
+            club:'Sheffield united',
+            country:t('comunity.ListShirt.england'),
+            year:'2016',
             image:Imagen4,
+            tipo:Vend
+        },
+        {
+            user:'maxideprati',
+            club:'Independiente',
+            country:t('comunity.ListShirt.argentina'),
+            year:'1995',
+            image:Imagen5,
             tipo:Inter
         },
         {
-            user:'plunatiok',
-            club:'Selección Nacional',
-            country:t('comunity.ListShirt.paraguay'),
-            year:'2008',
-            image:Imagen5,
-            tipo:Vend
-        },
-        {
-            user:'camisetas.16',
-            club:'Crystal Palace',
-            country:t('comunity.ListShirt.england'),
-            year:'2015',
+            user:'elcayo.16',
+            club:'Celtic',
+            country:t('comunity.ListShirt.scotland'),
+            year:'2010',
             image:Imagen6,
-            tipo:Vend
+            tipo:Inter
         },
         {
-            user:'florcamisetas',
-            club:'Atlas Fútbol Club',
-            country:t('comunity.ListShirt.mexico'),
-            year:'1999',
-            image:Imagen7,
-            tipo:Vend
-        },
-        {
-            user:'edu lara',
-            club:'Selección Nacional',
+            user:'marcoszizu',
+            club:'Milan',
             country:t('comunity.ListShirt.italy'),
-            year:'1990',
+            year:'2013',
+            image:Imagen7,
+            tipo:Inter
+        },
+        {
+            user:'matteogardonio',
+            club:'Selección Nacional',
+            country:t('comunity.ListShirt.egypt'),
+            year:'2007',
             image:Imagen8,
             tipo:Inter
         },
     ]
 
-    const TopCounter = [616,9050];
-    const month = [t('comunity.months.may')];
+    const TopCounter = [670,9668];
+    const month = [t('comunity.months.jun')];
     
     const Top3 = [
         {
@@ -112,7 +112,7 @@ const Comunity = () => {
             username:'PABLORH239',
             number:'1',
             user: 'PABLORH239',
-            countShirt:'401'
+            countShirt:'408'
         },
         {
             username:'MATICALVETE',
@@ -125,23 +125,23 @@ const Comunity = () => {
         {
             number:'4',
             user: 'robertobaigo',
-            countShirt:'179'
+            countShirt:'182'
         },  
         {
             number:'5',
-            user: 'feinschteiger',
-            countShirt:'160'
+            user: 'lcidfig',
+            countShirt:'166'
         },  
          
         {
             number:'6',
-            user: 'lcidfig',
-            countShirt:'156'
+            user: 'guga.7',
+            countShirt:'163'
         },  
         {
             number:'6',
-            user: 'guga.7',
-            countShirt:'154'
+            user: 'feinschteiger',
+            countShirt:'160'
         },     
         {
             number:'8',
