@@ -12,16 +12,16 @@ const Header = () => {
             </div>
             <div className="body">
            <strong>Vinimay App</strong> nace en Septiembre del 2019 cuando <strong>Gabriel</strong> quería mostrar y contar a todo el mundo 
-           su <strong>pasión por las camisetas de fútbol</strong> y pensó que la mejor idea era hacer un Museo Digital con alcance mundial para que tod@s
-                 puedan<strong> exhibir</strong> sus camisetas. Así fue cuando el 17-07-2020 Vini sale al mercado, hoy luego de 9 meses la app tiene
-                  mas de <strong>7000 camisetas</strong> cargadas con mas de <strong>2100 usuarios</strong> registrados.
-            </div>
+           su <strong>pasión por las camisetas de fútbol</strong> y pensó que la mejor idea era desarrollar una plataforma digital con alcance mundial para que tod@s
+           los coleccionistas profesionales y apasionados puedan<strong> exhibir, comprar, vender o intercambiar</strong> sus camisetas oficiales. 
+           Hoy en día <strong>Vini</strong> esta ayudando a más de 4000 fanáticos que ya cargaron mas de 10.000 camisetas.
+                        </div>
             <div className="bottom">
                 ¿Ya sos parte de vinimay?
             </div>
          </Container>
     );
-
+ 
 
     }
 
