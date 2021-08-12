@@ -98,45 +98,45 @@ const Comunity = () => {
         },
     ]
 
-    const TopCounter = [914,10582];
-    const month = [t('comunity.months.jul')];
+    const TopCounter = [785,11139];
+    const month = [t('comunity.months.ago')];
     
     const Top3 = [
         {
             username:'sebacuevas32',
             number:'2',
             user: 'sebacuevas32',
-            countShirt:'344'
+            countShirt:'359'
         },  
         {
             username:'PABLORH239',
             number:'1',
             user: 'PABLORH239',
-            countShirt:'414'
+            countShirt:'423'
         },
         {
             username:'robertobaigo',
             number:'3',
             user: 'robertobaigo',
-            countShirt:'200'
+            countShirt:'216'
     } 
     ]
     const Top10 = [
         {
             number:'4',
             user: 'MATICALVETE',
-            countShirt:'197'
+            countShirt:'200'
         },  
         {
             number:'5',
             user: 'guga.7',
-            countShirt:'174'
+            countShirt:'180'
         },  
          
         {
             number:'6',
             user: 'lcidfig',
-            countShirt:'168'
+            countShirt:'171'
         },  
         {
             number:'7',
@@ -145,18 +145,18 @@ const Comunity = () => {
         },     
         {
             number:'8',
-            user: 'fabbian_campos',
-            countShirt:'150'
+            user: 'silorhaless',
+            countShirt:'155'
         },
         {
             number:'9',
-            user: 'lascasacasqtengo',
-            countShirt:'148'
+            user: 'fabbian_campos',
+            countShirt:'150'
         }, 
         {
             number:'10',
-            user: 'bryan hernandez arellano',
-            countShirt:'147'
+            user: 'lascasacasqtengo',
+            countShirt:'148'
         },   
     ]
 
