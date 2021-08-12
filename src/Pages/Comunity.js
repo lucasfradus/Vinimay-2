@@ -13,14 +13,14 @@ import {useTranslation} from "react-i18next";
 import { Helmet } from 'react-helmet';
 
 
-import Imagen1 from '../images/camisetas/1.jpg'
-import Imagen2 from '../images/camisetas/2.jpg'
-import Imagen3 from '../images/camisetas/3.jpg'
-import Imagen4 from '../images/camisetas/4.jpg'
-import Imagen5 from '../images/camisetas/5.jpg'
-import Imagen6 from '../images/camisetas/6.jpg'
-import Imagen7 from '../images/camisetas/7.jpg'
-import Imagen8 from '../images/camisetas/8.jpg'
+import Imagen1 from '../images/camisetas/1.jpeg'
+import Imagen2 from '../images/camisetas/2.jpeg'
+import Imagen3 from '../images/camisetas/3.jpeg'
+import Imagen4 from '../images/camisetas/4.jpeg'
+import Imagen5 from '../images/camisetas/5.jpeg'
+import Imagen6 from '../images/camisetas/6.jpeg'
+import Imagen7 from '../images/camisetas/7.jpeg'
+import Imagen8 from '../images/camisetas/8.jpeg'
 
 import Exibe from '../images/archivos-01.png'
 import Inter from '../images/archivos-02.png'
@@ -33,68 +33,68 @@ const Comunity = () => {
 
     const TopShirts = [
         {
-            user:'dani27r',
-            club:'Olympique de marsella',
-            country:t('comunity.ListShirt.france'),
-            year:'2019',
+            user:'nahuelheredia17',
+            club:'Belgrano',
+            country:t('comunity.ListShirt.argentina'),
+            year:'1998',
             image:Imagen1,
-            tipo:Vend
+            tipo:Inter
         },
         {
-            user:'martin.joge',
-            club:'Udinese',
-            country:t('comunity.ListShirt.italy'),
-            year:'2017',
+            user:'piluai666',
+            club:'Velez',
+            country:t('comunity.ListShirt.argentina'),
+            year:'2018',
             image:Imagen2,
-            tipo:Vend
-        },
-        {
-            user:'glorioso83',
-            club:'Seleccion Nacional',
-            country:t('comunity.ListShirt.south_sudan'),
-            year:'2016',
-            image:Imagen3,
-            tipo:Vend
-        },
-        {
-            user:'damibutiler',
-            club:'Manchester Uniter',
-            country:t('comunity.ListShirt.england'),
-            year:'2008',
-            image:Imagen4,
-            tipo:Vend
+            tipo:Inter
         },
         {
             user:'maxideprati',
             club:'Independiente',
             country:t('comunity.ListShirt.argentina'),
-            year:'2012',
-            image:Imagen5,
-            tipo:Inter
-        },
-        {
-            user:'daniel',
-            club:'Selección Nacional',
-            country:t('comunity.ListShirt.argentina'),
-            year:'2006',
-            image:Imagen6,
-            tipo:Inter
-        },
-        {
-            user:'gaston79',
-            club:'Olimpi',
-            country:t('comunity.ListShirt.argentina'),
-            year:'2018',
-            image:Imagen7,
+            year:'2015',
+            image:Imagen3,
             tipo:Inter
         },
         {
             user:'elcayo',
-            club:'Selección Nacional',
-            country:t('comunity.ListShirt.russia'),
+            club:'Manchester Uniter',
+            country:t('comunity.ListShirt.england'),
+            year:'2011',
+            image:Imagen4,
+            tipo:Inter
+        },
+        {
+            user:'joaruiz',
+            club:'Boca Juniors ',
+            country:t('comunity.ListShirt.argentina'),
+            year:'2014',
+            image:Imagen5,
+            tipo:Inter
+        },
+        {
+            user:'cesar78',
+            club:'Real Madrid',
+            country:t('comunity.ListShirt.spain'),
+            year:'1992',
+            image:Imagen6,
+            tipo:Vend
+        },
+        {
+            user:'jere11',
+            club:'Leones Negros UdeG',
+            country:t('comunity.ListShirt.mexico'),
+            year:'2019',
+            image:Imagen7,
+            tipo:Vend
+        },
+        {
+            user:'cristiano10',
+            club:'Chelsea',
+            country:t('comunity.ListShirt.england'),
             year:'2016',
             image:Imagen8,
-            tipo:Inter
+            tipo:Vend
         },
     ]
 
