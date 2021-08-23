@@ -49,6 +49,10 @@ export default function Terms() {
                 <p className='subTitle2'>{t('Terms.point9a')}</p>
                 <p className='text'>{t('Terms.point9b')}</p>
                
+               
+                <p className='subTitle2'>{t('Terms.point91a')}</p>
+                <p className='text'>{t('Terms.point91b')}</p>
+
                 <p className='subTitle2'>{t('Terms.point10a')}</p>
                 <p className='text'>{t('Terms.point10b')}</p>
                
