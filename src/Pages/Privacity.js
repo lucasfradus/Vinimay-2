@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Box from '../Components/box'
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { Helmet } from 'react-helmet';
 
 export default function Privacity() {
@@ -9,10 +9,10 @@ export default function Privacity() {
 
     return (
         <COntinaer>
-               <Helmet>
+            <Helmet>
                 <title>Politica de Privacidad</title>
             </Helmet>
-            <Box/>
+            <Box />
             <div className='conte'>
                 <h1 className='title'>{t('Privacy.title')}</h1>
                 <div className='divider'></div>
@@ -30,35 +30,38 @@ export default function Privacity() {
 
                 <p className='subTitle2'>{t('Privacy.point4a')}</p>
                 <p className='text'>{t('Privacy.point4b')}</p>
-               
+
                 <p className='subTitle2'>{t('Privacy.point5a')}</p>
                 <p className='text'>{t('Privacy.point5b')}</p>
-               
-               
+
+
                 <p className='subTitle2'>{t('Privacy.point6a')}</p>
                 <p className='text'>{t('Privacy.point6b')}</p>
-               
+
                 <p className='subTitle2'>{t('Privacy.point7a')}</p>
                 <p className='text'>{t('Privacy.point7b')}</p>
-               
+
+                <p className='subTitle2'>{t('Privacy.point7c')}</p>
+                <p className='text'>{t('Privacy.point7d')}</p>
+
                 <p className='subTitle2'>{t('Privacy.point8a')}</p>
                 <p className='text'>{t('Privacy.point8b')}</p>
-               
+
                 <p className='subTitle2'>{t('Privacy.point9a')}</p>
                 <p className='text'>{t('Privacy.point9b')}</p>
 
                 <p className='subTitle2'>{t('Privacy.point10a')}</p>
                 <p className='text'>{t('Privacy.point10b')}</p>
-               
+
                 <p className='subTitle2'>{t('Privacy.point11a')}</p>
                 <p className='text'>{t('Privacy.point11b')}</p>
-               
+
                 <p className='subTitle2'>{t('Privacy.point12a')}</p>
                 <p className='text'>{t('Privacy.point12b')}</p>
 
                 <p className='text'>{t('Privacy.date')}</p>
 
-               
+
 
             </div>
         </COntinaer>
