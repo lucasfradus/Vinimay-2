@@ -107,7 +107,7 @@ const Comunity = () => {
     ]
 
     const TopCounter = [915, 14598];
-    const month = [t('comunity.months.sep')];
+    const month = [t('comunity.months.oct')];
 
     const Top3 = [
         {
