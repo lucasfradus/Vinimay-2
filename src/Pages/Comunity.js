@@ -33,130 +33,138 @@ const Comunity = () => {
 
     const TopShirts = [
         {
-            user:'nahuelheredia17',
-            club:'Belgrano',
-            country:t('comunity.ListShirt.argentina'),
-            year:'1998',
+            /* Camiseta N° 1 */
+            user:'todoutileria',
+            club:'Atletico Morelia',
+            country:t('comunity.ListShirt.mexico'),
+            year:'2020',
             image:Imagen1,
-            tipo:Inter
+            tipo:Vend
         },
         {
-            user:'piluai666',
-            club:'Velez',
-            country:t('comunity.ListShirt.argentina'),
-            year:'2018',
+            /* Camiseta N° 2 */
+            user:'enzocabral.ch',
+            club:'Liverpool',
+            country:t('comunity.ListShirt.england'),
+            year:'2010',
             image:Imagen2,
-            tipo:Inter
+            tipo:Vend
         },
         {
-            user:'maxideprati',
-            club:'Independiente',
+             /* Camiseta N° 3 */
+            user:'juandezcurra',
+            club:'River Plate',
             country:t('comunity.ListShirt.argentina'),
             year:'2015',
             image:Imagen3,
-            tipo:Inter
+            tipo:Vend
         },
         {
-            user:'elcayo',
-            club:'Manchester Uniter',
-            country:t('comunity.ListShirt.england'),
-            year:'2011',
-            image:Imagen4,
-            tipo:Inter
-        },
-        {
-            user:'joaruiz',
-            club:'Boca Juniors ',
+             /* Camiseta N° 4 */
+            user:'fueradelarea',
+            club:'Estudiantes ',
             country:t('comunity.ListShirt.argentina'),
-            year:'2014',
+            year:'2006',
+            image:Imagen4,
+            tipo:Vend
+        },
+        {
+            /* Camiseta N° 5 */
+            user:'joyadelbarrio',
+            club:'rangers de talca',
+            country:t('comunity.ListShirt.chile'),
+            year:'2021',
             image:Imagen5,
             tipo:Inter
         },
         {
-            user:'cesar78',
-            club:'Real Madrid',
-            country:t('comunity.ListShirt.spain'),
-            year:'1992',
+            /* Camiseta N° 6 */
+            user:'todorojocai',
+            club:'Independiente',
+            country:t('comunity.ListShirt.argentina'),
+            year:'2000',
             image:Imagen6,
-            tipo:Vend
+            tipo:Inter
         },
         {
-            user:'jere11',
-            club:'Leones Negros UdeG',
-            country:t('comunity.ListShirt.mexico'),
-            year:'2019',
+            /* Camiseta N° 7 */
+            user:'puertogol',
+            club:'Arsenal',
+            country:t('comunity.ListShirt.england'),
+            year:'2016',
             image:Imagen7,
             tipo:Vend
         },
         {
-            user:'cristiano10',
-            club:'Chelsea',
-            country:t('comunity.ListShirt.england'),
-            year:'2016',
+            /* Camiseta N° 8 */
+            user:'rojo.10',
+            club:'Independiente ',
+            country:t('comunity.ListShirt.argentina'),
+            year:'2017',
             image:Imagen8,
             tipo:Vend
         },
     ]
 
-    const TopCounter = [785,11139];
-    const month = [t('comunity.months.ago')];
+    const TopCounter = [828,12631];
+    const month = [t('comunity.months.sep')];
     
     const Top3 = [
         {
-            username:'sebacuevas32',
+            username:'pablorh239',
             number:'2',
-            user: 'sebacuevas32',
-            countShirt:'359'
+            user: 'pablorh239',
+            countShirt:'431'
         },  
         {
-            username:'PABLORH239',
+            username:'robertobaigo',
             number:'1',
-            user: 'PABLORH239',
-            countShirt:'423'
+            user: 'robertobaigo',
+            countShirt:'664'
         },
         {
-            username:'robertobaigo',
+            username:'sebacuevas32',
             number:'3',
-            user: 'robertobaigo',
-            countShirt:'216'
+            user: 'sebacuevas32',
+            countShirt:'359'
     } 
     ]
     const Top10 = [
         {
             number:'4',
-            user: 'MATICALVETE',
-            countShirt:'200'
+            user: 'reddevilcai',
+            countShirt:'218'
         },  
         {
             number:'5',
-            user: 'guga.7',
-            countShirt:'180'
+            user: 'maticalvete',
+            countShirt:'201'
         },  
          
         {
             number:'6',
-            user: 'lcidfig',
-            countShirt:'171'
+            user: 'guga.7',
+            countShirt:'180'
         },  
         {
             number:'7',
-            user: 'feinschteiger',
-            countShirt:'160'
+            user: 'lcidfig',
+            countShirt:'179'
         },     
         {
             number:'8',
-            user: 'silorhaless',
-            countShirt:'155'
+            user: 'feinschteiger',
+            countShirt:'160'
         },
         {
             number:'9',
-            user: 'fabbian_campos',
-            countShirt:'150'
+            user: 'silorhaless',
+            countShirt:'160'
         }, 
         {
             number:'10',
-            user: 'lascasacasqtengo',
-            countShirt:'148'
+            user: 'fabbian_campos',
+            countShirt:'150'
         },   
     ]
 
