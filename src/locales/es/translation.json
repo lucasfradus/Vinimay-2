@@ -17,30 +17,30 @@
             "line3": "DE",
             "line4": "CAMISETAS DE",
             "line5": "FÚTBOL OFICIALES",
-            "line6": "¡BAJATE LA APP!"
+            "line6": "¡BJATE LA APP!"
         },
         "fanmap": {
-            "line1": "INTERACTUÁ CON FANÁTICOS DE OTROS PAISES",
-            "line2": "BUSCÁ LAS MEJORES CAMISETAS DE TODO EL MUNDO"
+            "line1": "INTERACTÚA CON FANÁTICOS DE OTROS PAISES",
+            "line2": "BUSCA LAS MEJORES CAMISETAS DE TODO EL MUNDO"
         },
         "infocollection": {
-            "line1": "MIRÁ VINIMAY DESDE ADENTRO",
-            "line2": "CARGÁ TUS CAMISETAS",
-            "line3": "En 30 segundos y tenerlas siempre con vos.",
+            "line1": "MIRA VINIMAY DESDE ADENTRO",
+            "line2": "CARGA TUS CAMISETAS",
+            "line3": "En 30 segundos y tenlas siempre contigo.",
             "line4": "INTERACTÚA",
-            "line5": "Conoce los museos de otros usuarios. Likeá, comentá y chateá.",
-            "line6": "COMPRÁ, VENDÉ E INTERCAMBÍA",
-            "line7": "Agrega a tu colección las camisetas que siempre soñaste."
+            "line5": "Descubre nuevas colecciones de camisetas. Likea, comenta y chatea",
+            "line6": "INTERCAMBIA, COMPRA Y VENDE",
+            "line7": "Suma a tu colección las camisetas que siempre soñaste."
         },
         "options": {
-            "line1": "ELEGÍ QUE TE GUSTARIA HACER CON TU CAMISETA",
+            "line1": "ELIGE QUE TE GUSTARIA HACER CON TU CAMISETA",
             "line2": "EXHIBIR",
             "line3": "INTERCAMBIAR",
             "line4": "VENDER"
         },
         "download": {
             "line1": "MUY PRONTO DISPONIBLE EN OTROS PAÍSES",
-            "line2": "¡BAJATE LA APP!"
+            "line2": "¡BÁJATE LA APP!"
         }
     },
     "comunity": {
@@ -107,7 +107,7 @@
             "line1": "Usuario: ",
             "line2": "CAMISETAS"
         },
-        "ButtomTitle": "¿QUIÉNES VAN A SER LOS PROXIMOS FANÁTICOS EN EL TOP 10?",
+        "ButtomTitle": "¿QUIÉNES SERÁN LOS PRÓXIMOS COLECCIONISTAS EN EL TOP 10?",
         "Questions": {
             "line1": "PREGUNTAS FRECUENTES:",
             "question1": "¿Cómo creo una cuenta en Vinimay?",
@@ -165,10 +165,10 @@
             "programming": "Programación"
         },
         "DownCom": {
-            "down": "¿ESTÁS LISTO PARA COMPARTIR TU PASIÓN?"
+            "down": "COMPARTE TUS CAMISETAS DE FUTBOL OFICIALES, COMPARTE TU PASIÓN"
         }
     },
-    "Follow": "¡SEGUINOS EN NUESTRAS REDES!",
+    "Follow": "SÍGUENOS EN NUESTRAS REDES!",
     "Footer": {
         "legal": {
             "legal": "LEGAL",
@@ -296,7 +296,7 @@
             "sending": "Enviando"
         },
         "downme": {
-            "down": "¡BAJATE LA APP!"
+            "down": "¡BÁJATE LA APP!"
         }
     },
     "titles": {

@@ -4,29 +4,29 @@ import background from '../../images/archivos-17.jpg';
 
 
 const Header = () => {
-    
+
     return (
         <Container>
             <div className="title">
                 Nuestra Historia
             </div>
             <div className="body">
-           <strong>Vinimay App</strong> nace en Septiembre del 2019 cuando <strong>Gabriel</strong> quería mostrar y contar a todo el mundo 
-           su <strong>pasión por las camisetas de fútbol</strong> y pensó que la mejor idea era desarrollar una plataforma digital con alcance mundial para que tod@s
-           los coleccionistas profesionales y apasionados puedan<strong> exhibir, comprar, vender o intercambiar</strong> sus camisetas oficiales. 
-           Hoy en día <strong>Vini</strong> esta ayudando a más de 4000 fanáticos que ya cargaron mas de 10.000 camisetas.
-                        </div>
+                <strong>Vinimay App</strong> nace en Septiembre del 2019 cuando <strong>Gabriel</strong> quería mostrar y contar a todo el mundo
+                su <strong>pasión por las camisetas de fútbol</strong> y pensó que la mejor idea era desarrollar una plataforma digital con alcance mundial para que tod@s
+                los coleccionistas profesionales y apasionados puedan<strong> exhibir, comprar, vender o intercambiar</strong> sus camisetas oficiales.
+                Hoy en día <strong>Vini</strong> esta ayudando a miles de fanáticos de todo el mundo.
+            </div>
             <div className="bottom">
                 ¿Ya sos parte de vinimay?
             </div>
-         </Container>
+        </Container>
     );
- 
-
-    }
 
 
-    const Container = styled.div`
+}
+
+
+const Container = styled.div`
         height:70vh;
         display:flex;
         align-items:center;
@@ -79,4 +79,4 @@ const Header = () => {
 
     `
 
-    export default Header;
+export default Header;
