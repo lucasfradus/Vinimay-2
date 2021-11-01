@@ -36,7 +36,7 @@ export default function TeamVini(props) {
                 <CardTeam imagen={Equipo5} nombre="Ignacio" apellido="Benito" posicion={props.translate('comunity.TeamVini.dev')} flecha_numero={3} flecha={flecha3} />
                 <CardTeam imagen={Equipo7} nombre="Victoria" apellido="Flores" posicion={props.translate('comunity.TeamVini.design')} flecha_numero={5} flecha={flecha5} />
                 <CardTeam imagen={Equipo8} nombre="Santiago" apellido="García Marra" posicion={props.translate('comunity.TeamVini.mkt')}  />
-                <CardTeam imagen={Equipo6} nombre="Leandro" apellido="Cerrella" posicion={props.translate('comunity.TeamVini.socialz')} />
+                <CardTeam imagen={Equipo6} nombre="Leandro" apellido="Cerrella" posicion={props.translate('comunity.TeamVini.social')} />
                 <CardTeam imagen={Equipo3} nombre="Segundo" apellido="Bourdieu" posicion={props.translate('comunity.TeamVini.customer')} flecha_numero={2} flecha={flecha2} />
                 <CardTeam imagen={Equipo4} nombre="Mateo" apellido="Bourdieu" posicion={props.translate('comunity.TeamVini.cfo')} />
             </div>
